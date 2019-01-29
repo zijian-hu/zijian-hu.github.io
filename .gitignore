@@ -1,0 +1,8 @@
+# OS X
+.DS_Store
+
+# Project level files
+examples/bootstrap-4.2.1/
+examples/beckham
+examples/jackson
+examples/personal
