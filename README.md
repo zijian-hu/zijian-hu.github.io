@@ -5,3 +5,4 @@
 - [colorlib: Beckham](https://colorlib.com/wp/template/beckham/)
 - [colorlib: Jackson](https://colorlib.com/wp/template/jackson/)
 - [colorlib: Personal](https://colorlib.com/wp/template/personal/)
+- [Academic](https://sourcethemes.com/academic/)
