@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2237bcfb-d92a-4b42-9d52-e9fad9be7215" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ciketop.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html5up-editorial.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html5up-forty.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html5up-story.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html5up-strata.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/css/noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/breakpoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/browser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/jquery.scrollex.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/jquery.scrolly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/base/_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_actions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_gallery.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_items.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_spotlight.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_table.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/components/_wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/layout/_wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/libs/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/libs/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/libs/_html-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/libs/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/libs/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/libs/_vendor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/assets/sass/noscript.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/fulls/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/gallery/thumbs/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/pic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/pic02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/pic03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/spotlight01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/spotlight02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/images/spotlight03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/index-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/story/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/css/images/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/js/breakpoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/js/browser.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/js/jquery.poptrox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/libs/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/libs/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/libs/_html-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/libs/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/libs/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/libs/_vendor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/assets/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/fulls/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/fulls/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/fulls/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/fulls/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/fulls/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/fulls/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/my_avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/thumbs/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/thumbs/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/thumbs/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/thumbs/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/thumbs/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/images/thumbs/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strata/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/strata/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/strata/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="425" column="22" selection-start-line="425" selection-start-column="16" selection-end-line="425" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>linked</find>
+      <find>article</find>
+      <find>after</find>
+      <find>.image</find>
+      <find>two</find>
+      <find>cv</find>
+      <find>:after</find>
+      <find>col-6</find>
+      <find>col-12-xsmall</find>
+      <find>x</find>
+      <find>twitter</find>
+      <find>col-12</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/forty/index.html" />
+        <option value="$PROJECT_DIR$/src/strata/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strata" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strata" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strata" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ciketop.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ciketop.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strata" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Projects\Personal\ciketop.github.io\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2237bcfb-d92a-4b42-9d52-e9fad9be7215" name="Default Changelist" comment="" />
+      <created>1553582224150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553582224150</updated>
+      <workItem from="1553582229815" duration="4047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4047000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24987654" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32997987" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/strata/images/thumbs/01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strata/images/bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strata/images/avatar.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strata/assets/css/images/overlay.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strata/assets/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forty/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="201" column="42" selection-start-line="201" selection-start-column="42" selection-end-line="201" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strata/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="425" column="22" selection-start-line="425" selection-start-column="16" selection-end-line="425" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strata/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
