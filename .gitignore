@@ -6,4 +6,7 @@
 .idea
 
 # Project level files
-public/
+examples/bootstrap-4.2.1/
+examples/beckham
+examples/jackson
+examples/personal
