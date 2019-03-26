@@ -1,6 +1,10 @@
 # OS X
 .DS_Store
 
+# IDE settings
+.vscode
+.idea
+
 # Project level files
 examples/bootstrap-4.2.1/
 examples/beckham
