@@ -1,5 +1,3 @@
-_site/
-
 # OS X
 .DS_Store
 
@@ -8,7 +6,4 @@ _site/
 .idea
 
 # Project level files
-examples/bootstrap-4.2.1/
-examples/beckham
-examples/jackson
-examples/personal
+public/
