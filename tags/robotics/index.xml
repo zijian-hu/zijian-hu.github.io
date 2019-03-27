@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on Zijian Hu</title>
+    <link>/tags/robotics/</link>
+    <description>Recent content in Robotics on Zijian Hu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
+      <link>/project/baby/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>/project/baby/</guid>
+      <description>Infants engage in motor babbling that allows them to explore their space and learn what movements produce desired outcomes. Less motor babbling from infants can lead to developmental delays. Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide contingent positive feedback to increase exploration and expand early movement practice.
+Towards this end, we are collaborating with physical therapists to create approaches to predict the developmental status of infants using wearable sensors; running user studies that explore various robot rewards for contingent activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with the task.</description>
+    </item>
+    
+    <item>
+      <title>Socially Aware, Expressive, and Personalized Mobile Remote Presence:
+Co-Robots as Gateways to Access to K-12 In-School Education
+</title>
+      <link>/project/nri_kids/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>/project/nri_kids/</guid>
+      <description>Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses specifically on interactions between one or more robots and multiple people, known as Multi-Party Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI (interaction dynamics, human perception, etc.) and extends them to the challenges of multi-party interactions (within-group turn taking, dyadic dynamics, and group dynamics).
+To address these, MP-HRI requires new methods and approaches. Effective MP-HRI enables robotic systems to function in many contexts, including service, support, and mediation.</description>
+    </item>
+    
+    <item>
+      <title>Trust in Multi-Party Human-Robot Interaction</title>
+      <link>/project/multi_party/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>/project/multi_party/</guid>
+      <description>Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses specifically on interactions between one or more robots and multiple people, known as Multi-Party Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI (interaction dynamics, human perception, etc.) and extends them to the challenges of multi-party interactions (within-group turn taking, dyadic dynamics, and group dynamics).
+To address these, MP-HRI requires new methods and approaches. Effective MP-HRI enables robotic systems to function in many contexts, including service, support, and mediation.</description>
+    </item>
+    
+  </channel>
+</rss>

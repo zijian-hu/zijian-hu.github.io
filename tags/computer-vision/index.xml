@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on Zijian Hu</title>
+    <link>/tags/computer-vision/</link>
+    <description>Recent content in Computer Vision on Zijian Hu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
+      <link>/project/baby/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>/project/baby/</guid>
+      <description>Infants engage in motor babbling that allows them to explore their space and learn what movements produce desired outcomes. Less motor babbling from infants can lead to developmental delays. Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide contingent positive feedback to increase exploration and expand early movement practice.
+Towards this end, we are collaborating with physical therapists to create approaches to predict the developmental status of infants using wearable sensors; running user studies that explore various robot rewards for contingent activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with the task.</description>
+    </item>
+    
+  </channel>
+</rss>

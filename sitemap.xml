@@ -3,13 +3,25 @@
   
     <url>
     
-      <loc>/author/admin/</loc>
+      <loc>/project/baby/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
     </url>
   
     <url>
     
-      <loc>/</loc>
-      <priority>0</priority>
+      <loc>/project/nri_kids/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/project/multi_party/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/author/admin/</loc>
     </url>
   
     <url>
@@ -32,7 +44,28 @@
   
     <url>
     
+      <loc>/tags/computer-vision/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/tags/machine-learning/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/post/</loc>
+    </url>
+  
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+      <priority>0</priority>
     </url>
   
     <url>
@@ -53,7 +86,22 @@
   
     <url>
     
+      <loc>/tags/robotics/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/tags/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
   
