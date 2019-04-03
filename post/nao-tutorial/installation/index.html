@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Undergraduate Student">
+  <meta name="description" content="Installing NAOqi SDK and configure NAO with ROS.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/authors/admin/">
+  <link rel="alternate" hreflang="en-us" href="/post/nao-tutorial/installation/">
 
   
 
@@ -98,15 +98,15 @@
   
 
   
-  <link rel="alternate" href="/authors/admin/index.xml" type="application/rss+xml" title="Zijian Hu">
-  <link rel="feed" href="/authors/admin/index.xml" type="application/rss+xml" title="Zijian Hu">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Zijian Hu">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Zijian Hu">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/authors/admin/">
+  <link rel="canonical" href="/post/nao-tutorial/installation/">
 
   
   
@@ -118,19 +118,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Zijian Hu">
-  <meta property="og:url" content="/authors/admin/">
-  <meta property="og:title" content="admin | Zijian Hu">
-  <meta property="og:description" content="Undergraduate Student"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/nao-tutorial/installation/">
+  <meta property="og:title" content="NAO Dev Tutorial: Installation | Zijian Hu">
+  <meta property="og:description" content="Installing NAOqi SDK and configure NAO with ROS."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-01-23T00:00:00-08:00">
+  <meta property="article:published_time" content="2019-01-23T00:00:00-08:00">
+  
+  <meta property="article:modified_time" content="2019-04-02T00:00:00-07:00">
   
 
   
 
   
 
-  <title>admin | Zijian Hu</title>
+  <title>NAO Dev Tutorial: Installation | Zijian Hu</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -326,19 +328,7 @@
 </nav>
 
 
-
-
-
-<section id="about" class="pt-5">
-  <div class="container">
-    
-    
-    
-    
-      
-
-
-
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -350,176 +340,396 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
 
-      
-      
-      <img class="portrait" src="/author/admin/avatar_hu8f459841a5eedfd38230e160e24d04fa_61738_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
-      
 
-      <div class="portrait-title">
-        <h2 itemprop="name">Zijian Hu</h2>
-        <h3 itemprop="jobTitle">Undergraduate Student</h3>
 
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="https://www.usc.edu/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">University of Southern California</span>
-          </a>
-        </h3>
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="http://robotics.usc.edu/interaction/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">USC Interaction Lab</span>
-          </a>
-        </h3>
-        
-      </div>
+  
 
-      <link itemprop="url" href="">
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">NAO Dev Tutorial: Installation</h1>
 
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://www.linkedin.com/in/ciketop/" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://github.com/ciketop" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://drive.google.com/file/d/1oAOGkY2FmW6SOBPwkvSkb-ANSilb6Smv/view?usp=sharing" target="_blank" rel="noopener">
-            <i class="ai ai-cv big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
+  
+  <p class="page-subtitle">Installing NAOqi SDK and configure NAO with ROS 🚀</p>
+  
 
-    </div>
-  </div>
-  <div class="col-12 col-lg-8" itemprop="description">
-
-    
+  
     
 
-    <p>I am an undergraduate student in Computer Science at University of Southern California.
-My research interests include robotics, computer visions and human-robot interaction.</p>
 
 
-    <div class="row">
+<meta content="2019-01-23 00:00:00 -0800 PST" itemprop="datePublished">
+<meta content="2019-04-02 00:00:00 -0700 PDT" itemprop="dateModified">
 
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Robotics</li>
-          
-          <li>Computer Vision</li>
-          
-          <li>Machine Learning</li>
-          
-          <li>Human-Robot Interaction</li>
-          
-        </ul>
-      </div>
-      
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
 
       
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Computer Science, 2020</p>
-              <p class="institution">University of Southern California</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Computer Science, 2014</p>
-              <p class="institution">University of Missouri-Columbia</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
       
+      
+        <a href="/authors/admin/">Zijian Hu</a></span></span>
+  
 
-    </div>
+
+
   </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    <time>Apr 2, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=NAO%20Dev%20Tutorial%3a%20Installation&amp;url=%2fpost%2fnao-tutorial%2finstallation%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fnao-tutorial%2finstallation%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fnao-tutorial%2finstallation%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Installation"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fnao-tutorial%2finstallation%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Installation"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=NAO%20Dev%20Tutorial%3a%20Installation&amp;body=%2fpost%2fnao-tutorial%2finstallation%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
 </div>
 
     
 
-    
-    
-    
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Latest</h3>
-      <ul>
-        
-        <li>
-          <a href="/post/nao-tutorial/getting-started/">NAO Dev Tutorial: Getting Started (ROS)</a>
-        </li>
-        
-        <li>
-          <a href="/post/nao-tutorial/installation/">NAO Dev Tutorial: Installation</a>
-        </li>
-        
-        <li>
-          <a href="/post/nao-tutorial/nao-sdk/">NAO Dev Tutorial: NAOqi SDK</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-  
-</section>
 
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="installing-the-sdk">Installing the SDK</h2>
+
+<ol>
+<li><p>Make sure you have the following installed</p>
+
+<ul>
+<li><a href="https://www.python.org/download/releases/2.7/" target="_blank">Python 2.7</a></li>
+<li><a href="https://cmake.org/" target="_blank">CMake</a> version 2.8.3 or higher
+<br /></li>
+</ul></li>
+
+<li><p>Download the following from <a href="https://community.aldebaran.com/en/resources/software" target="_blank">Aldebaran Community</a> website (<em>you need to register an account in order to download the files</em>)</p>
+
+<ul>
+<li><strong>pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz</strong></li>
+<li><strong>naoqi-sdk-2.1.2.x-linux64.tar.gz</strong></li>
+<li>[optional] <strong>choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar</strong>
+<br /></li>
+</ul></li>
+
+<li><p>Execute the following command and replace <strong>2.1.2.x</strong> with the version you downloaded</p>
+
+<p>Unzip the tar files</p>
+
+<pre><code class="language-bash">$ mkdir ~/naoqi
+$ tar xzf &lt;path to NAOqi C++ SDK&gt;/naoqi-sdk-2.1.2.x-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
+$ tar xzf &lt;path to NAOqi Python SDK&gt;/pynaoqi-python2.7-2.1.2-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
+</code></pre>
+
+<p>Check the installation by executing NAOqi</p>
+
+<pre><code class="language-bash">$ ~/naoqi/naoqi-sdk-2.1.2.17-linux64/naoqi
+</code></pre>
+
+<p>You should see output similiar to</p>
+
+<pre><code>Starting NAOqi version 2.1.2.17
+.
+.
+.
+NAOqi is ready...
+</code></pre>
+
+<p>Press <strong>CTRL-C</strong> to exit</p>
+
+<p>Now we need to add <strong>NAOqi SDK</strong> to system variables. Add the following lines at the end of <strong>~/.bashrc</strong></p>
+
+<pre><code class="language-bash">$ export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.2-linux64:$PYTHONPATH
+$ export AL_DIR=~/naoqi/naoqi-sdk-2.1.2-linux64
+$ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
+</code></pre>
+
+<p>Execute <code>source ~/.bashrc</code> to apply the changes</p>
+
+<p>Verify <em>in python console</em></p>
+
+<pre><code class="language-python">import naoqi
+</code></pre>
+
+<p>if correctly installed, there should be no error</p></li>
+</ol>
+
+<h2 id="install-ros">Install ROS</h2>
+
+<ul>
+<li>See <a href="http://wiki.ros.org/kinetic/Installation" target="_blank">Official ROS Installation Tutorial</a></li>
+</ul>
+
+<h2 id="install-nao-package-for-ros">Install <strong>NAO package</strong> for ROS</h2>
+
+<ul>
+<li><p>Install the packages needed</p>
+
+<ul>
+<li><em>replace kinetic to your ROS version if needed</em>
+<br /></li>
+</ul>
+
+<pre><code class="language-bash">$ sudo apt-get install ros-kinetic-driver-base ros-kinetic-move-base-msgs \
+ros-kinetic-octomap ros-kinetic-octomap-msgs ros-kinetic-humanoid-msgs \
+ros-kinetic-humanoid-nav-msgs ros-kinetic-camera-info-manager \
+ros-kinetic-camera-info-manager-py
+</code></pre></li>
+
+<li><p>Install the main package</p>
+
+<pre><code class="language-bash">$ sudo apt-get install ros-kinetic-nao-robot
+</code></pre></li>
+
+<li><p>Install packages for robot control</p>
+
+<pre><code class="language-bash">$ sudo apt-get install ros-kinetic-nao-bringup ros-kinetic-naoqi-pose \
+ros-kinetic-nao-interaction ros-kinetic-nao-moveit-config \
+ros-kinetic-naoqi-driver ros-kinetic-naoqi-driver-py \
+ros-kinetic-naoqi-sensors-py ros-kinetic-nao-dcm-bringup \
+ros-kinetic-moveit
+</code></pre></li>
+
+<li><p>Install packages for simulation</p></li>
+</ul>
+
+<p><em>Notice: to install nao_meshes package, you need to agree the policy</em></p>
+
+<pre><code class="language-bash">  $ sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes
+</code></pre>
+
+<h2 id="next-getting-started-post-nao-tutorial-getting-started">Next: <a href="/post/nao-tutorial/getting-started/">Getting Started</a></h2>
+
+<h3 id="reference">Reference</h3>
+
+<ul>
+<li><a href="http://doc.aldebaran.com/2-1/dev/python/install_guide.html" target="_blank">Python SDK Install Guide</a></li>
+<li><a href="http://doc.aldebaran.com/2-1/dev/cpp/install_guide.html" target="_blank">C++ SDK Installation</a></li>
+<li><a href="http://wiki.ros.org/nao/Tutorials/Installation" target="_blank">Installation of ROS for usage with or on a NAO robot</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/academic/">Academic</a>
+  
+</div>
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hu8f459841a5eedfd38230e160e24d04fa_61738_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Zijian Hu</a></h5>
+    <h6 class="card-subtitle">Undergraduate Student</h6>
+    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/ciketop/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/ciketop" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://drive.google.com/file/d/1oAOGkY2FmW6SOBPwkvSkb-ANSilb6Smv/view?usp=sharing" target="_blank" rel="noopener">
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/nao-tutorial/getting-started/">NAO Dev Tutorial: Getting Started (ROS)</a></li>
+          
+          <li><a href="/post/nao-tutorial/nao-sdk/">NAO Dev Tutorial: NAOqi SDK</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
 
 <div class="container">
   <footer class="site-footer">
