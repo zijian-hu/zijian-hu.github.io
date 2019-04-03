@@ -119,7 +119,7 @@
   
   <meta property="og:site_name" content="Zijian Hu">
   <meta property="og:url" content="/post/nao-tutorial/getting-started/">
-  <meta property="og:title" content="NAO Dev Tutorial: Getting Started (ROS) | Zijian Hu">
+  <meta property="og:title" content="NAO Dev Tutorial: Getting Started with NAO using ROS | Zijian Hu">
   <meta property="og:description" content="This tutorial shows how to work with Physical NAO."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -132,7 +132,7 @@
 
   
 
-  <title>NAO Dev Tutorial: Getting Started (ROS) | Zijian Hu</title>
+  <title>NAO Dev Tutorial: Getting Started with NAO using ROS | Zijian Hu</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -349,10 +349,10 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">NAO Dev Tutorial: Getting Started (ROS)</h1>
+  <h1 itemprop="name">NAO Dev Tutorial: Getting Started with NAO using ROS</h1>
 
   
-  <p class="page-subtitle">Physical NAO setup with ROS 🚀</p>
+  <p class="page-subtitle">NAO setup with ROS 🤖</p>
   
 
   
@@ -422,7 +422,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20%28ROS%29&amp;url=%2fpost%2fnao-tutorial%2fgetting-started%2f"
+         href="https://twitter.com/intent/tweet?text=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20with%20NAO%20using%20ROS&amp;url=%2fpost%2fnao-tutorial%2fgetting-started%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -436,21 +436,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fnao-tutorial%2fgetting-started%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20%28ROS%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fnao-tutorial%2fgetting-started%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20with%20NAO%20using%20ROS"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2fnao-tutorial%2fgetting-started%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20%28ROS%29"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fnao-tutorial%2fgetting-started%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20with%20NAO%20using%20ROS"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20%28ROS%29&amp;body=%2fpost%2fnao-tutorial%2fgetting-started%2f">
+         href="mailto:?subject=NAO%20Dev%20Tutorial%3a%20Getting%20Started%20with%20NAO%20using%20ROS&amp;body=%2fpost%2fnao-tutorial%2fgetting-started%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -500,11 +500,14 @@
 
 <ol>
 <li>Turn on the robot. See <a href="http://doc.aldebaran.com/2-1/nao/getting_out_of_the_box.html" target="_blank">this guide</a> for detail</li>
-<li>Start the robot bridge on your computer
-<code>bash
-$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&lt;robot_ip&gt; roscore_ip:=&lt;roscore_ip&gt;
-</code>
-This will start the robot&rsquo;s default configuration with the following publisher:
+
+<li><p>Start the robot bridge on your computer</p>
+
+<pre><code class="language-bash">$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&lt;robot_ip&gt; \
+roscore_ip:=&lt;roscore_ip&gt;
+</code></pre>
+
+<p>This will start the robot&rsquo;s default configuration with the following publisher:</p>
 
 <ul>
 <li>joint_states</li>
@@ -515,10 +518,11 @@ This will start the robot&rsquo;s default configuration with the following publi
 <li>right sonar</li>
 <li>microphone</li>
 </ul></li>
-<li>To visualize the robot, open <strong>rviz</strong>
-<code>bash
-$ rosrun rviz rviz
-</code>
+
+<li><p>To visualize the robot, open <strong>rviz</strong></p>
+
+<pre><code class="language-bash">$ rosrun rviz rviz
+</code></pre>
 
 <ol>
 <li>In top bar, go to <code>File-&gt;Open Config</code></li>
@@ -530,26 +534,35 @@ $ rosrun rviz rviz
 <li>you should see something similar to the below screenshot
 <img src="http://wiki.ros.org/nao/Tutorials/Getting-Started?action=AttachFile&amp;do=get&amp;target=NaoRviz.png" alt="NAO rviz" /></li>
 </ol></li>
-<li>Controlling the robot
+
+<li><p>Controlling the robot</p>
 
 <ol>
-<li>run <code>$ rosnode list</code> to check if <strong>/nao_walker</strong> node is running</li>
-<li>To turn on the motors
-<code>bash
-$ rosservice call /body_stiffness/enable &quot;{}&quot;
-</code>
-To turn off the motors
-<code>bash
-$ rosservice call /body_stiffness/disable &quot;{}&quot;
-</code></li>
-<li>once the motors are on, use the following command to move the robot in x-direction
-<code>bash
-$ rostopic pub -1 /cmd_vel geometry_msgs/Twist '{linear: {x: 1.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}'
-</code>
-To stop the robot, run:
-<code>bash
-$ rostopic pub -1 /cmd_vel geometry_msgs/Twist '{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}'
-</code></li>
+<li>execute <code>rosnode list</code> to check if <strong>/nao_walker</strong> node is running</li>
+
+<li><p>To turn on the motors</p>
+
+<pre><code class="language-bash">$ rosservice call /body_stiffness/enable &quot;{}&quot;
+</code></pre>
+
+<p>To turn off the motors</p>
+
+<pre><code class="language-bash">$ rosservice call /body_stiffness/disable &quot;{}&quot;
+</code></pre></li>
+
+<li><p>once the motors are on, use the following command to move the robot in x-direction</p>
+
+<pre><code class="language-bash">$ rostopic pub -1 /cmd_vel geometry_msgs/Twist \
+'{linear: {x: 1.0, y: 0.0, z: 0.0}, \
+angular: {x: 0.0, y: 0.0, z: 0.0}}'
+</code></pre>
+
+<p>To stop the robot, run:</p>
+
+<pre><code class="language-bash">$ rostopic pub -1 /cmd_vel geometry_msgs/Twist \
+'{linear: {x: 0.0, y: 0.0, z: 0.0}, \
+angular: {x: 0.0, y: 0.0, z: 0.0}}'
+</code></pre></li>
 </ol></li>
 </ol>
 
@@ -670,9 +683,9 @@ $ rostopic pub -1 /cmd_vel geometry_msgs/Twist '{linear: {x: 0.0, y: 0.0, z: 0.0
         <h3>Related</h3>
         <ul>
           
-          <li><a href="/post/nao-tutorial/installation/">NAO Dev Tutorial: Installation</a></li>
-          
           <li><a href="/post/nao-tutorial/nao-sdk/">NAO Dev Tutorial: NAOqi SDK</a></li>
+          
+          <li><a href="/post/nao-tutorial/installation/">NAO Dev Tutorial: Installation</a></li>
           
         </ul>
       </div>

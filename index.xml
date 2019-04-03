@@ -90,7 +90,7 @@ for details and related publications&lt;/p&gt;
     </item>
     
     <item>
-      <title>NAO Dev Tutorial: Getting Started (ROS)</title>
+      <title>NAO Dev Tutorial: Getting Started with NAO using ROS</title>
       <link>/post/nao-tutorial/getting-started/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
@@ -107,11 +107,14 @@ for details and related publications&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Turn on the robot. See &lt;a href=&#34;http://doc.aldebaran.com/2-1/nao/getting_out_of_the_box.html&#34; target=&#34;_blank&#34;&gt;this guide&lt;/a&gt; for detail&lt;/li&gt;
-&lt;li&gt;Start the robot bridge on your computer
-&lt;code&gt;bash
-$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; roscore_ip:=&amp;lt;roscore_ip&amp;gt;
-&lt;/code&gt;
-This will start the robot&amp;rsquo;s default configuration with the following publisher:
+
+&lt;li&gt;&lt;p&gt;Start the robot bridge on your computer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \
+roscore_ip:=&amp;lt;roscore_ip&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will start the robot&amp;rsquo;s default configuration with the following publisher:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;joint_states&lt;/li&gt;
@@ -122,10 +125,11 @@ This will start the robot&amp;rsquo;s default configuration with the following p
 &lt;li&gt;right sonar&lt;/li&gt;
 &lt;li&gt;microphone&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;
-&lt;code&gt;bash
-$ rosrun rviz rviz
-&lt;/code&gt;
+
+&lt;li&gt;&lt;p&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosrun rviz rviz
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
 &lt;li&gt;In top bar, go to &lt;code&gt;File-&amp;gt;Open Config&lt;/code&gt;&lt;/li&gt;
@@ -137,26 +141,35 @@ $ rosrun rviz rviz
 &lt;li&gt;you should see something similar to the below screenshot
 &lt;img src=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started?action=AttachFile&amp;amp;do=get&amp;amp;target=NaoRviz.png&#34; alt=&#34;NAO rviz&#34; /&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;Controlling the robot
+
+&lt;li&gt;&lt;p&gt;Controlling the robot&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;run &lt;code&gt;$ rosnode list&lt;/code&gt; to check if &lt;strong&gt;/nao_walker&lt;/strong&gt; node is running&lt;/li&gt;
-&lt;li&gt;To turn on the motors
-&lt;code&gt;bash
-$ rosservice call /body_stiffness/enable &amp;quot;{}&amp;quot;
-&lt;/code&gt;
-To turn off the motors
-&lt;code&gt;bash
-$ rosservice call /body_stiffness/disable &amp;quot;{}&amp;quot;
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;once the motors are on, use the following command to move the robot in x-direction
-&lt;code&gt;bash
-$ rostopic pub -1 /cmd_vel geometry_msgs/Twist &#39;{linear: {x: 1.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
-&lt;/code&gt;
-To stop the robot, run:
-&lt;code&gt;bash
-$ rostopic pub -1 /cmd_vel geometry_msgs/Twist &#39;{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
-&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;execute &lt;code&gt;rosnode list&lt;/code&gt; to check if &lt;strong&gt;/nao_walker&lt;/strong&gt; node is running&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;To turn on the motors&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosservice call /body_stiffness/enable &amp;quot;{}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To turn off the motors&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosservice call /body_stiffness/disable &amp;quot;{}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;once the motors are on, use the following command to move the robot in x-direction&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rostopic pub -1 /cmd_vel geometry_msgs/Twist \
+&#39;{linear: {x: 1.0, y: 0.0, z: 0.0}, \
+angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To stop the robot, run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rostopic pub -1 /cmd_vel geometry_msgs/Twist \
+&#39;{linear: {x: 0.0, y: 0.0, z: 0.0}, \
+angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -307,15 +320,15 @@ ros-kinetic-moveit
 
 &lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;Make sure you have &lt;strong&gt;Choregraphe suite&lt;/strong&gt; installed
 
 &lt;ul&gt;
 &lt;li&gt;See &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34;&gt;this tutorial&lt;/a&gt; for detail&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&#34;hello-world-example&#34;&gt;Hello World Example&lt;/h2&gt;
+&lt;!--## Hello World Example--&gt;
 
 &lt;h3 id=&#34;using-choregraphe&#34;&gt;Using Choregraphe&lt;/h3&gt;
 
