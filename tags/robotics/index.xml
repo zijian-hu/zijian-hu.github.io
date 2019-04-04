@@ -43,5 +43,41 @@ To address these, MP-HRI requires new methods and approaches. Effective MP-HRI e
 To address these, MP-HRI requires new methods and approaches. Effective MP-HRI enables robotic systems to function in many contexts, including service, support, and mediation.</description>
     </item>
     
+    <item>
+      <title>NAO Dev Tutorial: Installation</title>
+      <link>/post/nao-tutorial/installation/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/post/nao-tutorial/installation/</guid>
+      <description>Installing the SDK  Make sure you have the following installed
+ Python 2.7 CMake version 2.8.3 or higher   Download the following from Aldebaran Community website (you need to register an account in order to download the files)
+ pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz naoqi-sdk-2.1.2.x-linux64.tar.gz [optional] choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar   Execute the following command and replace 2.1.2.x with the version you downloaded
+Unzip the tar files
+$ mkdir ~/naoqi $ tar xzf &amp;lt;path to NAOqi C++ SDK&amp;gt;/naoqi-sdk-2.</description>
+    </item>
+    
+    <item>
+      <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
+      <link>/post/nao-tutorial/getting-started/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/post/nao-tutorial/getting-started/</guid>
+      <description>This tutorial shows how to work with Physical NAO.
+Make sure you have installed all the dependencies and configured PYTHONPATH system variable correctly
+*see installation guide for detail
+Controlling Robot  Turn on the robot. See this guide for detail Start the robot bridge on your computer
+$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \ roscore_ip:=&amp;lt;roscore_ip&amp;gt;  This will start the robot&amp;rsquo;s default configuration with the following publisher:
+ joint_states tf top camera bottom camera left sonar right sonar microphone  To visualize the robot, open rviz</description>
+    </item>
+    
+    <item>
+      <title>NAO Tutorial: NAOqi SDK</title>
+      <link>/post/nao-tutorial/nao-sdk/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/post/nao-tutorial/nao-sdk/</guid>
+      <description> Before starting  Make sure you have Choregraphe suite installed  See this tutorial for detail   Using Choregraphe  Follow this tutorial  Using Python in Choregraphe  Follow this tutorial  Using Dialog topic in Choregraphe  Follow this tutorial  Using Python  Follow this tutorial  Reference  Choregraphe Suite Installation Hello World 1 - using Choregraphe  </description>
+    </item>
+    
   </channel>
 </rss>

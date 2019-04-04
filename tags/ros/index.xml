@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ROS on Zijian Hu</title>
+    <link>/tags/ros/</link>
+    <description>Recent content in ROS on Zijian Hu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="/tags/ros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
+      <link>/post/nao-tutorial/getting-started/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/post/nao-tutorial/getting-started/</guid>
+      <description>This tutorial shows how to work with Physical NAO.
+Make sure you have installed all the dependencies and configured PYTHONPATH system variable correctly
+*see installation guide for detail
+Controlling Robot  Turn on the robot. See this guide for detail Start the robot bridge on your computer
+$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \ roscore_ip:=&amp;lt;roscore_ip&amp;gt;  This will start the robot&amp;rsquo;s default configuration with the following publisher:
+ joint_states tf top camera bottom camera left sonar right sonar microphone  To visualize the robot, open rviz</description>
+    </item>
+    
+  </channel>
+</rss>
