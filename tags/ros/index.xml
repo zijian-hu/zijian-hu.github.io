@@ -17,12 +17,7 @@
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>/post/nao-tutorial/getting-started/</guid>
-      <description>This tutorial shows how to work with Physical NAO.
-Make sure you have installed all the dependencies and configured PYTHONPATH system variable correctly
-*see installation guide for detail
-Controlling Robot  Turn on the robot. See this guide for detail Start the robot bridge on your computer
-$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \ roscore_ip:=&amp;lt;roscore_ip&amp;gt;  This will start the robot&amp;rsquo;s default configuration with the following publisher:
- joint_states tf top camera bottom camera left sonar right sonar microphone  To visualize the robot, open rviz</description>
+      <description>This tutorial shows how to work with Physical NAO.</description>
     </item>
     
   </channel>

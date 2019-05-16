@@ -12,25 +12,26 @@
     
     
     <item>
-      <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
-      <link>/project/baby/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
-      
-      <guid>/project/baby/</guid>
-      <description>Infants engage in motor babbling that allows them to explore their space and learn what movements produce desired outcomes. Less motor babbling from infants can lead to developmental delays. Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide contingent positive feedback to increase exploration and expand early movement practice.
-Towards this end, we are collaborating with physical therapists to create approaches to predict the developmental status of infants using wearable sensors; running user studies that explore various robot rewards for contingent activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with the task.</description>
-    </item>
-    
-    <item>
-      <title>Socially Aware, Expressive, and Personalized Mobile Remote Presence:
+      <title>
+Socially Aware, Expressive, and Personalized Mobile Remote Presence:
 Co-Robots as Gateways to Access to K-12 In-School Education
 </title>
       <link>/project/nri_kids/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
       
       <guid>/project/nri_kids/</guid>
-      <description>Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses specifically on interactions between one or more robots and multiple people, known as Multi-Party Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI (interaction dynamics, human perception, etc.) and extends them to the challenges of multi-party interactions (within-group turn taking, dyadic dynamics, and group dynamics).
-To address these, MP-HRI requires new methods and approaches. Effective MP-HRI enables robotic systems to function in many contexts, including service, support, and mediation.</description>
+      <description>Providing different control interface for telepresence robot for K-12 in-school education</description>
+    </item>
+    
+    <item>
+      <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
+      <link>/project/baby/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>/project/baby/</guid>
+      <description>Our goal is to develop a socially assistive, non-contact, infant-robot interaction
+system to provide contingent positive feedback to increase exploration and expand
+early movement practice</description>
     </item>
     
     <item>
@@ -39,8 +40,7 @@ To address these, MP-HRI requires new methods and approaches. Effective MP-HRI e
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
       
       <guid>/project/multi_party/</guid>
-      <description>Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses specifically on interactions between one or more robots and multiple people, known as Multi-Party Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI (interaction dynamics, human perception, etc.) and extends them to the challenges of multi-party interactions (within-group turn taking, dyadic dynamics, and group dynamics).
-To address these, MP-HRI requires new methods and approaches. Effective MP-HRI enables robotic systems to function in many contexts, including service, support, and mediation.</description>
+      <description>Building computational model of trust for human-robot interaction in group therapy setting</description>
     </item>
     
     <item>
@@ -49,11 +49,7 @@ To address these, MP-HRI requires new methods and approaches. Effective MP-HRI e
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>/post/nao-tutorial/installation/</guid>
-      <description>Installing the SDK  Make sure you have the following installed
- Python 2.7 CMake version 2.8.3 or higher   Download the following from Aldebaran Community website (you need to register an account in order to download the files)
- pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz naoqi-sdk-2.1.2.x-linux64.tar.gz [optional] choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar   Execute the following command and replace 2.1.2.x with the version you downloaded
-Unzip the tar files
-$ mkdir ~/naoqi $ tar xzf &amp;lt;path to NAOqi C++ SDK&amp;gt;/naoqi-sdk-2.</description>
+      <description>Installing NAOqi SDK and configure NAO with ROS.</description>
     </item>
     
     <item>
@@ -62,12 +58,7 @@ $ mkdir ~/naoqi $ tar xzf &amp;lt;path to NAOqi C++ SDK&amp;gt;/naoqi-sdk-2.</de
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>/post/nao-tutorial/getting-started/</guid>
-      <description>This tutorial shows how to work with Physical NAO.
-Make sure you have installed all the dependencies and configured PYTHONPATH system variable correctly
-*see installation guide for detail
-Controlling Robot  Turn on the robot. See this guide for detail Start the robot bridge on your computer
-$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \ roscore_ip:=&amp;lt;roscore_ip&amp;gt;  This will start the robot&amp;rsquo;s default configuration with the following publisher:
- joint_states tf top camera bottom camera left sonar right sonar microphone  To visualize the robot, open rviz</description>
+      <description>This tutorial shows how to work with Physical NAO.</description>
     </item>
     
     <item>
@@ -76,7 +67,7 @@ $ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \ ro
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>/post/nao-tutorial/nao-sdk/</guid>
-      <description> Before starting  Make sure you have Choregraphe suite installed  See this tutorial for detail   Using Choregraphe  Follow this tutorial  Using Python in Choregraphe  Follow this tutorial  Using Dialog topic in Choregraphe  Follow this tutorial  Using Python  Follow this tutorial  Reference  Choregraphe Suite Installation Hello World 1 - using Choregraphe  </description>
+      <description>This tutorial shows how to use NAOqi SDK</description>
     </item>
     
   </channel>
