@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.55.5" />
+  <meta name="generator" content="Hugo 0.55.4" />
 
   
 
@@ -119,7 +119,7 @@
   
   <meta property="og:site_name" content="Zijian Hu">
   <meta property="og:url" content="/post/nao-tutorial/installation/">
-  <meta property="og:title" content="NAO Dev Tutorial: Installation | Zijian Hu">
+  <meta property="og:title" content="NAO Tutorial: Installation | Zijian Hu">
   <meta property="og:description" content="Installing NAOqi SDK and configure NAO with ROS."><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
@@ -132,7 +132,7 @@
 
   
 
-  <title>NAO Dev Tutorial: Installation | Zijian Hu</title>
+  <title>NAO Tutorial: Installation | Zijian Hu</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -349,7 +349,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">NAO Dev Tutorial: Installation</h1>
+  <h1 itemprop="name">NAO Tutorial: Installation</h1>
 
   
   <p class="page-subtitle">Installing NAOqi SDK and configure NAO with ROS 💾</p>
@@ -422,7 +422,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=NAO%20Dev%20Tutorial%3a%20Installation&amp;url=%2fpost%2fnao-tutorial%2finstallation%2f"
+         href="https://twitter.com/intent/tweet?text=NAO%20Tutorial%3a%20Installation&amp;url=%2fpost%2fnao-tutorial%2finstallation%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -436,21 +436,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fnao-tutorial%2finstallation%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Installation"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fnao-tutorial%2finstallation%2f&amp;title=NAO%20Tutorial%3a%20Installation"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2fnao-tutorial%2finstallation%2f&amp;title=NAO%20Dev%20Tutorial%3a%20Installation"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fnao-tutorial%2finstallation%2f&amp;title=NAO%20Tutorial%3a%20Installation"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=NAO%20Dev%20Tutorial%3a%20Installation&amp;body=%2fpost%2fnao-tutorial%2finstallation%2f">
+         href="mailto:?subject=NAO%20Tutorial%3a%20Installation&amp;body=%2fpost%2fnao-tutorial%2finstallation%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -572,14 +572,12 @@ $ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
 ros-kinetic-octomap ros-kinetic-octomap-msgs ros-kinetic-humanoid-msgs \
 ros-kinetic-humanoid-nav-msgs ros-kinetic-camera-info-manager \
 ros-kinetic-camera-info-manager-py
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Install the main package
-<code>bash
-$ sudo apt-get install ros-kinetic-nao-robot
-</code></li>
-</ul></li>
+<li><p>Install the main package</p>
+
+<pre><code class="language-bash">$ sudo apt-get install ros-kinetic-nao-robot
+</code></pre></li>
 
 <li><p>Install packages for robot control</p>
 
@@ -588,17 +586,15 @@ ros-kinetic-nao-interaction ros-kinetic-nao-moveit-config \
 ros-kinetic-naoqi-driver ros-kinetic-naoqi-driver-py \
 ros-kinetic-naoqi-sensors-py ros-kinetic-nao-dcm-bringup \
 ros-kinetic-moveit
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Install packages for simulation</li>
+<li><p>Install packages for simulation</p></li>
 </ul>
 
 <p><em>Notice: to install nao_meshes package, you need to agree the policy</em></p>
 
-<pre><code class="language-bash">$ sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes
-</code></pre></li>
-</ul>
+<pre><code class="language-bash">  $ sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes
+</code></pre>
 
 <h2 id="next-getting-started-post-nao-tutorial-getting-started">Next: <a href="/post/nao-tutorial/getting-started/">Getting Started</a></h2>
 

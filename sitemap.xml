@@ -2,6 +2,40 @@
   
     <url>
     
+      <loc>/project/dpa_sgd/</loc>
+      <lastmod>2019-06-07T00:00:00-07:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>/tags/machine-learning/</loc>
+      <lastmod>2019-06-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2019-06-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-06-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-06-07T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>/project/nri_kids/</loc>
       <lastmod>2019-03-26T00:00:00-07:00</lastmod>
     </url>
@@ -21,28 +55,7 @@
   
     <url>
     
-      <loc>/tags/machine-learning/</loc>
-      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
       <loc>/tags/robotics/</loc>
-      <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>/tags/</loc>
       <lastmod>2019-04-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
@@ -51,13 +64,6 @@
     
       <loc>/project/multi_party/</loc>
       <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-      <priority>0</priority>
     </url>
   
     <url>
@@ -76,14 +82,14 @@
   
     <url>
     
-      <loc>/post/nao-tutorial/installation/</loc>
-      <lastmod>2019-04-02T00:00:00-07:00</lastmod>
+      <loc>/post/nao-tutorial/getting-started/</loc>
+      <lastmod>2019-04-03T00:00:00-07:00</lastmod>
     </url>
   
     <url>
     
-      <loc>/post/nao-tutorial/getting-started/</loc>
-      <lastmod>2019-04-03T00:00:00-07:00</lastmod>
+      <loc>/post/nao-tutorial/installation/</loc>
+      <lastmod>2019-04-02T00:00:00-07:00</lastmod>
     </url>
   
     <url>

@@ -12,21 +12,21 @@
     
     
     <item>
-      <title>NAO Dev Tutorial: Installation</title>
-      <link>/post/nao-tutorial/installation/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      
-      <guid>/post/nao-tutorial/installation/</guid>
-      <description>Installing NAOqi SDK and configure NAO with ROS.</description>
-    </item>
-    
-    <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
       <link>/post/nao-tutorial/getting-started/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>/post/nao-tutorial/getting-started/</guid>
       <description>This tutorial shows how to work with Physical NAO.</description>
+    </item>
+    
+    <item>
+      <title>NAO Tutorial: Installation</title>
+      <link>/post/nao-tutorial/installation/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/post/nao-tutorial/installation/</guid>
+      <description>Installing NAOqi SDK and configure NAO with ROS.</description>
     </item>
     
     <item>

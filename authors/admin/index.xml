@@ -12,21 +12,21 @@
     
     
     <item>
-      <title>NAO Dev Tutorial: Installation</title>
-      <link>/post/nao-tutorial/installation/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      
-      <guid>/post/nao-tutorial/installation/</guid>
-      <description>Installing NAOqi SDK and configure NAO with ROS.</description>
-    </item>
-    
-    <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
       <link>/post/nao-tutorial/getting-started/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>/post/nao-tutorial/getting-started/</guid>
       <description>This tutorial shows how to work with Physical NAO.</description>
+    </item>
+    
+    <item>
+      <title>NAO Tutorial: Installation</title>
+      <link>/post/nao-tutorial/installation/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/post/nao-tutorial/installation/</guid>
+      <description>Installing NAOqi SDK and configure NAO with ROS.</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/author/admin/</guid>
-      <description>I am an undergraduate computer science student at the University of Southern California. I am interested in building robots that frees human from tedious tasks so that we can focus on things that matter. I am interested in computer vision, few-shot learning, reinforcement learning, and robotics in general.</description>
+      <description>I am an undergraduate computer science student at the University of Southern California. I am interested in building robots that frees human from tedious tasks so that we can focus on things that matter.</description>
     </item>
     
   </channel>
