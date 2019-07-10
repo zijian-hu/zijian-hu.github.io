@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.55.4" />
+  <meta name="generator" content="Hugo 0.55.5" />
 
   
 
@@ -507,19 +507,18 @@
 roscore_ip:=&lt;roscore_ip&gt;
 </code></pre>
 
-<p>This will start the robot&rsquo;s default configuration with the following publisher:</p>
+<p>This will start the robot&rsquo;s default configuration with the following publisher:
+- joint_states
+- tf
+- top camera
+- bottom camera
+- left sonar
+- right sonar
+- microphone</p>
 
-<ul>
-<li>joint_states</li>
-<li>tf</li>
-<li>top camera</li>
-<li>bottom camera</li>
-<li>left sonar</li>
-<li>right sonar</li>
-<li>microphone</li>
-</ul></li>
-
-<li><p>To visualize the robot, open <strong>rviz</strong></p>
+<ol>
+<li>To visualize the robot, open <strong>rviz</strong></li>
+</ol>
 
 <pre><code class="language-bash">$ rosrun rviz rviz
 </code></pre>

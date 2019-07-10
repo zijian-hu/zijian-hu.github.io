@@ -9,7 +9,8 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Decentralized Federated Multi-Task Learning and System Design
+      <title>
+Decentralized Federated Multi-Task Learning and System Design
 </title>
       <link>/project/dpa_sgd/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 -0700</pubDate>
@@ -143,19 +144,18 @@ for details and related publications&lt;/p&gt;
 roscore_ip:=&amp;lt;roscore_ip&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This will start the robot&amp;rsquo;s default configuration with the following publisher:&lt;/p&gt;
+&lt;p&gt;This will start the robot&amp;rsquo;s default configuration with the following publisher:
+- joint_states
+- tf
+- top camera
+- bottom camera
+- left sonar
+- right sonar
+- microphone&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;joint_states&lt;/li&gt;
-&lt;li&gt;tf&lt;/li&gt;
-&lt;li&gt;top camera&lt;/li&gt;
-&lt;li&gt;bottom camera&lt;/li&gt;
-&lt;li&gt;left sonar&lt;/li&gt;
-&lt;li&gt;right sonar&lt;/li&gt;
-&lt;li&gt;microphone&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosrun rviz rviz
 &lt;/code&gt;&lt;/pre&gt;
@@ -237,7 +237,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;naoqi-sdk-2.1.2.x-linux64.tar.gz&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;[optional] &lt;strong&gt;choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;[optional]&lt;/em&gt;&lt;/strong&gt; choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
@@ -247,7 +247,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mkdir ~/naoqi
 $ tar xzf &amp;lt;path to NAOqi C++ SDK&amp;gt;/naoqi-sdk-2.1.2.x-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
-$ tar xzf &amp;lt;path to NAOqi Python SDK&amp;gt;/pynaoqi-python2.7-2.1.2-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
+$ tar xzf &amp;lt;path to NAOqi Python SDK&amp;gt;/pynaoqi-python2.7-2.1.2.x-linux64.tar -C ~/naoqi/pynaoqi-python2.7-2.1.2-linux64
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Check the installation by executing NAOqi&lt;/p&gt;
@@ -303,12 +303,10 @@ $ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
 ros-kinetic-octomap ros-kinetic-octomap-msgs ros-kinetic-humanoid-msgs \
 ros-kinetic-humanoid-nav-msgs ros-kinetic-camera-info-manager \
 ros-kinetic-camera-info-manager-py
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;Install the main package&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install ros-kinetic-nao-robot
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Install the main package with &lt;code&gt;sudo apt-get install ros-kinetic-nao-robot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Install packages for robot control&lt;/p&gt;
 
@@ -318,14 +316,13 @@ ros-kinetic-naoqi-driver ros-kinetic-naoqi-driver-py \
 ros-kinetic-naoqi-sensors-py ros-kinetic-nao-dcm-bringup \
 ros-kinetic-moveit
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Install packages for simulation&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;em&gt;Notice: to install nao_meshes package, you need to agree the policy&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Notice: to install nao_meshes package, you need to agree the policy&lt;/em&gt;
+  &lt;code&gt;sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;next-getting-started-post-nao-tutorial-getting-started&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/getting-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/h2&gt;
 

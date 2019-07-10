@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.55.4" />
+  <meta name="generator" content="Hugo 0.55.5" />
 
   
 
@@ -506,7 +506,7 @@
 <ul>
 <li><strong>pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz</strong></li>
 <li><strong>naoqi-sdk-2.1.2.x-linux64.tar.gz</strong></li>
-<li>[optional] <strong>choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar</strong>
+<li><strong><em>[optional]</em></strong> choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar
 <br /></li>
 </ul></li>
 
@@ -516,7 +516,7 @@
 
 <pre><code class="language-bash">$ mkdir ~/naoqi
 $ tar xzf &lt;path to NAOqi C++ SDK&gt;/naoqi-sdk-2.1.2.x-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
-$ tar xzf &lt;path to NAOqi Python SDK&gt;/pynaoqi-python2.7-2.1.2-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
+$ tar xzf &lt;path to NAOqi Python SDK&gt;/pynaoqi-python2.7-2.1.2.x-linux64.tar -C ~/naoqi/pynaoqi-python2.7-2.1.2-linux64
 </code></pre>
 
 <p>Check the installation by executing NAOqi</p>
@@ -572,12 +572,10 @@ $ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
 ros-kinetic-octomap ros-kinetic-octomap-msgs ros-kinetic-humanoid-msgs \
 ros-kinetic-humanoid-nav-msgs ros-kinetic-camera-info-manager \
 ros-kinetic-camera-info-manager-py
-</code></pre></li>
+</code></pre>
 
-<li><p>Install the main package</p>
-
-<pre><code class="language-bash">$ sudo apt-get install ros-kinetic-nao-robot
-</code></pre></li>
+<ul>
+<li><p>Install the main package with <code>sudo apt-get install ros-kinetic-nao-robot</code></p></li>
 
 <li><p>Install packages for robot control</p>
 
@@ -587,14 +585,13 @@ ros-kinetic-naoqi-driver ros-kinetic-naoqi-driver-py \
 ros-kinetic-naoqi-sensors-py ros-kinetic-nao-dcm-bringup \
 ros-kinetic-moveit
 </code></pre></li>
+</ul></li>
 
 <li><p>Install packages for simulation</p></li>
 </ul>
 
-<p><em>Notice: to install nao_meshes package, you need to agree the policy</em></p>
-
-<pre><code class="language-bash">  $ sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes
-</code></pre>
+<p><em>Notice: to install nao_meshes package, you need to agree the policy</em>
+  <code>sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes</code></p>
 
 <h2 id="next-getting-started-post-nao-tutorial-getting-started">Next: <a href="/post/nao-tutorial/getting-started/">Getting Started</a></h2>
 
