@@ -168,18 +168,19 @@ for details and related publications&lt;/p&gt;
 roscore_ip:=&amp;lt;roscore_ip&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This will start the robot&amp;rsquo;s default configuration with the following publisher:
-- joint_states
-- tf
-- top camera
-- bottom camera
-- left sonar
-- right sonar
-- microphone&lt;/p&gt;
+&lt;p&gt;This will start the robot&amp;rsquo;s default configuration with the following publisher:&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;joint_states&lt;/li&gt;
+&lt;li&gt;tf&lt;/li&gt;
+&lt;li&gt;top camera&lt;/li&gt;
+&lt;li&gt;bottom camera&lt;/li&gt;
+&lt;li&gt;left sonar&lt;/li&gt;
+&lt;li&gt;right sonar&lt;/li&gt;
+&lt;li&gt;microphone&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosrun rviz rviz
 &lt;/code&gt;&lt;/pre&gt;
@@ -327,9 +328,8 @@ $ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
 ros-kinetic-octomap ros-kinetic-octomap-msgs ros-kinetic-humanoid-msgs \
 ros-kinetic-humanoid-nav-msgs ros-kinetic-camera-info-manager \
 ros-kinetic-camera-info-manager-py
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Install the main package with &lt;code&gt;sudo apt-get install ros-kinetic-nao-robot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Install packages for robot control&lt;/p&gt;
@@ -340,7 +340,6 @@ ros-kinetic-naoqi-driver ros-kinetic-naoqi-driver-py \
 ros-kinetic-naoqi-sensors-py ros-kinetic-nao-dcm-bringup \
 ros-kinetic-moveit
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Install packages for simulation&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
