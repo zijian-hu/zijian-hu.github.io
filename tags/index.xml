@@ -12,53 +12,5 @@
       <link>/tags/</link>
     </image>
     
-    <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 -0700</pubDate>
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer Vision</title>
-      <link>/tags/computer-vision/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
-      <guid>/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robotics</title>
-      <link>/tags/robotics/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
-      <guid>/tags/robotics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NAO</title>
-      <link>/tags/nao/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/tags/nao/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ROS</title>
-      <link>/tags/ros/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/tags/ros/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
