@@ -12,5 +12,82 @@
       <link>/authors/</link>
     </image>
     
+    <item>
+      <title>Chris Birmingham</title>
+      <link>/authors/chris-birmingham/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/chris-birmingham/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eli Reber</title>
+      <link>/authors/eli-reber/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/eli-reber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kartik Mahajan</title>
+      <link>/authors/kartik-mahajan/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/kartik-mahajan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maja J. Matarić</title>
+      <link>/authors/maja-j.-mataric/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/maja-j.-mataric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zijian Hu</title>
+      <link>/authors/zijian-hu/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/zijian-hu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marton Demeter</title>
+      <link>/authors/marton-demeter/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/marton-demeter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Naomi T. Fitter</title>
+      <link>/authors/naomi-t.-fitter/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/naomi-t.-fitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youngseok Joung</title>
+      <link>/authors/youngseok-joung/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/youngseok-joung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Zijian Hu is an undergraduate computer science student at the University of
+Southern California. He is interested in building robots that frees human from
+tedious tasks so that we can focus on things that matter.&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;&lt;em&gt;My 
+&lt;a href=&#34;https://drive.google.com/file/d/1oAOGkY2FmW6SOBPwkvSkb-ANSilb6Smv/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CV&lt;/a&gt; was last updated on Feb 2, 2020&lt;/em&gt;&lt;/sup&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
