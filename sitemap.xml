@@ -3,12 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <loc>/authors/admin/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pytorch/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/pytorch/ema/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,11 +88,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/zijian-hu/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
@@ -88,17 +123,7 @@
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-06-07T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/</loc>
-    <lastmod>2019-06-07T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-06-07T00:00:00-07:00</lastmod>
   </url>
   
@@ -128,11 +153,6 @@
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/nao/</loc>
     <lastmod>2019-04-03T00:00:00-07:00</lastmod>
   </url>
@@ -153,17 +173,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/ros/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/tutorial/</loc>
     <lastmod>2019-04-03T00:00:00-07:00</lastmod>
   </url>
   
