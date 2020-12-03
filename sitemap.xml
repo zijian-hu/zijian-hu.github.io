@@ -48,6 +48,26 @@
   </url>
   
   <url>
+    <loc>/tags/human-robot-interaction/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/robotics/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/multi_party/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication_types/1/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
@@ -93,6 +113,11 @@
   </url>
   
   <url>
+    <loc>/project/nri_kids/</loc>
+    <lastmod>2019-10-14T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/fitter-2019-1048/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
   </url>
@@ -118,38 +143,13 @@
   </url>
   
   <url>
-    <loc>/project/dpa_sgd/</loc>
-    <lastmod>2019-06-07T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2019-06-07T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/nri_kids/</loc>
-    <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/computer-vision/</loc>
-    <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+    <lastmod>2019-03-26T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/project/baby/</loc>
-    <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/robotics/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/multi_party/</loc>
-    <lastmod>2019-03-26T00:00:00-07:00</lastmod>
+    <lastmod>2019-03-26T00:00:00-08:00</lastmod>
   </url>
   
   <url>
