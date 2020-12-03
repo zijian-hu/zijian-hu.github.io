@@ -5,9 +5,9 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
@@ -36,8 +36,7 @@ parties. These contexts often overlap, and algorithms that work in one context c
 exploring how robots and people establish, maintain, and repair trust in MP-HRI. Specifically, this research
 will examine robot group mediation for group conseling, with extensions to team performance in robot
 service and support teams.&lt;/p&gt;
-&lt;p&gt;See the 
-&lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
+&lt;p&gt;See the &lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
 for details and related publications&lt;/p&gt;
 </description>
     </item>
@@ -61,8 +60,7 @@ parties. These contexts often overlap, and algorithms that work in one context c
 exploring how robots and people establish, maintain, and repair trust in MP-HRI. Specifically, this research
 will examine robot group mediation for group conseling, with extensions to team performance in robot
 service and support teams.&lt;/p&gt;
-&lt;p&gt;See 
-&lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=nrikids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt; for details
+&lt;p&gt;See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=nrikids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt; for details
 and related publications&lt;/p&gt;
 </description>
     </item>
@@ -85,8 +83,7 @@ status of infants using wearable sensors; running user studies that explore vari
 activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement
 learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with
 the task.&lt;/p&gt;
-&lt;p&gt;See 
-&lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
+&lt;p&gt;See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
 for details and related publications&lt;/p&gt;
 </description>
     </item>

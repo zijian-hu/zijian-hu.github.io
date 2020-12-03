@@ -3,52 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <loc>/tag/machine-learning/</loc>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/pytorch/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <loc>/tag/pytorch/</loc>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/pytorch/ema/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <loc>/tag/tutorial/</loc>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-07-23T00:00:00-07:00</lastmod>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/human-robot-interaction/</loc>
+    <loc>/author/zijian-hu/</loc>
+    <lastmod>2020-07-23T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/chris-icra-2020/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/chris-birmingham/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/eli-reber/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/human-robot-interaction/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/kartik-mahajan/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/maja-j.-mataric/</loc>
     <lastmod>2020-05-31T00:00:00-08:00</lastmod>
   </url>
   
@@ -58,7 +88,17 @@
   </url>
   
   <url>
-    <loc>/tags/robotics/</loc>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/robotics/</loc>
     <lastmod>2020-05-31T00:00:00-08:00</lastmod>
   </url>
   
@@ -68,48 +108,23 @@
   </url>
   
   <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <loc>/author/zijian-hu/</loc>
+    <lastmod>2020-05-31T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/chris-icra-2020/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <loc>/publication/fitter-2019-1048/</loc>
+    <lastmod>2019-10-14T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/chris-birmingham/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <loc>/author/marton-demeter/</loc>
+    <lastmod>2019-10-14T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/eli-reber/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/kartik-mahajan/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/maja-j.-mataric/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/zijian-hu/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <loc>/author/naomi-t.-fitter/</loc>
+    <lastmod>2019-10-14T00:00:00-08:00</lastmod>
   </url>
   
   <url>
@@ -118,32 +133,17 @@
   </url>
   
   <url>
-    <loc>/publication/fitter-2019-1048/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/marton-demeter/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/naomi-t.-fitter/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/fitter-2019-1049/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-14T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/youngseok-joung/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <loc>/author/youngseok-joung/</loc>
+    <lastmod>2019-10-14T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/computer-vision/</loc>
+    <loc>/tag/computer-vision/</loc>
     <lastmod>2019-03-26T00:00:00-08:00</lastmod>
   </url>
   
@@ -153,28 +153,28 @@
   </url>
   
   <url>
-    <loc>/tags/nao/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
+    <loc>/tag/nao/</loc>
+    <lastmod>2019-04-03T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/nao-tutorial/getting-started/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
+    <lastmod>2019-04-03T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/nao-tutorial/installation/</loc>
-    <lastmod>2019-04-02T00:00:00-07:00</lastmod>
+    <lastmod>2019-04-02T00:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/nao-tutorial/nao-sdk/</loc>
-    <lastmod>2019-04-02T00:00:00-07:00</lastmod>
+    <lastmod>2019-04-02T00:00:00-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ros/</loc>
-    <lastmod>2019-04-03T00:00:00-07:00</lastmod>
+    <loc>/tag/ros/</loc>
+    <lastmod>2019-04-03T00:00:00-08:00</lastmod>
   </url>
   
   <url>

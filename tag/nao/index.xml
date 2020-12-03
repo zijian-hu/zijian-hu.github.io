@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NAO | Zijian Hu</title>
+    <link>/tag/nao/</link>
+      <atom:link href="/tag/nao/index.xml" rel="self" type="application/rss+xml" />
+    <description>NAO</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Jan 2019 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <title>NAO</title>
+      <link>/tag/nao/</link>
+    </image>
+    
+    <item>
+      <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
+      <link>/post/nao-tutorial/getting-started/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <guid>/post/nao-tutorial/getting-started/</guid>
+      <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;controlling-robot&#34;&gt;Controlling Robot&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Turn on the robot. See &lt;a href=&#34;http://doc.aldebaran.com/2-1/nao/getting_out_of_the_box.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this guide&lt;/a&gt; for detail&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the robot bridge on your computer&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ roslaunch nao_bringup nao_full_py.launch nao_ip:=&amp;lt;robot_ip&amp;gt; \
+roscore_ip:=&amp;lt;roscore_ip&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will start the robot&amp;rsquo;s default configuration with the following publisher:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;joint_states&lt;/li&gt;
+&lt;li&gt;tf&lt;/li&gt;
+&lt;li&gt;top camera&lt;/li&gt;
+&lt;li&gt;bottom camera&lt;/li&gt;
+&lt;li&gt;left sonar&lt;/li&gt;
+&lt;li&gt;right sonar&lt;/li&gt;
+&lt;li&gt;microphone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To visualize the robot, open &lt;strong&gt;rviz&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosrun rviz rviz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;In top bar, go to &lt;code&gt;File-&amp;gt;Open Config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;navigate to &lt;code&gt;&amp;lt;your catkin workspace&amp;gt;/src/nao_robot/nao_description/config&lt;/code&gt; and open the file with &lt;strong&gt;.rviz&lt;/strong&gt; extension
+&lt;ul&gt;
+&lt;li&gt;make sure you have &lt;a href=&#34;http://wiki.ros.org/nao_meshes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nao_meshes&lt;/a&gt; installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;you should see something similar to the below screenshot
+&lt;img src=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started?action=AttachFile&amp;amp;do=get&amp;amp;target=NaoRviz.png&#34; alt=&#34;NAO rviz&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Controlling the robot&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;execute &lt;code&gt;rosnode list&lt;/code&gt; to check if &lt;strong&gt;/nao_walker&lt;/strong&gt; node is running&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To turn on the motors&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosservice call /body_stiffness/enable &amp;quot;{}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To turn off the motors&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rosservice call /body_stiffness/disable &amp;quot;{}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;once the motors are on, use the following command to move the robot in x-direction&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rostopic pub -1 /cmd_vel geometry_msgs/Twist \
+&#39;{linear: {x: 1.0, y: 0.0, z: 0.0}, \
+angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To stop the robot, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rostopic pub -1 /cmd_vel geometry_msgs/Twist \
+&#39;{linear: {x: 0.0, y: 0.0, z: 0.0}, \
+angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting started with ROS for Nao, including NAOqi and rviz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao_bringup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nao_bringup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NAO Tutorial: Installation</title>
+      <link>/post/nao-tutorial/installation/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <guid>/post/nao-tutorial/installation/</guid>
+      <description>&lt;h2 id=&#34;installing-the-sdk&#34;&gt;Installing the SDK&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure you have the following installed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/download/releases/2.7/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python 2.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cmake.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMake&lt;/a&gt; version 2.8.3 or higher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the following from &lt;a href=&#34;https://community.aldebaran.com/en/resources/software&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aldebaran Community&lt;/a&gt; website (&lt;em&gt;you need to register an account in order to download the files&lt;/em&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;naoqi-sdk-2.1.2.x-linux64.tar.gz&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;[optional]&lt;/em&gt;&lt;/strong&gt; choregraphe-suite-[2.1.4 or 2.1.2].x-linux64.tar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the following command and replace &lt;strong&gt;2.1.2.x&lt;/strong&gt; with the version you downloaded&lt;/p&gt;
+&lt;p&gt;Unzip the tar files&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mkdir ~/naoqi
+$ tar xzf &amp;lt;path to NAOqi C++ SDK&amp;gt;/naoqi-sdk-2.1.2.x-linux64.tar -C ~/naoqi/naoqi-sdk-2.1.2-linux64
+$ tar xzf &amp;lt;path to NAOqi Python SDK&amp;gt;/pynaoqi-python2.7-2.1.2.x-linux64.tar -C ~/naoqi/pynaoqi-python2.7-2.1.2-linux64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Check the installation by executing NAOqi&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/naoqi/naoqi-sdk-2.1.2.17-linux64/naoqi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should see output similiar to&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Starting NAOqi version 2.1.2.17
+.
+.
+.
+NAOqi is ready...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;strong&gt;CTRL-C&lt;/strong&gt; to exit&lt;/p&gt;
+&lt;p&gt;Now we need to add &lt;strong&gt;NAOqi SDK&lt;/strong&gt; to system variables. Add the following lines at the end of &lt;strong&gt;~/.bashrc&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.2-linux64:$PYTHONPATH
+$ export AL_DIR=~/naoqi/naoqi-sdk-2.1.2-linux64
+$ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Execute &lt;code&gt;source ~/.bashrc&lt;/code&gt; to apply the changes&lt;/p&gt;
+&lt;p&gt;Verify &lt;em&gt;in python console&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import naoqi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;if correctly installed, there should be no error&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;install-ros&#34;&gt;Install ROS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href=&#34;http://wiki.ros.org/kinetic/Installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Official ROS Installation Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install-nao-package-for-ros&#34;&gt;Install &lt;strong&gt;NAO package&lt;/strong&gt; for ROS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install the packages needed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;replace kinetic to your ROS version if needed&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install ros-kinetic-driver-base ros-kinetic-move-base-msgs \
+ros-kinetic-octomap ros-kinetic-octomap-msgs ros-kinetic-humanoid-msgs \
+ros-kinetic-humanoid-nav-msgs ros-kinetic-camera-info-manager \
+ros-kinetic-camera-info-manager-py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the main package with &lt;code&gt;sudo apt-get install ros-kinetic-nao-robot&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install packages for robot control&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install ros-kinetic-nao-bringup ros-kinetic-naoqi-pose \
+ros-kinetic-nao-interaction ros-kinetic-nao-moveit-config \
+ros-kinetic-naoqi-driver ros-kinetic-naoqi-driver-py \
+ros-kinetic-naoqi-sensors-py ros-kinetic-nao-dcm-bringup \
+ros-kinetic-moveit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install packages for simulation&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Notice: to install nao_meshes package, you need to agree the policy&lt;/em&gt;
+&lt;code&gt;sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-getting-startedpostnao-tutorialgetting-started&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/getting-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/python/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python SDK Install Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/cpp/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;C++ SDK Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Installation of ROS for usage with or on a NAO robot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NAO Tutorial: NAOqi SDK</title>
+      <link>/post/nao-tutorial/nao-sdk/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <guid>/post/nao-tutorial/nao-sdk/</guid>
+      <description>&lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure you have &lt;strong&gt;Choregraphe suite&lt;/strong&gt; installed
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; for detail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--## Hello World Example--&gt;
+&lt;h3 id=&#34;using-choregraphe&#34;&gt;Using Choregraphe&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;using-python-in-choregraphe&#34;&gt;Using Python in Choregraphe&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe_script.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;using-dialog-topic-in-choregraphe&#34;&gt;Using Dialog topic in Choregraphe&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe_dialog.htmll&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;using-python&#34;&gt;Using Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_python.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choregraphe Suite Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hello World 1 - using Choregraphe&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

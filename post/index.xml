@@ -5,26 +5,24 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0700</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
     
     <item>
-      <title>PyTorch: Exponential Moving Average Example</title>
+      <title>PyTorch: Exponential Moving Average (EMA) Example</title>
       <link>/post/pytorch/ema/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 -0800</pubDate>
       <guid>/post/pytorch/ema/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s 
-&lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s &lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Notice that when applying EMA, only the trainable parameters should be changed; for PyTorch, we can get the trainable parameters by &lt;code&gt;model.parameters()&lt;/code&gt; or &lt;code&gt;model.named_parameters()&lt;/code&gt; where &lt;code&gt;model&lt;/code&gt; is a &lt;code&gt;torch.nn.Module&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Since my implementation creates a copy of the input model (i.e. &lt;code&gt;shadow&lt;/code&gt;), the buffers needs to be copied to &lt;code&gt;shadow&lt;/code&gt; whenever &lt;code&gt;update()&lt;/code&gt; is invoked.&lt;/p&gt;
 &lt;h3 id=&#34;alternative-implementation&#34;&gt;Alternative Implementation&lt;/h3&gt;
-&lt;p&gt;You could implement &lt;code&gt;shadow&lt;/code&gt; as a &lt;code&gt;dict&lt;/code&gt;, for detail of this version see 
-&lt;a href=&#34;https://fyubang.com/2019/06/01/ema/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现&lt;/a&gt;. One problem with that implementation is that shadow needs to be manually saved since shadow parameters are not stored in &lt;code&gt;state_dict&lt;/code&gt;; a simple fix to this problem is to register all shadow parameters by calling &lt;code&gt;register_parameter(&amp;lt;parameter name&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You could implement &lt;code&gt;shadow&lt;/code&gt; as a &lt;code&gt;dict&lt;/code&gt;, for detail of this version see &lt;a href=&#34;https://fyubang.com/2019/06/01/ema/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现&lt;/a&gt;. One problem with that implementation is that shadow needs to be manually saved since shadow parameters are not stored in &lt;code&gt;state_dict&lt;/code&gt;; a simple fix to this problem is to register all shadow parameters by calling &lt;code&gt;register_parameter(&amp;lt;parameter name&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import torch
 from torch import nn
@@ -84,10 +82,8 @@ class EMA(nn.Module):
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://fyubang.com/2019/06/01/ema/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fyubang.com/2019/06/01/ema/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -97,15 +93,12 @@ class EMA(nn.Module):
       <link>/post/nao-tutorial/getting-started/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       <guid>/post/nao-tutorial/getting-started/</guid>
-      <description>&lt;p&gt;This tutorial shows how to work with Physical NAO.&lt;/p&gt;
-&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;see 
-&lt;a href=&#34;/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;controlling-robot&#34;&gt;Controlling Robot&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Turn on the robot. See 
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/nao/getting_out_of_the_box.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this guide&lt;/a&gt; for detail&lt;/p&gt;
+&lt;p&gt;Turn on the robot. See &lt;a href=&#34;http://doc.aldebaran.com/2-1/nao/getting_out_of_the_box.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this guide&lt;/a&gt; for detail&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Start the robot bridge on your computer&lt;/p&gt;
@@ -131,8 +124,7 @@ roscore_ip:=&amp;lt;roscore_ip&amp;gt;
 &lt;li&gt;In top bar, go to &lt;code&gt;File-&amp;gt;Open Config&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;navigate to &lt;code&gt;&amp;lt;your catkin workspace&amp;gt;/src/nao_robot/nao_description/config&lt;/code&gt; and open the file with &lt;strong&gt;.rviz&lt;/strong&gt; extension
 &lt;ul&gt;
-&lt;li&gt;make sure you have 
-&lt;a href=&#34;http://wiki.ros.org/nao_meshes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nao_meshes&lt;/a&gt; installed&lt;/li&gt;
+&lt;li&gt;make sure you have &lt;a href=&#34;http://wiki.ros.org/nao_meshes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nao_meshes&lt;/a&gt; installed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;you should see something similar to the below screenshot
@@ -168,14 +160,11 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: 
-&lt;a href=&#34;/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting started with ROS for Nao, including NAOqi and rviz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://wiki.ros.org/nao_bringup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nao_bringup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting started with ROS for Nao, including NAOqi and rviz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao_bringup&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nao_bringup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -190,15 +179,12 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
 &lt;li&gt;
 &lt;p&gt;Make sure you have the following installed&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.python.org/download/releases/2.7/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python 2.7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://cmake.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMake&lt;/a&gt; version 2.8.3 or higher&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.python.org/download/releases/2.7/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python 2.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cmake.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMake&lt;/a&gt; version 2.8.3 or higher&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Download the following from 
-&lt;a href=&#34;https://community.aldebaran.com/en/resources/software&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aldebaran Community&lt;/a&gt; website (&lt;em&gt;you need to register an account in order to download the files&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Download the following from &lt;a href=&#34;https://community.aldebaran.com/en/resources/software&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aldebaran Community&lt;/a&gt; website (&lt;em&gt;you need to register an account in order to download the files&lt;/em&gt;)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;pynaoqi-python-2.7-naoqi-2.1.2.x-linux64.tar.gz&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;naoqi-sdk-2.1.2.x-linux64.tar.gz&lt;/strong&gt;&lt;/li&gt;
@@ -237,8 +223,7 @@ $ export AL_DIR_SIM=~/naoqi/naoqi-sdk-2.1.2-linux64
 &lt;/ol&gt;
 &lt;h2 id=&#34;install-ros&#34;&gt;Install ROS&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;See 
-&lt;a href=&#34;http://wiki.ros.org/kinetic/Installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Official ROS Installation Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;http://wiki.ros.org/kinetic/Installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Official ROS Installation Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;install-nao-package-for-ros&#34;&gt;Install &lt;strong&gt;NAO package&lt;/strong&gt; for ROS&lt;/h2&gt;
 &lt;ul&gt;
@@ -273,16 +258,12 @@ ros-kinetic-moveit
 &lt;code&gt;sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;next-getting-startedpostnao-tutorialgetting-started&#34;&gt;Next: 
-&lt;a href=&#34;/post/nao-tutorial/getting-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;next-getting-startedpostnao-tutorialgetting-started&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/getting-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/python/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python SDK Install Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/cpp/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;C++ SDK Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Installation of ROS for usage with or on a NAO robot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/python/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python SDK Install Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/cpp/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;C++ SDK Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Installation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Installation of ROS for usage with or on a NAO robot&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -296,38 +277,31 @@ ros-kinetic-moveit
 &lt;ul&gt;
 &lt;li&gt;Make sure you have &lt;strong&gt;Choregraphe suite&lt;/strong&gt; installed
 &lt;ul&gt;
-&lt;li&gt;See 
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; for detail&lt;/li&gt;
+&lt;li&gt;See &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; for detail&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--## Hello World Example--&gt;
 &lt;h3 id=&#34;using-choregraphe&#34;&gt;Using Choregraphe&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Follow 
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;using-python-in-choregraphe&#34;&gt;Using Python in Choregraphe&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Follow 
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe_script.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe_script.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;using-dialog-topic-in-choregraphe&#34;&gt;Using Dialog topic in Choregraphe&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Follow 
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe_dialog.htmll&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe_dialog.htmll&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;using-python&#34;&gt;Using Python&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Follow 
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_python.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_python.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choregraphe Suite Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hello World 1 - using Choregraphe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choregraphe Suite Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hello World 1 - using Choregraphe&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Zijian Hu</title>
+    <link>/publication-type/1/</link>
+      <atom:link href="/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <title>1</title>
+      <link>/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
+      <link>/publication/chris-icra-2020/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <guid>/publication/chris-icra-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</title>
+      <link>/publication/fitter-2019-1048/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <guid>/publication/fitter-2019-1048/</guid>
+      <description>&lt;h2 id=&#34;linked-material&#34;&gt;&lt;strong&gt;Linked material&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;YouTube video for &amp;ldquo;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&amp;rdquo;&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Ft8XCAIbslE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>User Interface Tradeoffs for Remote Deictic Gesturing</title>
+      <link>/publication/fitter-2019-1049/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <guid>/publication/fitter-2019-1049/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
