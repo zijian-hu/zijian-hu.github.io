@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Human-Robot Interaction | Zijian Hu</title>
-    <link>/tag/human-robot-interaction/</link>
-      <atom:link href="/tag/human-robot-interaction/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/tag/human-robot-interaction/</link>
+      <atom:link href="https://www.zijianhu.com/tag/human-robot-interaction/index.xml" rel="self" type="application/rss+xml" />
     <description>Human-Robot Interaction</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Human-Robot Interaction</title>
-      <link>/tag/human-robot-interaction/</link>
+      <link>https://www.zijianhu.com/tag/human-robot-interaction/</link>
     </image>
     
     <item>
       <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
-      <link>/publication/chris-icra-2020/</link>
+      <link>https://www.zijianhu.com/publication/chris-icra-2020/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
-      <guid>/publication/chris-icra-2020/</guid>
+      <guid>https://www.zijianhu.com/publication/chris-icra-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Trust in Multi-Party Human-Robot Interaction</title>
-      <link>/project/multi_party/</link>
+      <link>https://www.zijianhu.com/project/multi_party/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
-      <guid>/project/multi_party/</guid>
+      <guid>https://www.zijianhu.com/project/multi_party/</guid>
       <description>&lt;sub&gt;
 See
   &lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34;&gt;the Interaction Lab website&lt;/a&gt;
@@ -51,9 +51,9 @@ for details and related publications&lt;/p&gt;
     
     <item>
       <title>Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</title>
-      <link>/publication/fitter-2019-1048/</link>
+      <link>https://www.zijianhu.com/publication/fitter-2019-1048/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
-      <guid>/publication/fitter-2019-1048/</guid>
+      <guid>https://www.zijianhu.com/publication/fitter-2019-1048/</guid>
       <description>&lt;h2 id=&#34;linked-material&#34;&gt;&lt;strong&gt;Linked material&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;YouTube video for &amp;ldquo;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&amp;rdquo;&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Ft8XCAIbslE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -62,9 +62,9 @@ for details and related publications&lt;/p&gt;
     
     <item>
       <title>Socially Aware, Expressive, and Personalized Mobile Remote Presence: Co-Robots as Gateways to Access to K-12 In-School Education</title>
-      <link>/project/nri_kids/</link>
+      <link>https://www.zijianhu.com/project/nri_kids/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
-      <guid>/project/nri_kids/</guid>
+      <guid>https://www.zijianhu.com/project/nri_kids/</guid>
       <description>&lt;p&gt;Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses
 specifically on interactions between one or more robots and multiple people, known as Multi-Party
 Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI
@@ -86,17 +86,17 @@ and related publications&lt;/p&gt;
     
     <item>
       <title>User Interface Tradeoffs for Remote Deictic Gesturing</title>
-      <link>/publication/fitter-2019-1049/</link>
+      <link>https://www.zijianhu.com/publication/fitter-2019-1049/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
-      <guid>/publication/fitter-2019-1049/</guid>
+      <guid>https://www.zijianhu.com/publication/fitter-2019-1049/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
-      <link>/project/baby/</link>
+      <link>https://www.zijianhu.com/project/baby/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
-      <guid>/project/baby/</guid>
+      <guid>https://www.zijianhu.com/project/baby/</guid>
       <description>&lt;sub&gt;
 See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34;&gt;Interaction Lab website&lt;/a&gt;
 for details and related publications

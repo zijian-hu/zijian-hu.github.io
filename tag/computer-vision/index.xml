@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Vision | Zijian Hu</title>
-    <link>/tag/computer-vision/</link>
-      <atom:link href="/tag/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/tag/computer-vision/</link>
+      <atom:link href="https://www.zijianhu.com/tag/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <description>Computer Vision</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Mar 2019 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Computer Vision</title>
-      <link>/tag/computer-vision/</link>
+      <link>https://www.zijianhu.com/tag/computer-vision/</link>
     </image>
     
     <item>
       <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
-      <link>/project/baby/</link>
+      <link>https://www.zijianhu.com/project/baby/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
-      <guid>/project/baby/</guid>
+      <guid>https://www.zijianhu.com/project/baby/</guid>
       <description>&lt;sub&gt;
 See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34;&gt;Interaction Lab website&lt;/a&gt;
 for details and related publications

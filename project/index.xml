@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Zijian Hu</title>
-    <link>/project/</link>
-      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/project/</link>
+      <atom:link href="https://www.zijianhu.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
-      <link>/project/</link>
+      <link>https://www.zijianhu.com/project/</link>
     </image>
     
     <item>
       <title>Trust in Multi-Party Human-Robot Interaction</title>
-      <link>/project/multi_party/</link>
+      <link>https://www.zijianhu.com/project/multi_party/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
-      <guid>/project/multi_party/</guid>
+      <guid>https://www.zijianhu.com/project/multi_party/</guid>
       <description>&lt;sub&gt;
 See
   &lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34;&gt;the Interaction Lab website&lt;/a&gt;
@@ -43,9 +43,9 @@ for details and related publications&lt;/p&gt;
     
     <item>
       <title>Socially Aware, Expressive, and Personalized Mobile Remote Presence: Co-Robots as Gateways to Access to K-12 In-School Education</title>
-      <link>/project/nri_kids/</link>
+      <link>https://www.zijianhu.com/project/nri_kids/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
-      <guid>/project/nri_kids/</guid>
+      <guid>https://www.zijianhu.com/project/nri_kids/</guid>
       <description>&lt;p&gt;Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses
 specifically on interactions between one or more robots and multiple people, known as Multi-Party
 Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI
@@ -67,9 +67,9 @@ and related publications&lt;/p&gt;
     
     <item>
       <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
-      <link>/project/baby/</link>
+      <link>https://www.zijianhu.com/project/baby/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
-      <guid>/project/baby/</guid>
+      <guid>https://www.zijianhu.com/project/baby/</guid>
       <description>&lt;sub&gt;
 See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34;&gt;Interaction Lab website&lt;/a&gt;
 for details and related publications

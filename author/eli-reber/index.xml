@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eli Reber | Zijian Hu</title>
-    <link>/author/eli-reber/</link>
-      <atom:link href="/author/eli-reber/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/author/eli-reber/</link>
+      <atom:link href="https://www.zijianhu.com/author/eli-reber/index.xml" rel="self" type="application/rss+xml" />
     <description>Eli Reber</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Eli Reber</title>
-      <link>/author/eli-reber/</link>
+      <link>https://www.zijianhu.com/author/eli-reber/</link>
     </image>
     
     <item>
       <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
-      <link>/publication/chris-icra-2020/</link>
+      <link>https://www.zijianhu.com/publication/chris-icra-2020/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
-      <guid>/publication/chris-icra-2020/</guid>
+      <guid>https://www.zijianhu.com/publication/chris-icra-2020/</guid>
       <description></description>
     </item>
     

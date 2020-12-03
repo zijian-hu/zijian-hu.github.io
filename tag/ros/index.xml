@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ROS | Zijian Hu</title>
-    <link>/tag/ros/</link>
-      <atom:link href="/tag/ros/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/tag/ros/</link>
+      <atom:link href="https://www.zijianhu.com/tag/ros/index.xml" rel="self" type="application/rss+xml" />
     <description>ROS</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Jan 2019 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>ROS</title>
-      <link>/tag/ros/</link>
+      <link>https://www.zijianhu.com/tag/ros/</link>
     </image>
     
     <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
-      <link>/post/nao-tutorial/getting-started/</link>
+      <link>https://www.zijianhu.com/post/nao-tutorial/getting-started/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/post/nao-tutorial/getting-started/</guid>
+      <guid>https://www.zijianhu.com/post/nao-tutorial/getting-started/</guid>
       <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;controlling-robot&#34;&gt;Controlling Robot&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -84,7 +84,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting started with ROS for Nao, including NAOqi and rviz&lt;/a&gt;&lt;/li&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Zijian Hu</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/post/</link>
+      <atom:link href="https://www.zijianhu.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://www.zijianhu.com/post/</link>
     </image>
     
     <item>
       <title>PyTorch: Exponential Moving Average (EMA) Example</title>
-      <link>/post/pytorch/ema/</link>
+      <link>https://www.zijianhu.com/post/pytorch/ema/</link>
       <pubDate>Thu, 23 Jul 2020 00:00:00 -0800</pubDate>
-      <guid>/post/pytorch/ema/</guid>
+      <guid>https://www.zijianhu.com/post/pytorch/ema/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s &lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Notice that when applying EMA, only the trainable parameters should be changed; for PyTorch, we can get the trainable parameters by &lt;code&gt;model.parameters()&lt;/code&gt; or &lt;code&gt;model.named_parameters()&lt;/code&gt; where &lt;code&gt;model&lt;/code&gt; is a &lt;code&gt;torch.nn.Module&lt;/code&gt;.&lt;/p&gt;
@@ -90,11 +90,11 @@ class EMA(nn.Module):
     
     <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
-      <link>/post/nao-tutorial/getting-started/</link>
+      <link>https://www.zijianhu.com/post/nao-tutorial/getting-started/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/post/nao-tutorial/getting-started/</guid>
+      <guid>https://www.zijianhu.com/post/nao-tutorial/getting-started/</guid>
       <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;controlling-robot&#34;&gt;Controlling Robot&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -160,7 +160,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;next-naoqi-sdk-guidepostnao-tutorialnao-sdk&#34;&gt;Next: &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/nao-sdk&#34;&gt;NAOqi SDK Guide&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/nao/Tutorials/Getting-Started&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getting started with ROS for Nao, including NAOqi and rviz&lt;/a&gt;&lt;/li&gt;
@@ -171,9 +171,9 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
     
     <item>
       <title>NAO Tutorial: Installation</title>
-      <link>/post/nao-tutorial/installation/</link>
+      <link>https://www.zijianhu.com/post/nao-tutorial/installation/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/post/nao-tutorial/installation/</guid>
+      <guid>https://www.zijianhu.com/post/nao-tutorial/installation/</guid>
       <description>&lt;h2 id=&#34;installing-the-sdk&#34;&gt;Installing the SDK&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -258,7 +258,7 @@ ros-kinetic-moveit
 &lt;code&gt;sudo apt-get install ros-kinetic-rospack ros-kinetic-nao-meshes&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;next-getting-startedpostnao-tutorialgetting-started&#34;&gt;Next: &lt;a href=&#34;/post/nao-tutorial/getting-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;next-getting-startedpostnao-tutorialgetting-started&#34;&gt;Next: &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/getting-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://doc.aldebaran.com/2-1/dev/python/install_guide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python SDK Install Guide&lt;/a&gt;&lt;/li&gt;
@@ -270,9 +270,9 @@ ros-kinetic-moveit
     
     <item>
       <title>NAO Tutorial: NAOqi SDK</title>
-      <link>/post/nao-tutorial/nao-sdk/</link>
+      <link>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
-      <guid>/post/nao-tutorial/nao-sdk/</guid>
+      <guid>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</guid>
       <description>&lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Make sure you have &lt;strong&gt;Choregraphe suite&lt;/strong&gt; installed

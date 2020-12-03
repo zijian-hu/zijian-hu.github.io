@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Youngseok Joung | Zijian Hu</title>
-    <link>/author/youngseok-joung/</link>
-      <atom:link href="/author/youngseok-joung/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.zijianhu.com/author/youngseok-joung/</link>
+      <atom:link href="https://www.zijianhu.com/author/youngseok-joung/index.xml" rel="self" type="application/rss+xml" />
     <description>Youngseok Joung</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 14 Oct 2019 00:00:00 -0800</lastBuildDate>
     <image>
-      <url>/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Youngseok Joung</title>
-      <link>/author/youngseok-joung/</link>
+      <link>https://www.zijianhu.com/author/youngseok-joung/</link>
     </image>
     
     <item>
       <title>Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</title>
-      <link>/publication/fitter-2019-1048/</link>
+      <link>https://www.zijianhu.com/publication/fitter-2019-1048/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
-      <guid>/publication/fitter-2019-1048/</guid>
+      <guid>https://www.zijianhu.com/publication/fitter-2019-1048/</guid>
       <description>&lt;h2 id=&#34;linked-material&#34;&gt;&lt;strong&gt;Linked material&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;YouTube video for &amp;ldquo;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&amp;rdquo;&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Ft8XCAIbslE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -25,9 +25,9 @@
     
     <item>
       <title>User Interface Tradeoffs for Remote Deictic Gesturing</title>
-      <link>/publication/fitter-2019-1049/</link>
+      <link>https://www.zijianhu.com/publication/fitter-2019-1049/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
-      <guid>/publication/fitter-2019-1049/</guid>
+      <guid>https://www.zijianhu.com/publication/fitter-2019-1049/</guid>
       <description></description>
     </item>
     
