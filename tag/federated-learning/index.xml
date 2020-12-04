@@ -1,92 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning | Zijian Hu</title>
-    <link>https://www.zijianhu.com/tag/machine-learning/</link>
-      <atom:link href="https://www.zijianhu.com/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    <description>Machine Learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0800</lastBuildDate>
+    <title>Federated Learning | Zijian Hu</title>
+    <link>https://www.zijianhu.com/tag/federated-learning/</link>
+      <atom:link href="https://www.zijianhu.com/tag/federated-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Federated Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Jun 2019 00:00:00 -0800</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
-      <title>Machine Learning</title>
-      <link>https://www.zijianhu.com/tag/machine-learning/</link>
+      <title>Federated Learning</title>
+      <link>https://www.zijianhu.com/tag/federated-learning/</link>
     </image>
-    
-    <item>
-      <title>PyTorch: Exponential Moving Average (EMA) Example</title>
-      <link>https://www.zijianhu.com/post/pytorch/ema/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 -0800</pubDate>
-      <guid>https://www.zijianhu.com/post/pytorch/ema/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s &lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Notice that when applying EMA, only the trainable parameters should be changed; for PyTorch, we can get the trainable parameters by &lt;code&gt;model.parameters()&lt;/code&gt; or &lt;code&gt;model.named_parameters()&lt;/code&gt; where &lt;code&gt;model&lt;/code&gt; is a &lt;code&gt;torch.nn.Module&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Since my implementation creates a copy of the input model (i.e. &lt;code&gt;shadow&lt;/code&gt;), the buffers needs to be copied to &lt;code&gt;shadow&lt;/code&gt; whenever &lt;code&gt;update()&lt;/code&gt; is invoked.&lt;/p&gt;
-&lt;h3 id=&#34;alternative-implementation&#34;&gt;Alternative Implementation&lt;/h3&gt;
-&lt;p&gt;You could implement &lt;code&gt;shadow&lt;/code&gt; as a &lt;code&gt;dict&lt;/code&gt;, for detail of this version see &lt;a href=&#34;https://fyubang.com/2019/06/01/ema/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现&lt;/a&gt;. One problem with that implementation is that shadow needs to be manually saved since shadow parameters are not stored in &lt;code&gt;state_dict&lt;/code&gt;; a simple fix to this problem is to register all shadow parameters by calling &lt;code&gt;register_parameter(&amp;lt;parameter name&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import torch
-from torch import nn
-
-from copy import deepcopy
-from collections import OrderedDict
-from sys import stderr
-
-# for type hint
-from torch import Tensor
-
-
-class EMA(nn.Module):
-    def __init__(self, model: nn.Module, decay: float):
-        super().__init__()
-        self.decay = decay
-
-        self.model = model
-        self.shadow = deepcopy(self.model)
-
-        for param in self.shadow.parameters():
-            param.detach_()
-
-    @torch.no_grad()
-    def update(self):
-        if not self.training:
-            print(&amp;quot;EMA update should only be called during training&amp;quot;, file=stderr, flush=True)
-            return
-
-        model_params = OrderedDict(self.model.named_parameters())
-        shadow_params = OrderedDict(self.shadow.named_parameters())
-
-        # check if both model contains the same set of keys
-        assert model_params.keys() == shadow_params.keys()
-
-        for name, param in model_params.items():
-            # see https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage
-            # shadow_variable -= (1 - decay) * (shadow_variable - variable)
-            shadow_params[name].sub_((1. - self.decay) * (shadow_params[name] - param))
-
-        model_buffers = OrderedDict(self.model.named_buffers())
-        shadow_buffers = OrderedDict(self.shadow.named_buffers())
-
-        # check if both model contains the same set of keys
-        assert model_buffers.keys() == shadow_buffers.keys()
-
-        for name, buffer in model_buffers.items():
-            # buffers are copied
-            shadow_buffers[name].copy_(buffer)
-
-    def forward(self, inputs: Tensor, return_feature: bool = False) -&amp;gt; Tensor:
-        if self.training:
-            return self.model(inputs, return_feature)
-        else:
-            return self.shadow(inputs, return_feature)
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fyubang.com/2019/06/01/ema/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>Decentralized Federated Multi-Task Learning and System Design</title>
@@ -676,29 +600,6 @@ better convergence.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;appendix-ii-poster&#34;&gt;Appendix II: Poster&lt;/h3&gt;
 &lt;figure&gt;&lt;a href=&#34;attachments/fl-dpa-sgd-poster.pdf&#34;&gt;&lt;img src=&#34;attachments/fl-dpa-sgd-poster.png&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;Poster (click to see the pdf)&lt;/figcaption&gt;&lt;/figure&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
-      <link>https://www.zijianhu.com/project/baby/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
-      <guid>https://www.zijianhu.com/project/baby/</guid>
-      <description>&lt;sub&gt;
-See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications
-&lt;/sub&gt;
-&lt;p&gt;Infants engage in motor babbling that allows them to explore their space and learn what movements produce
-desired outcomes. Less motor babbling from infants can lead to developmental delays.
-Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide contingent
-positive feedback to increase exploration and expand early movement practice.&lt;/p&gt;
-&lt;p&gt;Towards this end, we are collaborating with physical therapists to create approaches to predict the developmental
-status of infants using wearable sensors; running user studies that explore various robot rewards for contingent
-activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement
-learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with
-the task.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications&lt;/p&gt;
 </description>
     </item>
     
