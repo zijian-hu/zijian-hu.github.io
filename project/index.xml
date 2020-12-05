@@ -17,11 +17,13 @@
       <link>https://www.zijianhu.com/project/multi_party/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/multi_party/</guid>
-      <description>&lt;sub&gt;
-See
-  &lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34;&gt;the Interaction Lab website&lt;/a&gt;
-for details and related publications.
-&lt;/sub&gt;
+      <description>&lt;p&gt;In this project, we designed and evaluated a novel framework for robot mediation of a support group.
+We conducted a user study using an NAO robot mediator controlled by a human operator that is unseen by the participants (&lt;a href=&#34;https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wizard-of-Oz&lt;/a&gt;).
+At the end of each study, the participants are asked to annotate their trust towards other participants in the study session recordings.
+In a &lt;a href=&#34;https://www.zijianhu.com/publication/birmingham-icra-2020/&#34;&gt;second-author paper&lt;/a&gt; at International Conference on Robotics and Automation (ICRA),
+we showed that using a robot could significantly increase the average interpersonal trust after the group interaction session.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses
 specifically on interactions between one or more robots and multiple people, known as Multi-Party
 Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI
@@ -36,8 +38,149 @@ parties. These contexts often overlap, and algorithms that work in one context c
 exploring how robots and people establish, maintain, and repair trust in MP-HRI. Specifically, this research
 will examine robot group mediation for group conseling, with extensions to team performance in robot
 service and support teams.&lt;/p&gt;
-&lt;p&gt;See the &lt;a href=&#34;http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;study-design&#34;&gt;Study Design&lt;/h2&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-volunteers-demonstrating-the-study-setup&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Volunteers demonstrating the study setup&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;4032&#34; height=&#34;3024&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Volunteers demonstrating the study setup
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In each study session, three participants were seated around the end of a table with a seated &lt;a href=&#34;https://www.softbankrobotics.com/emea/index.php/en/nao&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NAO&lt;/a&gt; robot as shown in Figure 1.
+The NAO robot, acting as a group moderator, was positioned towards the participants.
+On the table, a 360-degree microphone and 3 cameras facing directly to the participants&#39; face were placed.
+Behind the robot, an RGB-D camera was mounted on a tripod to record the interactions between the group members.
+The robot operator was seated behind a one-way mirror hidden from participants.&lt;/p&gt;
+&lt;p&gt;To measure how the level of trust changes overtime, the participants were asked to report their trust towards other participants against the recordings of the current session after the group interaction.&lt;/p&gt;
+&lt;p&gt;The detail for the procedure of the study can be found &lt;a href=&#34;https://www.zijianhu.com/publication/birmingham-icra-2020/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+&lt;p&gt;For project development, my contributions includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed NAO control program&lt;/li&gt;
+&lt;li&gt;Designed and implemented web-based Wizard of Oz controller&lt;/li&gt;
+&lt;li&gt;Designed and implemented self-annotation website&lt;/li&gt;
+&lt;li&gt;Developed data collection program for one depth camera, three webcams and one 360 degree microphone&lt;/li&gt;
+&lt;li&gt;Data post-processing for data whitening and fast data loading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-publications&#34;&gt;Related Publications&lt;/h2&gt;
+
+
+
+
+
+
+
+  
+    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/chris-birmingham/&#34;&gt;Chris Birmingham&lt;/a&gt;&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/kartik-mahajan/&#34;&gt;Kartik Mahajan&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/eli-reber/&#34;&gt;Eli Reber&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/maja-j.-mataric/&#34;&gt;Maja J. Matarić&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;https://www.zijianhu.com/publication/birmingham-icra-2020/&#34;&gt;Can I Trust You? A User Study of Robot Mediation of a Support Group&lt;/a&gt;.
+  &lt;em&gt;2020 International Conference on Robotics and Automation (ICRA)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://arxiv.org/abs/2002.04671&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/birmingham-icra-2020/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+  
+  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/multi_party/&#34;&gt;
+    Project
+  &lt;/a&gt;
+  
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://doi.org/10.1109/ICRA40945.2020.9196875&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+  
+
+
 </description>
     </item>
     
@@ -46,7 +189,10 @@ for details and related publications&lt;/p&gt;
       <link>https://www.zijianhu.com/project/nri_kids/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/nri_kids/</guid>
-      <description>&lt;p&gt;Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses
+      <description>&lt;p&gt;In this project, we developed and evaluated various control methods and interfaces for mobile remote presence robots (MRP) for remote K-12 education. In the two papers published at the International Symposium on Robot and Human Interactive Communication (RO-MAN), we conducted a user study and evaluated our system.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=nrikids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses
 specifically on interactions between one or more robots and multiple people, known as Multi-Party
 Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI
 (interaction dynamics, human perception, etc.) and extends them to the challenges of multi-party
@@ -60,15 +206,200 @@ parties. These contexts often overlap, and algorithms that work in one context c
 exploring how robots and people establish, maintain, and repair trust in MP-HRI. Specifically, this research
 will examine robot group mediation for group conseling, with extensions to team performance in robot
 service and support teams.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=nrikids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt; for details
-and related publications&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+&lt;p&gt;We used an &lt;a href=&#34;https://ohmnilabs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ohmni&lt;/a&gt; robot equipped with an arm and a Linux PC.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Ft8XCAIbslE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For project development, my contributions consist of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed customized web user interface for robot arm control&lt;/li&gt;
+&lt;li&gt;Designed and implemented communication protocol and software between the Linux PC and the Ohmni server&lt;/li&gt;
+&lt;li&gt;Developed user interface with a turning dial for robot arm control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-publications&#34;&gt;Related Publications&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+  
+    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/naomi-t.-fitter/&#34;&gt;Naomi T. Fitter&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/youngseok-joung/&#34;&gt;Youngseok Joung&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/marton-demeter/&#34;&gt;Marton Demeter&lt;/a&gt;&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/maja-j.-mataric/&#34;&gt;Maja J. Matarić&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;https://www.zijianhu.com/publication/fitter-roman-2019-hardware/&#34;&gt;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&lt;/a&gt;.
+  &lt;em&gt;2019 IEEE International Symposium on Robot and Human Interactive Communication (Ro-Man)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;http://robotics.usc.edu/publications/1048/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/fitter-roman-2019-hardware/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+  
+  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/nri_kids/&#34;&gt;
+    Project
+  &lt;/a&gt;
+  
+
+
+
+
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://youtu.be/Ft8XCAIbslE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Video
+&lt;/a&gt;
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://doi.org/10.1109/RO-MAN46459.2019.8956413&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+  
+
+
+
+
+
+
+
+
+
+  
+    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/naomi-t.-fitter/&#34;&gt;Naomi T. Fitter&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/youngseok-joung/&#34;&gt;Youngseok Joung&lt;/a&gt;&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/marton-demeter/&#34;&gt;Marton Demeter&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/maja-j.-mataric/&#34;&gt;Maja J. Matarić&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;https://www.zijianhu.com/publication/fitter-roman-2019-ui/&#34;&gt;User Interface Tradeoffs for Remote Deictic Gesturing&lt;/a&gt;.
+  &lt;em&gt;2019 IEEE International Symposium on Robot and Human Interactive Communication (Ro-Man)&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;http://robotics.usc.edu/publications/1049/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/fitter-roman-2019-ui/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+  
+  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/nri_kids/&#34;&gt;
+    Project
+  &lt;/a&gt;
+  
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://doi.org/10.1109/RO-MAN46459.2019.8956354&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+  
+
+&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Decentralized Federated Multi-Task Learning and System Design</title>
       <link>https://www.zijianhu.com/project/dpa_sgd/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 -0800</pubDate>
+      <pubDate>Fri, 03 May 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/dpa_sgd/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This page contains a copy of the final report of our final project for Spring 2019 CSCI-599: Deep Learning and its Applications at the University of Southern California. The &lt;a href=&#34;http://fl.chaoyanghe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original page&lt;/a&gt; was removed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -518,10 +849,10 @@ $$&lt;/p&gt;
 &lt;figure id=&#34;figure-accuracy-for-fedavg-single-task-and-ring-dpa-sgd-multi-task-vs-round-number&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number&#34;&gt;
 
 
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;624&#34; height=&#34;520&#34;&gt;
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;624&#34; height=&#34;520&#34;&gt;
 &lt;/a&gt;
 
 
@@ -570,10 +901,10 @@ $$&lt;/p&gt;
 &lt;figure id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-walk-clock-time&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time&#34;&gt;
 
 
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;634&#34; height=&#34;503&#34;&gt;
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;634&#34; height=&#34;503&#34;&gt;
 &lt;/a&gt;
 
 
@@ -612,10 +943,10 @@ $$&lt;/p&gt;
 &lt;figure id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-round-number&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number&#34;&gt;
 
 
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;662&#34; height=&#34;503&#34;&gt;
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;662&#34; height=&#34;503&#34;&gt;
 &lt;/a&gt;
 
 
@@ -652,7 +983,7 @@ better convergence.&lt;/p&gt;
 &lt;li&gt;upload on-device data to the edge data center.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;appendix-ii-poster&#34;&gt;Appendix II: Poster&lt;/h3&gt;
-&lt;figure&gt;&lt;a href=&#34;attachments/fl-dpa-sgd-poster.pdf&#34;&gt;&lt;img src=&#34;attachments/fl-dpa-sgd-poster.png&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;Poster (click to see the pdf)&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;a href=&#34;attachments/fl-dpa-sgd-poster.pdf&#34;&gt;&lt;img src=&#34;images/fl-dpa-sgd-poster.png&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;Poster (click to see the pdf)&lt;/figcaption&gt;&lt;/figure&gt;
 </description>
     </item>
     
@@ -661,21 +992,35 @@ better convergence.&lt;/p&gt;
       <link>https://www.zijianhu.com/project/baby/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/baby/</guid>
-      <description>&lt;sub&gt;
-See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications
-&lt;/sub&gt;
+      <description>&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Infants engage in motor babbling that allows them to explore their space and learn what movements produce
 desired outcomes. Less motor babbling from infants can lead to developmental delays.
-Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide contingent
-positive feedback to increase exploration and expand early movement practice.&lt;/p&gt;
-&lt;p&gt;Towards this end, we are collaborating with physical therapists to create approaches to predict the developmental
-status of infants using wearable sensors; running user studies that explore various robot rewards for contingent
-activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement
-learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with
-the task.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications&lt;/p&gt;
+Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide
+contingent positive feedback to increase exploration and expand early movement practice.&lt;/p&gt;
+&lt;p&gt;Towards this end, we are collaborating with physical therapists to create approaches to predict the
+developmental status of infants using wearable sensors; running user studies that explore various robot
+rewards for contingent activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the
+robot; and using reinforcement learning to adjust the difficulty of the task presented by the robot to
+increase the infant&amp;rsquo;s engagement with the task.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PqTkw2weVjU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For project development, my contributions includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detecting and Tracking two &lt;a href=&#34;https://www.sphero.com/sphero-sprk-plus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sphero SPRK+&lt;/a&gt; robots with a wall-mounted camera&lt;/li&gt;
+&lt;li&gt;Object Detection: apply transfer learning to YOLOv3 pre-trained with MS-COCO dataset&lt;/li&gt;
+&lt;li&gt;Visual Tracking:
+&lt;ul&gt;
+&lt;li&gt;With &lt;a href=&#34;https://arxiv.org/abs/1812.11703&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SiamRPN&lt;/a&gt;: Since SiamRPN outputs tracking confidence, detection is used only when confidence is below a threshold&lt;/li&gt;
+&lt;li&gt;With &lt;a href=&#34;https://arxiv.org/pdf/1611.08461.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CSRT tracker&lt;/a&gt;: CSRT does not output tracking confidence; detection is conducted with a predefined frequency to update the tracking location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

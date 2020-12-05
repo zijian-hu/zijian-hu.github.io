@@ -733,7 +733,7 @@
     
 
   
-  <span class="author-highlighted"><a href="/author/zijian-hu/">Zijian Hu</a></span>
+  <span class="author-highlighted"><a href="/author/zijian-hu/">Zijian Hu</a></span>, <span ><a href="/author/chris-birmingham/">Chris Birmingham</a></span>
   </div>
   
   
@@ -842,11 +842,13 @@
   <div class="article-container">
 
     <div class="article-style">
-      <sub>
-See
-  <a href="http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support">the Interaction Lab website</a>
-for details and related publications.
-</sub>
+      <p>In this project, we designed and evaluated a novel framework for robot mediation of a support group.
+We conducted a user study using an NAO robot mediator controlled by a human operator that is unseen by the participants (<a href="https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment" target="_blank" rel="noopener">Wizard-of-Oz</a>).
+At the end of each study, the participants are asked to annotate their trust towards other participants in the study session recordings.
+In a <a href="https://www.zijianhu.com/publication/birmingham-icra-2020/">second-author paper</a> at International Conference on Robotics and Automation (ICRA),
+we showed that using a robot could significantly increase the average interpersonal trust after the group interaction session.</p>
+<p><em>The following project description is taken from <a href="http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support" target="_blank" rel="noopener">Interaction Lab website</a>.</em></p>
+<blockquote>
 <p>Within the field of Human-Robot Interaction (HRI), a growing subfield is forming that focuses
 specifically on interactions between one or more robots and multiple people, known as Multi-Party
 Human-Robot Interaction (MP-HRI). MP-HRI encompasses the challenges of single-user HRI
@@ -861,8 +863,149 @@ parties. These contexts often overlap, and algorithms that work in one context c
 exploring how robots and people establish, maintain, and repair trust in MP-HRI. Specifically, this research
 will examine robot group mediation for group conseling, with extensions to team performance in robot
 service and support teams.</p>
-<p>See the <a href="http://robotics.usc.edu/interaction/projects/desc2.php?name=multiparty_support" target="_blank" rel="noopener">Interaction Lab website</a>
-for details and related publications</p>
+</blockquote>
+<h2 id="study-design">Study Design</h2>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-volunteers-demonstrating-the-study-setup">
+
+
+  <a data-fancybox="" href="/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_2000x2000_fit_q75_lanczos.jpg" data-caption="Volunteers demonstrating the study setup">
+
+
+  <img data-src="/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_2000x2000_fit_q75_lanczos.jpg" class="lazyload" alt="" width="4032" height="3024">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Volunteers demonstrating the study setup
+  </figcaption>
+
+
+</figure>
+
+<p>In each study session, three participants were seated around the end of a table with a seated <a href="https://www.softbankrobotics.com/emea/index.php/en/nao" target="_blank" rel="noopener">NAO</a> robot as shown in Figure 1.
+The NAO robot, acting as a group moderator, was positioned towards the participants.
+On the table, a 360-degree microphone and 3 cameras facing directly to the participants' face were placed.
+Behind the robot, an RGB-D camera was mounted on a tripod to record the interactions between the group members.
+The robot operator was seated behind a one-way mirror hidden from participants.</p>
+<p>To measure how the level of trust changes overtime, the participants were asked to report their trust towards other participants against the recordings of the current session after the group interaction.</p>
+<p>The detail for the procedure of the study can be found <a href="https://www.zijianhu.com/publication/birmingham-icra-2020/">here</a>.</p>
+<h2 id="development-detail">Development Detail</h2>
+<p>For project development, my contributions includes:</p>
+<ul>
+<li>Developed NAO control program</li>
+<li>Designed and implemented web-based Wizard of Oz controller</li>
+<li>Designed and implemented self-annotation website</li>
+<li>Developed data collection program for one depth camera, three webcams and one 360 degree microphone</li>
+<li>Data post-processing for data whitening and fast data loading</li>
+</ul>
+<h2 id="related-publications">Related Publications</h2>
+
+
+
+
+
+
+
+  
+    <div class="pub-list-item" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  
+  <span ><a href="/author/chris-birmingham/">Chris Birmingham</a></span>, <span class="author-highlighted"><a href="/author/zijian-hu/">Zijian Hu</a></span>, <span ><a href="/author/kartik-mahajan/">Kartik Mahajan</a></span>, <span ><a href="/author/eli-reber/">Eli Reber</a></span>, <span ><a href="/author/maja-j.-mataric/">Maja J. Matarić</a></span>
+  </span>
+  (2020).
+  <a href="/publication/birmingham-icra-2020/">Can I Trust You? A User Study of Robot Mediation of a Support Group</a>.
+  <em>2020 International Conference on Robotics and Automation (ICRA)</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2002.04671" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/birmingham-icra-2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/multi_party/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1109/ICRA40945.2020.9196875" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+  
+
+
 
     </div>
 
@@ -1105,6 +1248,12 @@ for details and related publications</p>
 
 
   
+    
+
+
+
+
+  
 
 
 
@@ -1125,11 +1274,11 @@ for details and related publications</p>
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/chris-icra-2020/">Can I Trust You? A User Study of Robot Mediation of a Support Group</a></li>
+      <li><a href="/publication/birmingham-icra-2020/">Can I Trust You? A User Study of Robot Mediation of a Support Group</a></li>
       
-      <li><a href="/publication/fitter-2019-1048/">Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</a></li>
+      <li><a href="/publication/fitter-roman-2019-ui/">User Interface Tradeoffs for Remote Deictic Gesturing</a></li>
       
-      <li><a href="/publication/fitter-2019-1049/">User Interface Tradeoffs for Remote Deictic Gesturing</a></li>
+      <li><a href="/publication/fitter-roman-2019-hardware/">Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</a></li>
       
       <li><a href="/project/nri_kids/">Socially Aware, Expressive, and Personalized Mobile Remote Presence: Co-Robots as Gateways to Access to K-12 In-School Education</a></li>
       
@@ -1486,11 +1635,11 @@ for details and related publications</p>
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/chris-icra-2020/" >Can I Trust You? A User Study of Robot Mediation of a Support Group</a>
+      <a href="/publication/birmingham-icra-2020/" >Can I Trust You? A User Study of Robot Mediation of a Support Group</a>
     </h3>
 
     
-    <a href="/publication/chris-icra-2020/"  class="summary-link">
+    <a href="/publication/birmingham-icra-2020/"  class="summary-link">
       <div class="article-style">
         We designed and evaluated a novel framework for robot mediation of a support group
       </div>
@@ -1535,7 +1684,7 @@ for details and related publications</p>
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/chris-icra-2020/cite.bib">
+        data-filename="/publication/birmingham-icra-2020/cite.bib">
   Cite
 </button>
 

@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/author/tian-xie/</link>
       <atom:link href="https://www.zijianhu.com/author/tian-xie/index.xml" rel="self" type="application/rss+xml" />
     <description>Tian Xie</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Jun 2019 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 May 2019 00:00:00 -0800</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Tian Xie</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Decentralized Federated Multi-Task Learning and System Design</title>
       <link>https://www.zijianhu.com/project/dpa_sgd/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 -0800</pubDate>
+      <pubDate>Fri, 03 May 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/dpa_sgd/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This page contains a copy of the final report of our final project for Spring 2019 CSCI-599: Deep Learning and its Applications at the University of Southern California. The &lt;a href=&#34;http://fl.chaoyanghe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original page&lt;/a&gt; was removed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -465,10 +465,10 @@ $$&lt;/p&gt;
 &lt;figure id=&#34;figure-accuracy-for-fedavg-single-task-and-ring-dpa-sgd-multi-task-vs-round-number&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number&#34;&gt;
 
 
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;624&#34; height=&#34;520&#34;&gt;
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;624&#34; height=&#34;520&#34;&gt;
 &lt;/a&gt;
 
 
@@ -517,10 +517,10 @@ $$&lt;/p&gt;
 &lt;figure id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-walk-clock-time&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time&#34;&gt;
 
 
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;634&#34; height=&#34;503&#34;&gt;
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;634&#34; height=&#34;503&#34;&gt;
 &lt;/a&gt;
 
 
@@ -559,10 +559,10 @@ $$&lt;/p&gt;
 &lt;figure id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-round-number&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number&#34;&gt;
 
 
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;662&#34; height=&#34;503&#34;&gt;
+  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;662&#34; height=&#34;503&#34;&gt;
 &lt;/a&gt;
 
 
@@ -599,7 +599,7 @@ better convergence.&lt;/p&gt;
 &lt;li&gt;upload on-device data to the edge data center.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;appendix-ii-poster&#34;&gt;Appendix II: Poster&lt;/h3&gt;
-&lt;figure&gt;&lt;a href=&#34;attachments/fl-dpa-sgd-poster.pdf&#34;&gt;&lt;img src=&#34;attachments/fl-dpa-sgd-poster.png&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;Poster (click to see the pdf)&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;a href=&#34;attachments/fl-dpa-sgd-poster.pdf&#34;&gt;&lt;img src=&#34;images/fl-dpa-sgd-poster.png&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;Poster (click to see the pdf)&lt;/figcaption&gt;&lt;/figure&gt;
 </description>
     </item>
     

@@ -17,21 +17,35 @@
       <link>https://www.zijianhu.com/project/baby/</link>
       <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/baby/</guid>
-      <description>&lt;sub&gt;
-See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications
-&lt;/sub&gt;
+      <description>&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Infants engage in motor babbling that allows them to explore their space and learn what movements produce
 desired outcomes. Less motor babbling from infants can lead to developmental delays.
-Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide contingent
-positive feedback to increase exploration and expand early movement practice.&lt;/p&gt;
-&lt;p&gt;Towards this end, we are collaborating with physical therapists to create approaches to predict the developmental
-status of infants using wearable sensors; running user studies that explore various robot rewards for contingent
-activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the robot; and using reinforcement
-learning to adjust the difficulty of the task presented by the robot to increase the infant&amp;rsquo;s engagement with
-the task.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;http://robotics.usc.edu/interaction/sponsors/desc.php?name=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;
-for details and related publications&lt;/p&gt;
+Our goal is to develop a socially assistive, non-contact, infant-robot interaction system to provide
+contingent positive feedback to increase exploration and expand early movement practice.&lt;/p&gt;
+&lt;p&gt;Towards this end, we are collaborating with physical therapists to create approaches to predict the
+developmental status of infants using wearable sensors; running user studies that explore various robot
+rewards for contingent activities for the infant, as well as measuring the infant&amp;rsquo;s ability to mimic the
+robot; and using reinforcement learning to adjust the difficulty of the task presented by the robot to
+increase the infant&amp;rsquo;s engagement with the task.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PqTkw2weVjU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For project development, my contributions includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detecting and Tracking two &lt;a href=&#34;https://www.sphero.com/sphero-sprk-plus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sphero SPRK+&lt;/a&gt; robots with a wall-mounted camera&lt;/li&gt;
+&lt;li&gt;Object Detection: apply transfer learning to YOLOv3 pre-trained with MS-COCO dataset&lt;/li&gt;
+&lt;li&gt;Visual Tracking:
+&lt;ul&gt;
+&lt;li&gt;With &lt;a href=&#34;https://arxiv.org/abs/1812.11703&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SiamRPN&lt;/a&gt;: Since SiamRPN outputs tracking confidence, detection is used only when confidence is below a threshold&lt;/li&gt;
+&lt;li&gt;With &lt;a href=&#34;https://arxiv.org/pdf/1611.08461.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CSRT tracker&lt;/a&gt;: CSRT does not output tracking confidence; detection is conducted with a predefined frequency to update the tracking location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
