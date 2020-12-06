@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Semi-Supervised Learning | Zijian Hu</title>
+    <link>https://www.zijianhu.com/tag/semi-supervised-learning/</link>
+      <atom:link href="https://www.zijianhu.com/tag/semi-supervised-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Semi-Supervised Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <title>Semi-Supervised Learning</title>
+      <link>https://www.zijianhu.com/tag/semi-supervised-learning/</link>
+    </image>
+    
+    <item>
+      <title>Semi-Supervised Learning Paper Submitted to CVPR 2021</title>
+      <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
+      <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Notice&lt;/strong&gt;: author &lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt; and &lt;strong&gt;Zhengyu Yang&lt;/strong&gt; has equal contributions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Since this paper is submitted to 2021 Conference on Computer Vision and Pattern Recognition (CVPR) and is currently under review, only anonymized information is included on this page.
+I will provide the full detail once the CVPR review is over.
+If you are interested in our project, you can email me to request a full copy of the paper.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

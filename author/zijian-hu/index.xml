@@ -5,12 +5,129 @@
     <link>https://www.zijianhu.com/author/zijian-hu/</link>
       <atom:link href="https://www.zijianhu.com/author/zijian-hu/index.xml" rel="self" type="application/rss+xml" />
     <description>Zijian Hu</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0800</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Zijian Hu</title>
       <link>https://www.zijianhu.com/author/zijian-hu/</link>
     </image>
+    
+    <item>
+      <title>Semi-Supervised Learning Paper Submitted to CVPR 2021</title>
+      <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
+      <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Notice&lt;/strong&gt;: author &lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt; and &lt;strong&gt;Zhengyu Yang&lt;/strong&gt; has equal contributions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Since this paper is submitted to 2021 Conference on Computer Vision and Pattern Recognition (CVPR) and is currently under review, only anonymized information is included on this page.
+I will provide the full detail once the CVPR review is over.
+If you are interested in our project, you can email me to request a full copy of the paper.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning with Less Labeling (LwLL)</title>
+      <link>https://www.zijianhu.com/project/lwll/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 -0800</pubDate>
+      <guid>https://www.zijianhu.com/project/lwll/</guid>
+      <description>&lt;p&gt;We proposed a novel semi-supervised classification algorithm that focuses on the less studied relationship between the high confidence unlabeled data that are similar to each other. Our algorithm, SimPLE, achieved state-of-the-art performance on standard SSL benchmarks and achieved the best accuracy on some tasks in LwLL evaluation. We also evaluated our method in the transfer setting where our algorithm outperforms prior works and supervised baseline by a large margin.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://www.darpa.mil/program/learning-with-less-labeling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DARPA&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In supervised machine learning (ML), the ML system learns by example to recognize things, such as objects in images or speech. Humans provide these examples to ML systems during their training in the form of labeled data. With enough labeled data, we can generally build accurate pattern recognition models.&lt;/p&gt;
+&lt;p&gt;The problem is that training accurate models currently requires lots of labeled data. For tasks like machine translation, speech recognition or object recognition, deep neural networks (DNNs) have emerged as the state of the art, due to the superior accuracy they can achieve. To gain this advantage over other techniques, however, DNN models need more data, typically requiring 109 or 1010 labeled training examples to achieve good performance.&lt;/p&gt;
+&lt;p&gt;The commercial world has harvested and created large sets of labeled data for training models. These datasets are often created via crowdsourcing: a cheap and efficient way to create labeled data. Unfortunately, crowdsourcing techniques are often not possible for proprietary or sensitive data. Creating data sets for these sorts of problems can result in 100x higher costs and 50x longer time to label.&lt;/p&gt;
+&lt;p&gt;To make matters worse, machine learning models are brittle, in that their performance can degrade severely with small changes in their operating environment. For instance, the performance of computer vision systems degrades when data is collected from a new sensor and new collection viewpoints. Similarly, dialog and text understanding systems are very sensitive to changes in formality and register. As a result, additional labels are needed after initial training to adapt these models to new environments and data collection conditions. For many problems, the labeled data required to adapt models to new environments approaches the amount required to train a new model from scratch.&lt;/p&gt;
+&lt;p&gt;The Learning with Less Labeling (LwLL) program aims to make the process of training machine learning models more efficient by reducing the amount of labeled data required to build a model by six or more orders of magnitude, and by reducing the amount of data needed to adapt models to new environments to tens to hundreds of labeled examples.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;lwll-evaluation&#34;&gt;LwLL Evaluation&lt;/h2&gt;
+&lt;p&gt;The evaluation has 3 types of tasks: NLP, Image Classification and Object Detection.
+Our team is focusing on the image classification task.
+Each task includes a base stage and an adaptation stage where each stage consists of 6 to 7 checkpoints.
+For image classification, pre-trained models on some selected datasets are allowed.&lt;/p&gt;
+&lt;p&gt;At the first checkpoint, only 1 label per category is available.
+As the training progress, more class labels become available until the training is fully labeled in the last checkpoint.&lt;/p&gt;
+&lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+&lt;p&gt;Our team used a few-shot learning method for the first 2 to 3 checkpoints when the labeled set size is small. Once sufficient number of labeled data samples become available, the training was handed to our semi-supervised algorithm.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed a novel algorithm for semi-supervised classification&lt;/li&gt;
+&lt;li&gt;Evaluated our algorithm on standard benchmarks (CIFAR-10, CIFAR-100, SVHN, Mini-ImageNet)&lt;/li&gt;
+&lt;li&gt;Evaluated our algorithm in the transfer learning setting (on Mini-ImageNet, DomainNet-Real, AID, RESISC45), where models are initialized models pretrained on ImageNet or DomainNet-Real&lt;/li&gt;
+&lt;li&gt;Distributed training with PyTorch Distributed Data Parallel&lt;/li&gt;
+&lt;li&gt;GPU accelerated data augmentation with &lt;a href=&#34;https://kornia.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kornia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-publications&#34;&gt;Related Publications&lt;/h2&gt;
+
+
+
+
+
+
+
+  
+    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  
+  &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/zhengyu-yang/&#34;&gt;Zhengyu Yang&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/xuefeng-hu/&#34;&gt;Xuefeng Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/ram-nevatia/&#34;&gt;Ram Nevatia&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2021).
+  &lt;a href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/&#34;&gt;Semi-Supervised Learning Paper Submitted to CVPR 2021&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/hu-2020-simple/cite.bib&#34;&gt;
+  Cite
+&lt;/button&gt;
+
+
+
+
+
+  
+  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/lwll/&#34;&gt;
+    Project
+  &lt;/a&gt;
+  
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+  
+
+
+</description>
+    </item>
     
     <item>
       <title>PyTorch: Exponential Moving Average (EMA) Example</title>
