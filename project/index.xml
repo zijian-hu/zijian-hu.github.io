@@ -202,6 +202,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
 &lt;li&gt;Designed and implemented self-annotation website&lt;/li&gt;
 &lt;li&gt;Developed data collection program for one depth camera, three webcams and one 360 degree microphone&lt;/li&gt;
 &lt;li&gt;Data post-processing for data whitening and fast data loading&lt;/li&gt;
+&lt;li&gt;Turn-taking prediction with &lt;a href=&#34;http://zpascal.net/cvpr2017/Lea_Temporal_Convolutional_Networks_CVPR_2017_paper.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Temporal Convolutional Networks (TCN)&lt;/a&gt; and LSTM for multi-modal input&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;related-publications&#34;&gt;Related Publications&lt;/h2&gt;
 
