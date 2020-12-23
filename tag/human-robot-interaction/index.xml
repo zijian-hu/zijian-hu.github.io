@@ -208,7 +208,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
     </item>
     
     <item>
-      <title>Socially Aware, Expressive, and Personalized Mobile Remote Presence: Co-Robots as Gateways to Access to K-12 In-School Education</title>
+      <title>Telepresence Robot for K-12 Remote Education</title>
       <link>https://www.zijianhu.com/project/nri_kids/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/project/nri_kids/</guid>
@@ -425,6 +425,24 @@ service and support teams.&lt;/p&gt;
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Resource Distribution in Human-Robot Teams</title>
+      <link>https://www.zijianhu.com/project/robot_team/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0800</pubDate>
+      <guid>https://www.zijianhu.com/project/robot_team/</guid>
+      <description>&lt;p&gt;Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members&lt;/p&gt;
+&lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+&lt;p&gt;For project development, my contributions includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented multi-threaded perception and control system for &lt;a href=&#34;https://anki.com/en-ca/vector.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anki Vector&lt;/a&gt; robot&lt;/li&gt;
+&lt;li&gt;Camera calibration with ArUco Markers&lt;/li&gt;
+&lt;li&gt;ArUco Marker detection for navigation and robot localization&lt;/li&gt;
+&lt;li&gt;Path planning using finite state machine&lt;/li&gt;
+&lt;li&gt;Resource distribution with Multi Armed Bandit variant algorithm&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
