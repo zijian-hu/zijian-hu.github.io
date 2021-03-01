@@ -13,12 +13,12 @@
     </image>
     
     <item>
-      <title>Semi-Supervised Learning Paper Submitted to CVPR 2021</title>
+      <title>SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</title>
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
       <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
-      <description>&lt;p&gt;Since this paper is submitted to 2021 Conference on Computer Vision and Pattern Recognition (CVPR) and is currently under review, only anonymized information is included on this page.
-I will provide the full detail once the CVPR review is over.
+      <description>&lt;p&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
+We will release the full copy of the paper once we have the camera-ready version.
 If you are interested in our project, you can email me to request a full copy of the paper.&lt;/p&gt;
 </description>
     </item>
