@@ -17,9 +17,292 @@
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
       <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
-      <description>&lt;p&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
 We will release the full copy of the paper once we have the camera-ready version.
-If you are interested in our project, you can email me to request a full copy of the paper.&lt;/p&gt;
+If you are interested in our project, you can email me to request a full copy of the paper.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#semi-supervised-learning&#34;&gt;Semi-supervised Learning&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#method&#34;&gt;Method&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#problem-description&#34;&gt;Problem Description&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#augmentation-strategy&#34;&gt;Augmentation Strategy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#pseudo-labeling&#34;&gt;Pseudo-labeling&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#loss&#34;&gt;Loss&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#simple-algorithm&#34;&gt;SimPLE Algorithm&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Deep learning has recently achieved state-of-the-art performance on many computer vision tasks.
+labeling large datasets is very expensive and often not feasible, especially in domains that require expertise to provide labels.
+Semi-Supervised Learning (SSL), on the other hand, can take advantage of partially labeled data,
+which is much more easily available,
+as shown in Figure &lt;a href=&#34;#figure-illustration-of-an-image-set-with-a-limited-amount-of-labeled-images-among-a-large-number-of-unlabeled-images&#34;&gt;1&lt;/a&gt;, for example.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-illustration-of-an-image-set-with-a-limited-amount-of-labeled-images-among-a-large-number-of-unlabeled-images&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/images/problem_hue2b165cb1d98fede9488ffa362868af2_2811778_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Illustration of an image set with a limited amount of labeled images among a large number of unlabeled images.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://www.zijianhu.com/publication/hu-2020-simple/images/problem_hue2b165cb1d98fede9488ffa362868af2_2811778_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3328&#34; height=&#34;1500&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Illustration of an image set with a limited amount of labeled images among a large number of unlabeled images.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;semi-supervised-learning&#34;&gt;Semi-supervised Learning&lt;/h3&gt;
+&lt;p&gt;A critical problem in semi-supervised learning is how to generalize the information learned from limited label data to unlabeled data.
+Following the &lt;em&gt;continuity assumption&lt;/em&gt; that close data have a higher probability of sharing the same label, many approaches have been developed, including the recently proposed &lt;a href=&#34;https://arxiv.org/abs/1904.04717&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Label Propagation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another critical problem in semi-supervised learning is how to directly learn from the large amount of unlabeled data.
+Maintaining consistency between differently augmented unlabeled data has been recently studied and proved to be an effective way to learn from unlabeled data in both self-supervised learning.&lt;/p&gt;
+&lt;p&gt;The recently proposed &lt;a href=&#34;https://arxiv.org/abs/1905.02249&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MixMatch&lt;/a&gt; combines the above techniques and designed a unified loss term to let the model learn from differently augmented labeled and unlabeled data, together with the &lt;a href=&#34;https://openreview.net/forum?id=ByxtC2VtPB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mix-up&lt;/a&gt; technique, which encourages convex behavior between samples to increase model&amp;rsquo;s generalization ability.
+&lt;a href=&#34;https://openreview.net/forum?id=HklkeR4KPB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ReMixMatch&lt;/a&gt; further improves the MixMatch by introducing the distribution alignment and Augmentation Anchoring techniques, which allows the model to accommodate and leverage from the heavily augmented samples.
+&lt;a href=&#34;https://arxiv.org/abs/2001.07685&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FixMatch&lt;/a&gt; simplified its previous works by introducing a confidence threshold into its unsupervised objective function and achieves state-of-the-art performance over the standard benchmarks.&lt;/p&gt;
+&lt;p&gt;In this paper, we propose to take advantage of the relationship between different unlabeled samples.
+We introduce a novel Pair Loss, which encourages a pair of similar unlabeled samples (in the augmented space) to have similar predictions if at least one of them is of high confidence in its prediction.
+Combining the techniques developed by the MixMatch family, we propose the SimPLE algorithm.
+As shown in Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;&gt;2&lt;/a&gt;, the SimPLE algorithm generates pseudo labels of unlabeled samples by averaging and sharpening the predictions on multiple weakly augmented variations of the same sample.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-an-overview-of-the-proposed-simple-algorithm&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/images/overview_hu7e6c5a87fea892f23597c7d6d500ed86_413333_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;An overview of the proposed SimPLE algorithm.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://www.zijianhu.com/publication/hu-2020-simple/images/overview_hu7e6c5a87fea892f23597c7d6d500ed86_413333_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3150&#34; height=&#34;1100&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    An overview of the proposed SimPLE algorithm.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Then, we use both the labels and pseudo labels to compute the supervised cross-entropy loss and unsupervised $L2$ distance loss.
+These two terms push the decision boundaries to go through low-density areas and encourage consistency among different variations of the same samples.
+Finally, with the newly proposed Pair Loss, we harness the relationships among the pseudo labels of different samples by encouraging consistency among different unlabeled samples which share a great similarity.&lt;/p&gt;
+&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;
+&lt;p&gt;To take full advantage of the vast quantity of unlabeled samples in SSL problems, we propose the SimPLE algorithm that focuses on the relationship between unlabeled samples.&lt;/p&gt;
+&lt;h3 id=&#34;problem-description&#34;&gt;Problem Description&lt;/h3&gt;
+&lt;p&gt;We define the semi-supervised image classification problem as following. In a $L$-class classification setting, we have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\mathcal{X}=\left(\left(x_{b}, y_{b}\right) ; b \in(1, \ldots, B)\right)$: a batch of labeled data&lt;/li&gt;
+&lt;li&gt;$\mathcal{U}=\left(u_{b} ; b \in(1, \ldots, B)\right)$: a batch of unlabeled data&lt;/li&gt;
+&lt;li&gt;$\mathrm{p}_{\text{model}}\left(\tilde{y} \mid x ; \theta\right)$: the model&amp;rsquo;s predicted softmax class probability of input $x$ parameterized by weight $\theta$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;augmentation-strategy&#34;&gt;Augmentation Strategy&lt;/h3&gt;
+&lt;p&gt;Our algorithm uses Augmentation Anchoring, in which pseudo labels come from weakly augmented samples act as &amp;ldquo;anchor,&amp;rdquo; and we align the strongly augmented samples to the &amp;ldquo;anchor.&amp;rdquo;
+Our weak augmentation, follows that of MixMatch family, contains a random cropping followed by a random horizontal flip.
+We use &lt;a href=&#34;https://arxiv.org/abs/1909.13719&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RandAugment&lt;/a&gt; or a fixed augmentation strategy that contains difficult transformations such as random affine and color jitter as strong augmentation.
+For every batch, RandAugment randomly selects a fixed number of augmentations from a predefined pool; the intensity of each transformation is determined by a magnitude parameter.&lt;/p&gt;
+&lt;h3 id=&#34;pseudo-labeling&#34;&gt;Pseudo-labeling&lt;/h3&gt;
+&lt;p&gt;Our pseudo labeling is based on the label guessing technique used in MixMatch. We first take the average of the model&amp;rsquo;s predictions of several weakly augmented versions of the same unlabeled sample as its pseudo label.
+As the prediction is averaged from $K$ slight perturbations of the same input instead of $K$ severe perturbation or a single perturbation, the guessed pseudo label should be more stable.
+Then, we use the sharpening operation defined in MixMatch to increase the temperature of the label&amp;rsquo;s distribution:
+$$\operatorname{Sharpen}(p, T):= \frac{p^{\frac{1}{T}}}{\textbf{1}^\top p^{\frac{1}{T}}}$$&lt;/p&gt;
+&lt;p&gt;As the peak of the pseudo label&amp;rsquo;s distribution is &amp;ldquo;sharpened,&amp;rdquo; the network will push this sample further away from the decision boundary.
+Additionally, following the practice of MixMatch, we use the exponential moving average of the model at each time step to guess the labels.&lt;/p&gt;
+&lt;h3 id=&#34;loss&#34;&gt;Loss&lt;/h3&gt;
+&lt;p&gt;Our loss consists of three terms, $\mathcal{L_X}$, $\mathcal{L_U}$, and $\mathcal{L_P}$, representing the supervised loss, the unsupervised loss, and the Pair Loss respectively.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+\mathcal{L} &amp;amp;= \mathcal{L_X} + \lambda_{\mathcal{U}} \mathcal{L_U} + \lambda_{\mathcal{P}} \mathcal{L_P} \\&lt;br&gt;
+\mathcal{L_X} &amp;amp;= \frac{1}{\left| \mathcal{X}&#39; \right|} \sum_{x,y \in \hat{\mathcal{X}}} H\left(y, \mathrm{p}_{\text{model}}\left(\tilde{y} \mid x ; \theta\right)\right) \\&lt;br&gt;
+\mathcal{L_U} &amp;amp;= \frac{
+\sum_{u,q \in \hat{\mathcal{U}}}
+\mathbb{1}_{\left(\max\left(q\right) &amp;gt; \tau_c\right)}
+\left| q - \mathrm{p}_{\text{model}}\left(\tilde{y} \mid u ; \theta\right) \right|^{2}_{2}
+}{L \left| \hat{\mathcal{U}} \right|}
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;$\mathcal{L_X}$ calculates the cross-entropy of weakly augmented labeled samples, and $\mathcal{L_U}$ represents the $L_2$ distance between strongly augmented samples and their pseudo labels, filtered by high confidence threshold.
+Notice that $\mathcal{L_U}$ only enforces the consistency among different perturbations of the same samples but not the consistency among different samples.&lt;/p&gt;
+&lt;p&gt;As we aim to exploit the relationship among unlabeled samples, we hereby introduce a novel loss term, Pair Loss, that allows information to propagate implicitly between different unlabeled samples.
+In Pair Loss, we use a high confidence pseudo label of an unlabeled point, $p$, as an &amp;ldquo;anchor.&amp;rdquo;
+All unlabeled samples whose pseudo labels are similar enough to $p$ need to align their predictions under severe perturbation to the &amp;ldquo;anchor.&amp;rdquo;&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-pair-loss-overview&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/featured_hu4ae5f06fd090dbf90a6b38dbfa89063a_483332_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Pair Loss Overview.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://www.zijianhu.com/publication/hu-2020-simple/featured_hu4ae5f06fd090dbf90a6b38dbfa89063a_483332_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3182&#34; height=&#34;2469&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Pair Loss Overview.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Figure &lt;a href=&#34;#figure-pair-loss-overview&#34;&gt;3&lt;/a&gt; offers an overview of this selection process. During this process, the similarity threshold &amp;ldquo;extended&amp;rdquo; our confidence threshold in an adaptive manner, as a sample whose pseudo label confidence is below the threshold can still be selected by the loss and be pushed to a higher confidence level.
+Formally, we defined the Pair Loss as following:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\mathcal{L_P} &amp;amp;= \frac{1}{\binom{K&amp;rsquo;B}{2}}
+\sum_{
+\substack{
+i,j \in \left[\left|\mathcal{U}&#39;\right|\right], i \ne j \\&lt;br&gt;
+\left(v_l, q_l\right) = \mathcal{U}&#39;_{i} \\&lt;br&gt;
+\left(v_r, q_r\right) = \mathcal{U}&#39;_{j}
+}
+}
+\varphi_{\tau_c}\left(\max\left(q_l\right)\right) \\&lt;br&gt;
+&amp;amp;\cdot \varphi_{\tau_s}\left(f_{\operatorname{sim}}\left(q_l, q_r\right)\right) \\&lt;br&gt;
+&amp;amp;\cdot f_{\operatorname{dist}}\left(q_l, \mathrm{p}_{\text{model}}\left(\tilde{y} \mid v_r ; \theta\right)\right)
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Here, $\tau_c$ and $\tau_s$ denote the confidence threshold and similarity threshold respectively.
+$\varphi_t(x)=\mathbb{1}_{\left(x &amp;gt; t\right)} x$ is a hard threshold function controlled by threshold $t$.
+$f_{\operatorname{sim}}\left(p, q\right)$ measures the similarity between two probability vectors $p, q$ by &lt;a href=&#34;http://www.jstor.org/stable/25047882&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bhattacharyya coefficient&lt;/a&gt;.
+The coefficient is bounded between $[0, 1]$, and represents the size of the overlapping portion of the two discrete distributions:&lt;/p&gt;
+&lt;p&gt;$$f_{\operatorname{sim}}\left(p, q\right) = \sqrt{p} \cdot \sqrt{q}$$&lt;/p&gt;
+&lt;p&gt;$f_{\operatorname{dist}}\left(p, q\right)$ measures the distance between two probability vectors $p, q$.
+As $f_{\operatorname{sim}}\left(p, q\right)$ is bounded between $[0, 1]$, we simply choose the distance function to be $f_{\operatorname{dist}}\left(p, q\right) = 1 - f_{\operatorname{sim}}\left(p, q\right)$.&lt;/p&gt;
+&lt;p&gt;Although based on analysis, we found that $\cos(\cos^{-1}(\sqrt{\tau_c})+\cos^{-1}(\tau_s))^2$ is the minimal confidence a label need to have for it to be selected by both thresholds, such low confidence label are rarely selected in practice.
+Based on empirical evidence, we believe this is caused by the fact a label $p$ that can pass through the high confidence threshold typically has a near one hot distribution.
+Thus, for another label $q$ to fall in the similarity threshold of $q$, it must also have relatively high confidence.
+Due to this property, the Pair Loss is not very sensitive to the choices of hyperparameters $\tau_s$, $\tau_c$, which we will show empirically in later section.&lt;/p&gt;
+&lt;h3 id=&#34;simple-algorithm&#34;&gt;SimPLE Algorithm&lt;/h3&gt;
+&lt;p&gt;By putting together all the components introduced in this section, we now present the SimPLE algorithm.
+During training, for a mini-batch of samples, SimPLE will first augment both labeled and unlabeled samples with both weak and strong augmentations.
+The pseudo labels of the unlabeled samples are obtained by averaging and then sharpening the models&#39; predictions on the weakly augmented unlabeled samples.
+Finally, we optimize the three loss terms based on augmented samples and pseudo labels.
+During testing, SimPLE uses the exponential moving average of the weights of the model to do prediction, as what is done by MixMatch.
+Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;&gt;2&lt;/a&gt; gives an overview of the algorithm, and the complete training algorithm is described in Alg. &lt;a href=&#34;#figure-simple-algorithm&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-simple-algorithm&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/images/algorithm1_hu53e17220f872f8c8eb187beb5c84338c_350636_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;SimPLE algorithm.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://www.zijianhu.com/publication/hu-2020-simple/images/algorithm1_hu53e17220f872f8c8eb187beb5c84338c_350636_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1990&#34; height=&#34;1126&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    SimPLE algorithm.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;The experiment section will be updated soon&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -150,10 +433,10 @@ capacities of each worker may differ due to variability in hardware(CPU, memory)
 
 
 
-&lt;figure id=&#34;figure-figure-2-federated-multi-task-deep-learning-framework&#34;&gt;
+&lt;figure id=&#34;figure-federated-multi-task-deep-learning-framework&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Figure 2: Federated Multi-Task Deep Learning Framework&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Federated Multi-Task Deep Learning Framework&#34;&gt;
 
 
   &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3006&#34; height=&#34;1017&#34;&gt;
@@ -163,7 +446,7 @@ capacities of each worker may differ due to variability in hardware(CPU, memory)
   
   
   &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Figure 2: Federated Multi-Task Deep Learning Framework
+    Federated Multi-Task Deep Learning Framework
   &lt;/figcaption&gt;
 
 

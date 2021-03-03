@@ -648,10 +648,10 @@ capacities of each worker may differ due to variability in hardware(CPU, memory)
 
 
 
-&lt;figure id=&#34;figure-figure-2-federated-multi-task-deep-learning-framework&#34;&gt;
+&lt;figure id=&#34;figure-federated-multi-task-deep-learning-framework&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Figure 2: Federated Multi-Task Deep Learning Framework&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Federated Multi-Task Deep Learning Framework&#34;&gt;
 
 
   &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3006&#34; height=&#34;1017&#34;&gt;
@@ -661,7 +661,7 @@ capacities of each worker may differ due to variability in hardware(CPU, memory)
   
   
   &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Figure 2: Federated Multi-Task Deep Learning Framework
+    Federated Multi-Task Deep Learning Framework
   &lt;/figcaption&gt;
 
 

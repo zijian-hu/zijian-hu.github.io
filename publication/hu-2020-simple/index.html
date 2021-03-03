@@ -65,6 +65,9 @@
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -204,9 +207,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -271,10 +274,9 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@zijianhu">
   <meta property="twitter:creator" content="@zijianhu">
@@ -282,8 +284,8 @@
   <meta property="og:site_name" content="Zijian Hu">
   <meta property="og:url" content="https://www.zijianhu.com/publication/hu-2020-simple/">
   <meta property="og:title" content="SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification | Zijian Hu">
-  <meta property="og:description" content="We propose a novel algorithm that focuses on the less studied relationship between the unlabeled data. Our algorithm achieves state-of-the-art performance on standard benchmarks"><meta property="og:image" content="https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="We propose a novel algorithm that focuses on the less studied relationship between the unlabeled data. Our algorithm achieves state-of-the-art performance on standard benchmarks"><meta property="og:image" content="https://www.zijianhu.com/publication/hu-2020-simple/featured.png">
+  <meta property="twitter:image" content="https://www.zijianhu.com/publication/hu-2020-simple/featured.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-12-05T00:00:00-08:00">
@@ -313,6 +315,10 @@
     "@id": "https://www.zijianhu.com/publication/hu-2020-simple/"
   },
   "headline": "SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification",
+  
+  "image": [
+    "https://www.zijianhu.com/publication/hu-2020-simple/featured.png"
+  ],
   
   "datePublished": "2020-12-05T00:00:00-08:00",
   "dateModified": "2021-06-19T00:00:00-08:00",
@@ -707,18 +713,26 @@
 
 
 
-  
+
+
+
+
+
+
+
 
   
   
+    
   
+
+
 <div class="article-container pt-3">
   <h1>SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</h1>
 
   
 
   
-    
 
 
 <div class="article-metadata">
@@ -761,7 +775,7 @@
 
 </div>
 
-    
+  
 
 
 
@@ -822,7 +836,14 @@
 </div>
 
 
-  
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 559px;">
+  <div style="position: relative">
+    <img src="/publication/hu-2020-simple/featured_hu4ae5f06fd090dbf90a6b38dbfa89063a_483332_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
@@ -869,9 +890,292 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
+    <div class="article-style"><p><em><strong>This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
 We will release the full copy of the paper once we have the camera-ready version.
-If you are interested in our project, you can email me to request a full copy of the paper.</p>
+If you are interested in our project, you can email me to request a full copy of the paper.</strong></em></p>
+<h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#semi-supervised-learning">Semi-supervised Learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#method">Method</a>
+      <ul>
+        <li><a href="#problem-description">Problem Description</a></li>
+        <li><a href="#augmentation-strategy">Augmentation Strategy</a></li>
+        <li><a href="#pseudo-labeling">Pseudo-labeling</a></li>
+        <li><a href="#loss">Loss</a></li>
+        <li><a href="#simple-algorithm">SimPLE Algorithm</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h2 id="introduction">Introduction</h2>
+<p>Deep learning has recently achieved state-of-the-art performance on many computer vision tasks.
+labeling large datasets is very expensive and often not feasible, especially in domains that require expertise to provide labels.
+Semi-Supervised Learning (SSL), on the other hand, can take advantage of partially labeled data,
+which is much more easily available,
+as shown in Figure <a href="#figure-illustration-of-an-image-set-with-a-limited-amount-of-labeled-images-among-a-large-number-of-unlabeled-images">1</a>, for example.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-illustration-of-an-image-set-with-a-limited-amount-of-labeled-images-among-a-large-number-of-unlabeled-images">
+
+
+  <a data-fancybox="" href="/publication/hu-2020-simple/images/problem_hue2b165cb1d98fede9488ffa362868af2_2811778_2000x2000_fit_lanczos_2.png" data-caption="Illustration of an image set with a limited amount of labeled images among a large number of unlabeled images.">
+
+
+  <img data-src="/publication/hu-2020-simple/images/problem_hue2b165cb1d98fede9488ffa362868af2_2811778_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="3328" height="1500">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Illustration of an image set with a limited amount of labeled images among a large number of unlabeled images.
+  </figcaption>
+
+
+</figure>
+
+<h3 id="semi-supervised-learning">Semi-supervised Learning</h3>
+<p>A critical problem in semi-supervised learning is how to generalize the information learned from limited label data to unlabeled data.
+Following the <em>continuity assumption</em> that close data have a higher probability of sharing the same label, many approaches have been developed, including the recently proposed <a href="https://arxiv.org/abs/1904.04717" target="_blank" rel="noopener">Label Propagation</a>.</p>
+<p>Another critical problem in semi-supervised learning is how to directly learn from the large amount of unlabeled data.
+Maintaining consistency between differently augmented unlabeled data has been recently studied and proved to be an effective way to learn from unlabeled data in both self-supervised learning.</p>
+<p>The recently proposed <a href="https://arxiv.org/abs/1905.02249" target="_blank" rel="noopener">MixMatch</a> combines the above techniques and designed a unified loss term to let the model learn from differently augmented labeled and unlabeled data, together with the <a href="https://openreview.net/forum?id=ByxtC2VtPB" target="_blank" rel="noopener">mix-up</a> technique, which encourages convex behavior between samples to increase model&rsquo;s generalization ability.
+<a href="https://openreview.net/forum?id=HklkeR4KPB" target="_blank" rel="noopener">ReMixMatch</a> further improves the MixMatch by introducing the distribution alignment and Augmentation Anchoring techniques, which allows the model to accommodate and leverage from the heavily augmented samples.
+<a href="https://arxiv.org/abs/2001.07685" target="_blank" rel="noopener">FixMatch</a> simplified its previous works by introducing a confidence threshold into its unsupervised objective function and achieves state-of-the-art performance over the standard benchmarks.</p>
+<p>In this paper, we propose to take advantage of the relationship between different unlabeled samples.
+We introduce a novel Pair Loss, which encourages a pair of similar unlabeled samples (in the augmented space) to have similar predictions if at least one of them is of high confidence in its prediction.
+Combining the techniques developed by the MixMatch family, we propose the SimPLE algorithm.
+As shown in Figure <a href="#figure-an-overview-of-the-proposed-simple-algorithm">2</a>, the SimPLE algorithm generates pseudo labels of unlabeled samples by averaging and sharpening the predictions on multiple weakly augmented variations of the same sample.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-an-overview-of-the-proposed-simple-algorithm">
+
+
+  <a data-fancybox="" href="/publication/hu-2020-simple/images/overview_hu7e6c5a87fea892f23597c7d6d500ed86_413333_2000x2000_fit_lanczos_2.png" data-caption="An overview of the proposed SimPLE algorithm.">
+
+
+  <img data-src="/publication/hu-2020-simple/images/overview_hu7e6c5a87fea892f23597c7d6d500ed86_413333_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="3150" height="1100">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    An overview of the proposed SimPLE algorithm.
+  </figcaption>
+
+
+</figure>
+
+<p>Then, we use both the labels and pseudo labels to compute the supervised cross-entropy loss and unsupervised $L2$ distance loss.
+These two terms push the decision boundaries to go through low-density areas and encourage consistency among different variations of the same samples.
+Finally, with the newly proposed Pair Loss, we harness the relationships among the pseudo labels of different samples by encouraging consistency among different unlabeled samples which share a great similarity.</p>
+<h2 id="method">Method</h2>
+<p>To take full advantage of the vast quantity of unlabeled samples in SSL problems, we propose the SimPLE algorithm that focuses on the relationship between unlabeled samples.</p>
+<h3 id="problem-description">Problem Description</h3>
+<p>We define the semi-supervised image classification problem as following. In a $L$-class classification setting, we have:</p>
+<ul>
+<li>$\mathcal{X}=\left(\left(x_{b}, y_{b}\right) ; b \in(1, \ldots, B)\right)$: a batch of labeled data</li>
+<li>$\mathcal{U}=\left(u_{b} ; b \in(1, \ldots, B)\right)$: a batch of unlabeled data</li>
+<li>$\mathrm{p}_{\text{model}}\left(\tilde{y} \mid x ; \theta\right)$: the model&rsquo;s predicted softmax class probability of input $x$ parameterized by weight $\theta$</li>
+</ul>
+<h3 id="augmentation-strategy">Augmentation Strategy</h3>
+<p>Our algorithm uses Augmentation Anchoring, in which pseudo labels come from weakly augmented samples act as &ldquo;anchor,&rdquo; and we align the strongly augmented samples to the &ldquo;anchor.&rdquo;
+Our weak augmentation, follows that of MixMatch family, contains a random cropping followed by a random horizontal flip.
+We use <a href="https://arxiv.org/abs/1909.13719" target="_blank" rel="noopener">RandAugment</a> or a fixed augmentation strategy that contains difficult transformations such as random affine and color jitter as strong augmentation.
+For every batch, RandAugment randomly selects a fixed number of augmentations from a predefined pool; the intensity of each transformation is determined by a magnitude parameter.</p>
+<h3 id="pseudo-labeling">Pseudo-labeling</h3>
+<p>Our pseudo labeling is based on the label guessing technique used in MixMatch. We first take the average of the model&rsquo;s predictions of several weakly augmented versions of the same unlabeled sample as its pseudo label.
+As the prediction is averaged from $K$ slight perturbations of the same input instead of $K$ severe perturbation or a single perturbation, the guessed pseudo label should be more stable.
+Then, we use the sharpening operation defined in MixMatch to increase the temperature of the label&rsquo;s distribution:
+$$\operatorname{Sharpen}(p, T):= \frac{p^{\frac{1}{T}}}{\textbf{1}^\top p^{\frac{1}{T}}}$$</p>
+<p>As the peak of the pseudo label&rsquo;s distribution is &ldquo;sharpened,&rdquo; the network will push this sample further away from the decision boundary.
+Additionally, following the practice of MixMatch, we use the exponential moving average of the model at each time step to guess the labels.</p>
+<h3 id="loss">Loss</h3>
+<p>Our loss consists of three terms, $\mathcal{L_X}$, $\mathcal{L_U}$, and $\mathcal{L_P}$, representing the supervised loss, the unsupervised loss, and the Pair Loss respectively.</p>
+<p>$$
+\begin{align}
+\mathcal{L} &amp;= \mathcal{L_X} + \lambda_{\mathcal{U}} \mathcal{L_U} + \lambda_{\mathcal{P}} \mathcal{L_P} \\<br>
+\mathcal{L_X} &amp;= \frac{1}{\left| \mathcal{X}' \right|} \sum_{x,y \in \hat{\mathcal{X}}} H\left(y, \mathrm{p}_{\text{model}}\left(\tilde{y} \mid x ; \theta\right)\right) \\<br>
+\mathcal{L_U} &amp;= \frac{
+\sum_{u,q \in \hat{\mathcal{U}}}
+\mathbb{1}_{\left(\max\left(q\right) &gt; \tau_c\right)}
+\left| q - \mathrm{p}_{\text{model}}\left(\tilde{y} \mid u ; \theta\right) \right|^{2}_{2}
+}{L \left| \hat{\mathcal{U}} \right|}
+\end{align}
+$$</p>
+<p>$\mathcal{L_X}$ calculates the cross-entropy of weakly augmented labeled samples, and $\mathcal{L_U}$ represents the $L_2$ distance between strongly augmented samples and their pseudo labels, filtered by high confidence threshold.
+Notice that $\mathcal{L_U}$ only enforces the consistency among different perturbations of the same samples but not the consistency among different samples.</p>
+<p>As we aim to exploit the relationship among unlabeled samples, we hereby introduce a novel loss term, Pair Loss, that allows information to propagate implicitly between different unlabeled samples.
+In Pair Loss, we use a high confidence pseudo label of an unlabeled point, $p$, as an &ldquo;anchor.&rdquo;
+All unlabeled samples whose pseudo labels are similar enough to $p$ need to align their predictions under severe perturbation to the &ldquo;anchor.&rdquo;</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-pair-loss-overview">
+
+
+  <a data-fancybox="" href="/publication/hu-2020-simple/featured_hu4ae5f06fd090dbf90a6b38dbfa89063a_483332_2000x2000_fit_lanczos_2.png" data-caption="Pair Loss Overview.">
+
+
+  <img data-src="/publication/hu-2020-simple/featured_hu4ae5f06fd090dbf90a6b38dbfa89063a_483332_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="3182" height="2469">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+    Pair Loss Overview.
+  </figcaption>
+
+
+</figure>
+
+<p>Figure <a href="#figure-pair-loss-overview">3</a> offers an overview of this selection process. During this process, the similarity threshold &ldquo;extended&rdquo; our confidence threshold in an adaptive manner, as a sample whose pseudo label confidence is below the threshold can still be selected by the loss and be pushed to a higher confidence level.
+Formally, we defined the Pair Loss as following:</p>
+<p>$$
+\begin{aligned}
+\mathcal{L_P} &amp;= \frac{1}{\binom{K&rsquo;B}{2}}
+\sum_{
+\substack{
+i,j \in \left[\left|\mathcal{U}'\right|\right], i \ne j \\<br>
+\left(v_l, q_l\right) = \mathcal{U}'_{i} \\<br>
+\left(v_r, q_r\right) = \mathcal{U}'_{j}
+}
+}
+\varphi_{\tau_c}\left(\max\left(q_l\right)\right) \\<br>
+&amp;\cdot \varphi_{\tau_s}\left(f_{\operatorname{sim}}\left(q_l, q_r\right)\right) \\<br>
+&amp;\cdot f_{\operatorname{dist}}\left(q_l, \mathrm{p}_{\text{model}}\left(\tilde{y} \mid v_r ; \theta\right)\right)
+\end{aligned}
+$$</p>
+<p>Here, $\tau_c$ and $\tau_s$ denote the confidence threshold and similarity threshold respectively.
+$\varphi_t(x)=\mathbb{1}_{\left(x &gt; t\right)} x$ is a hard threshold function controlled by threshold $t$.
+$f_{\operatorname{sim}}\left(p, q\right)$ measures the similarity between two probability vectors $p, q$ by <a href="http://www.jstor.org/stable/25047882" target="_blank" rel="noopener">Bhattacharyya coefficient</a>.
+The coefficient is bounded between $[0, 1]$, and represents the size of the overlapping portion of the two discrete distributions:</p>
+<p>$$f_{\operatorname{sim}}\left(p, q\right) = \sqrt{p} \cdot \sqrt{q}$$</p>
+<p>$f_{\operatorname{dist}}\left(p, q\right)$ measures the distance between two probability vectors $p, q$.
+As $f_{\operatorname{sim}}\left(p, q\right)$ is bounded between $[0, 1]$, we simply choose the distance function to be $f_{\operatorname{dist}}\left(p, q\right) = 1 - f_{\operatorname{sim}}\left(p, q\right)$.</p>
+<p>Although based on analysis, we found that $\cos(\cos^{-1}(\sqrt{\tau_c})+\cos^{-1}(\tau_s))^2$ is the minimal confidence a label need to have for it to be selected by both thresholds, such low confidence label are rarely selected in practice.
+Based on empirical evidence, we believe this is caused by the fact a label $p$ that can pass through the high confidence threshold typically has a near one hot distribution.
+Thus, for another label $q$ to fall in the similarity threshold of $q$, it must also have relatively high confidence.
+Due to this property, the Pair Loss is not very sensitive to the choices of hyperparameters $\tau_s$, $\tau_c$, which we will show empirically in later section.</p>
+<h3 id="simple-algorithm">SimPLE Algorithm</h3>
+<p>By putting together all the components introduced in this section, we now present the SimPLE algorithm.
+During training, for a mini-batch of samples, SimPLE will first augment both labeled and unlabeled samples with both weak and strong augmentations.
+The pseudo labels of the unlabeled samples are obtained by averaging and then sharpening the models' predictions on the weakly augmented unlabeled samples.
+Finally, we optimize the three loss terms based on augmented samples and pseudo labels.
+During testing, SimPLE uses the exponential moving average of the weights of the model to do prediction, as what is done by MixMatch.
+Figure <a href="#figure-an-overview-of-the-proposed-simple-algorithm">2</a> gives an overview of the algorithm, and the complete training algorithm is described in Alg. <a href="#figure-simple-algorithm">1</a>.</p>
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-simple-algorithm">
+
+
+  <a data-fancybox="" href="/publication/hu-2020-simple/images/algorithm1_hu53e17220f872f8c8eb187beb5c84338c_350636_2000x2000_fit_lanczos_2.png" data-caption="SimPLE algorithm.">
+
+
+  <img data-src="/publication/hu-2020-simple/images/algorithm1_hu53e17220f872f8c8eb187beb5c84338c_350636_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1990" height="1126">
+</a>
+
+
+  
+  
+  <figcaption>
+    SimPLE algorithm.
+  </figcaption>
+
+
+</figure>
+
+<p><em><strong>The experiment section will be updated soon</strong></em></p>
 </div>
 
     
