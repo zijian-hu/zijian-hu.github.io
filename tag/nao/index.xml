@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/tag/nao/</link>
       <atom:link href="https://www.zijianhu.com/tag/nao/index.xml" rel="self" type="application/rss+xml" />
     <description>NAO</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Jan 2019 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Jan 2019 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>NAO</title>
@@ -15,7 +15,7 @@
     <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/getting-started/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/getting-started/</guid>
       <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
 &lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
@@ -96,7 +96,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
     <item>
       <title>NAO Tutorial: Installation</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/installation/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/installation/</guid>
       <description>&lt;h2 id=&#34;installing-the-sdk&#34;&gt;Installing the SDK&lt;/h2&gt;
 &lt;ol&gt;
@@ -195,7 +195,7 @@ ros-kinetic-moveit
     <item>
       <title>NAO Tutorial: NAOqi SDK</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</guid>
       <description>&lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
 &lt;ul&gt;

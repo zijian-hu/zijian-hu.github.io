@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/</link>
       <atom:link href="https://www.zijianhu.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Zijian Hu</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Zijian Hu</title>
@@ -15,7 +15,7 @@
     <item>
       <title>SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</title>
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
-      <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
 We will release the full copy of the paper once we have the camera-ready version.
@@ -309,7 +309,7 @@ Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;
     <item>
       <title>Learning with Less Labeling (LwLL)</title>
       <link>https://www.zijianhu.com/project/lwll/</link>
-      <pubDate>Sat, 05 Dec 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/lwll/</guid>
       <description>&lt;p&gt;We proposed a novel semi-supervised classification algorithm that focuses on the less studied relationship between the high confidence unlabeled data that are similar to each other. Our algorithm, SimPLE, achieved state-of-the-art performance on standard SSL benchmarks and achieved the best accuracy on some tasks in LwLL evaluation. We also evaluated our method in the transfer setting where our algorithm outperforms prior works and supervised baseline by a large margin.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://www.darpa.mil/program/learning-with-less-labeling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DARPA&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -415,7 +415,7 @@ As the training progress, more class labels become available until the training 
     <item>
       <title>PyTorch: Exponential Moving Average (EMA) Example</title>
       <link>https://www.zijianhu.com/post/pytorch/ema/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/pytorch/ema/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s &lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;
@@ -491,7 +491,7 @@ class EMA(nn.Module):
     <item>
       <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
       <link>https://www.zijianhu.com/publication/birmingham-icra-2020/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/birmingham-icra-2020/</guid>
       <description></description>
     </item>
@@ -499,7 +499,7 @@ class EMA(nn.Module):
     <item>
       <title>Trust in Multi-Party Human-Robot Interaction</title>
       <link>https://www.zijianhu.com/project/multi_party/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/multi_party/</guid>
       <description>&lt;p&gt;In this project, we designed and evaluated a novel framework for robot mediation of a support group.
 We conducted a user study using an NAO robot mediator controlled by a human operator that is unseen by the participants (&lt;a href=&#34;https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wizard-of-Oz&lt;/a&gt;).
@@ -672,7 +672,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
     <item>
       <title>Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</title>
       <link>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</guid>
       <description>&lt;h2 id=&#34;linked-material&#34;&gt;&lt;strong&gt;Linked material&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;YouTube video for &amp;ldquo;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&amp;rdquo;&lt;/p&gt;
@@ -687,7 +687,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
     <item>
       <title>Telepresence Robot for K-12 Remote Education</title>
       <link>https://www.zijianhu.com/project/nri_kids/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/nri_kids/</guid>
       <description>&lt;p&gt;In this project, we developed and evaluated various control methods and interfaces for mobile remote presence robots (MRP) for remote K-12 education. In the two papers published at the International Symposium on Robot and Human Interactive Communication (RO-MAN), we conducted a user study and evaluated our system.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://uscinteractionlab.web.app/project?id=nrikids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -899,7 +899,7 @@ service and support teams.&lt;/p&gt;
     <item>
       <title>User Interface Tradeoffs for Remote Deictic Gesturing</title>
       <link>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</guid>
       <description></description>
     </item>
@@ -907,7 +907,7 @@ service and support teams.&lt;/p&gt;
     <item>
       <title>Resource Distribution in Human-Robot Teams</title>
       <link>https://www.zijianhu.com/project/robot_team/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/robot_team/</guid>
       <description>&lt;p&gt;Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
@@ -925,7 +925,7 @@ service and support teams.&lt;/p&gt;
     <item>
       <title>Decentralized Federated Multi-Task Learning and System Design</title>
       <link>https://www.zijianhu.com/project/dpa_sgd/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 -0800</pubDate>
+      <pubDate>Fri, 03 May 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/dpa_sgd/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This page contains a copy of the final report of our final project for Spring 2019 CSCI-599: Deep Learning and its Applications at the University of Southern California. The &lt;a href=&#34;http://fl.chaoyanghe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original page&lt;/a&gt; was removed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -1516,7 +1516,7 @@ better convergence.&lt;/p&gt;
     <item>
       <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
       <link>https://www.zijianhu.com/project/baby/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/baby/</guid>
       <description>&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://uscinteractionlab.web.app/project?id=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1553,7 +1553,7 @@ increase the infant&amp;rsquo;s engagement with the task.&lt;/p&gt;
     <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/getting-started/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/getting-started/</guid>
       <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
 &lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
@@ -1634,7 +1634,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
     <item>
       <title>NAO Tutorial: Installation</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/installation/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/installation/</guid>
       <description>&lt;h2 id=&#34;installing-the-sdk&#34;&gt;Installing the SDK&lt;/h2&gt;
 &lt;ol&gt;
@@ -1733,7 +1733,7 @@ ros-kinetic-moveit
     <item>
       <title>NAO Tutorial: NAOqi SDK</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</guid>
       <description>&lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
 &lt;ul&gt;

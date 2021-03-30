@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/tag/pytorch/</link>
       <atom:link href="https://www.zijianhu.com/tag/pytorch/index.xml" rel="self" type="application/rss+xml" />
     <description>PyTorch</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>PyTorch</title>
@@ -15,7 +15,7 @@
     <item>
       <title>PyTorch: Exponential Moving Average (EMA) Example</title>
       <link>https://www.zijianhu.com/post/pytorch/ema/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/pytorch/ema/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s &lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;

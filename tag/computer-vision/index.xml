@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/tag/computer-vision/</link>
       <atom:link href="https://www.zijianhu.com/tag/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <description>Computer Vision</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Dec 2020 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Dec 2020 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Computer Vision</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Learning with Less Labeling (LwLL)</title>
       <link>https://www.zijianhu.com/project/lwll/</link>
-      <pubDate>Sat, 05 Dec 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/lwll/</guid>
       <description>&lt;p&gt;We proposed a novel semi-supervised classification algorithm that focuses on the less studied relationship between the high confidence unlabeled data that are similar to each other. Our algorithm, SimPLE, achieved state-of-the-art performance on standard SSL benchmarks and achieved the best accuracy on some tasks in LwLL evaluation. We also evaluated our method in the transfer setting where our algorithm outperforms prior works and supervised baseline by a large margin.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://www.darpa.mil/program/learning-with-less-labeling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DARPA&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -121,7 +121,7 @@ As the training progress, more class labels become available until the training 
     <item>
       <title>Resource Distribution in Human-Robot Teams</title>
       <link>https://www.zijianhu.com/project/robot_team/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/robot_team/</guid>
       <description>&lt;p&gt;Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
@@ -139,7 +139,7 @@ As the training progress, more class labels become available until the training 
     <item>
       <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
       <link>https://www.zijianhu.com/project/baby/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/baby/</guid>
       <description>&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://uscinteractionlab.web.app/project?id=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;

@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/tag/robotics/</link>
       <atom:link href="https://www.zijianhu.com/tag/robotics/index.xml" rel="self" type="application/rss+xml" />
     <description>Robotics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Robotics</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
       <link>https://www.zijianhu.com/publication/birmingham-icra-2020/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/birmingham-icra-2020/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Trust in Multi-Party Human-Robot Interaction</title>
       <link>https://www.zijianhu.com/project/multi_party/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/multi_party/</guid>
       <description>&lt;p&gt;In this project, we designed and evaluated a novel framework for robot mediation of a support group.
 We conducted a user study using an NAO robot mediator controlled by a human operator that is unseen by the participants (&lt;a href=&#34;https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wizard-of-Oz&lt;/a&gt;).
@@ -196,7 +196,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
     <item>
       <title>Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</title>
       <link>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</guid>
       <description>&lt;h2 id=&#34;linked-material&#34;&gt;&lt;strong&gt;Linked material&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;YouTube video for &amp;ldquo;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&amp;rdquo;&lt;/p&gt;
@@ -211,7 +211,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
     <item>
       <title>Telepresence Robot for K-12 Remote Education</title>
       <link>https://www.zijianhu.com/project/nri_kids/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/nri_kids/</guid>
       <description>&lt;p&gt;In this project, we developed and evaluated various control methods and interfaces for mobile remote presence robots (MRP) for remote K-12 education. In the two papers published at the International Symposium on Robot and Human Interactive Communication (RO-MAN), we conducted a user study and evaluated our system.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://uscinteractionlab.web.app/project?id=nrikids&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -423,7 +423,7 @@ service and support teams.&lt;/p&gt;
     <item>
       <title>User Interface Tradeoffs for Remote Deictic Gesturing</title>
       <link>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</guid>
       <description></description>
     </item>
@@ -431,7 +431,7 @@ service and support teams.&lt;/p&gt;
     <item>
       <title>Resource Distribution in Human-Robot Teams</title>
       <link>https://www.zijianhu.com/project/robot_team/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/robot_team/</guid>
       <description>&lt;p&gt;Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
@@ -449,7 +449,7 @@ service and support teams.&lt;/p&gt;
     <item>
       <title>Infant-Robot Interaction as an Early Intervention Strategy</title>
       <link>https://www.zijianhu.com/project/baby/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 -0800</pubDate>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/baby/</guid>
       <description>&lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://uscinteractionlab.web.app/project?id=babies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interaction Lab website&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -486,7 +486,7 @@ increase the infant&amp;rsquo;s engagement with the task.&lt;/p&gt;
     <item>
       <title>NAO Tutorial: Getting Started with NAO &#43; ROS</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/getting-started/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/getting-started/</guid>
       <description>&lt;p&gt;Make sure you have installed all the dependencies and configured &lt;strong&gt;PYTHONPATH&lt;/strong&gt; system variable correctly&lt;/p&gt;
 &lt;p&gt;*&lt;em&gt;see &lt;a href=&#34;https://www.zijianhu.com/post/nao-tutorial/installation&#34;&gt;installation guide&lt;/a&gt; for detail&lt;/em&gt;&lt;/p&gt;
@@ -567,7 +567,7 @@ angular: {x: 0.0, y: 0.0, z: 0.0}}&#39;
     <item>
       <title>NAO Tutorial: Installation</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/installation/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/installation/</guid>
       <description>&lt;h2 id=&#34;installing-the-sdk&#34;&gt;Installing the SDK&lt;/h2&gt;
 &lt;ol&gt;
@@ -666,7 +666,7 @@ ros-kinetic-moveit
     <item>
       <title>NAO Tutorial: NAOqi SDK</title>
       <link>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</guid>
       <description>&lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
 &lt;ul&gt;

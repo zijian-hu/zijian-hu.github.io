@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/author/houston-claure/</link>
       <atom:link href="https://www.zijianhu.com/author/houston-claure/index.xml" rel="self" type="application/rss+xml" />
     <description>Houston Claure</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Houston Claure</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Resource Distribution in Human-Robot Teams</title>
       <link>https://www.zijianhu.com/project/robot_team/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/robot_team/</guid>
       <description>&lt;p&gt;Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;

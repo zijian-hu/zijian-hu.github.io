@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/author/chris-birmingham/</link>
       <atom:link href="https://www.zijianhu.com/author/chris-birmingham/index.xml" rel="self" type="application/rss+xml" />
     <description>Chris Birmingham</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Chris Birmingham</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
       <link>https://www.zijianhu.com/publication/birmingham-icra-2020/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/birmingham-icra-2020/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Trust in Multi-Party Human-Robot Interaction</title>
       <link>https://www.zijianhu.com/project/multi_party/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/multi_party/</guid>
       <description>&lt;p&gt;In this project, we designed and evaluated a novel framework for robot mediation of a support group.
 We conducted a user study using an NAO robot mediator controlled by a human operator that is unseen by the participants (&lt;a href=&#34;https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wizard-of-Oz&lt;/a&gt;).

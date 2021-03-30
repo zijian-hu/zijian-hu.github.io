@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/tag/machine-learning/</link>
       <atom:link href="https://www.zijianhu.com/tag/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine Learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Machine Learning</title>
@@ -15,7 +15,7 @@
     <item>
       <title>SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</title>
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
-      <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
 We will release the full copy of the paper once we have the camera-ready version.
@@ -309,7 +309,7 @@ Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;
     <item>
       <title>Learning with Less Labeling (LwLL)</title>
       <link>https://www.zijianhu.com/project/lwll/</link>
-      <pubDate>Sat, 05 Dec 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/lwll/</guid>
       <description>&lt;p&gt;We proposed a novel semi-supervised classification algorithm that focuses on the less studied relationship between the high confidence unlabeled data that are similar to each other. Our algorithm, SimPLE, achieved state-of-the-art performance on standard SSL benchmarks and achieved the best accuracy on some tasks in LwLL evaluation. We also evaluated our method in the transfer setting where our algorithm outperforms prior works and supervised baseline by a large margin.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://www.darpa.mil/program/learning-with-less-labeling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DARPA&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -415,7 +415,7 @@ As the training progress, more class labels become available until the training 
     <item>
       <title>PyTorch: Exponential Moving Average (EMA) Example</title>
       <link>https://www.zijianhu.com/post/pytorch/ema/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 -0800</pubDate>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/post/pytorch/ema/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This example carefully replicates the behavior of TensorFlow&amp;rsquo;s &lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tf.train.ExponentialMovingAverage&lt;/a&gt;.&lt;/p&gt;
@@ -491,7 +491,7 @@ class EMA(nn.Module):
     <item>
       <title>Trust in Multi-Party Human-Robot Interaction</title>
       <link>https://www.zijianhu.com/project/multi_party/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/multi_party/</guid>
       <description>&lt;p&gt;In this project, we designed and evaluated a novel framework for robot mediation of a support group.
 We conducted a user study using an NAO robot mediator controlled by a human operator that is unseen by the participants (&lt;a href=&#34;https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wizard-of-Oz&lt;/a&gt;).
@@ -664,7 +664,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
     <item>
       <title>Decentralized Federated Multi-Task Learning and System Design</title>
       <link>https://www.zijianhu.com/project/dpa_sgd/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 -0800</pubDate>
+      <pubDate>Fri, 03 May 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/dpa_sgd/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This page contains a copy of the final report of our final project for Spring 2019 CSCI-599: Deep Learning and its Applications at the University of Southern California. The &lt;a href=&#34;http://fl.chaoyanghe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original page&lt;/a&gt; was removed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;

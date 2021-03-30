@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/publication-type/1/</link>
       <atom:link href="https://www.zijianhu.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
@@ -15,7 +15,7 @@
     <item>
       <title>SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</title>
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
-      <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
 We will release the full copy of the paper once we have the camera-ready version.
@@ -309,7 +309,7 @@ Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;
     <item>
       <title>Can I Trust You? A User Study of Robot Mediation of a Support Group</title>
       <link>https://www.zijianhu.com/publication/birmingham-icra-2020/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 -0800</pubDate>
+      <pubDate>Sun, 31 May 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/birmingham-icra-2020/</guid>
       <description></description>
     </item>
@@ -317,7 +317,7 @@ Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;
     <item>
       <title>Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot</title>
       <link>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</guid>
       <description>&lt;h2 id=&#34;linked-material&#34;&gt;&lt;strong&gt;Linked material&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;YouTube video for &amp;ldquo;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&amp;rdquo;&lt;/p&gt;
@@ -332,7 +332,7 @@ Figure &lt;a href=&#34;#figure-an-overview-of-the-proposed-simple-algorithm&#34;
     <item>
       <title>User Interface Tradeoffs for Remote Deictic Gesturing</title>
       <link>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</guid>
       <description></description>
     </item>

@@ -5,7 +5,7 @@
     <link>https://www.zijianhu.com/author/xuefeng-hu/</link>
       <atom:link href="https://www.zijianhu.com/author/xuefeng-hu/index.xml" rel="self" type="application/rss+xml" />
     <description>Xuefeng Hu</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jun 2021 00:00:00 -0700</lastBuildDate>
     <image>
       <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Xuefeng Hu</title>
@@ -15,7 +15,7 @@
     <item>
       <title>SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</title>
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
-      <pubDate>Sat, 19 Jun 2021 00:00:00 -0800</pubDate>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
 We will release the full copy of the paper once we have the camera-ready version.
