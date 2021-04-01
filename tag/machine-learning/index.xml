@@ -17,10 +17,7 @@
       <link>https://www.zijianhu.com/publication/hu-2020-simple/</link>
       <pubDate>Sat, 19 Jun 2021 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/publication/hu-2020-simple/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This paper is accepted by the 2021 Conference on Computer Vision and Pattern Recognition (CVPR).
-We will release the full copy of the paper once we have the camera-ready version.
-If you are interested in our project, you can email me to request a full copy of the paper.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;
@@ -371,8 +368,14 @@ As the training progress, more class labels become available until the training 
 
 
   
+    
+  
 
 
+
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://arxiv.org/abs/2103.16725&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
 
 
 
@@ -381,6 +384,14 @@ As the training progress, more class labels become available until the training 
   Cite
 &lt;/button&gt;
 
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://github.com/zijian-hu/SimPLE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Code
+&lt;/a&gt;
 
 
 
