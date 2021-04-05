@@ -7,7 +7,7 @@
     <description>Robotics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 -0700</lastBuildDate>
     <image>
-      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/media/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Robotics</title>
       <link>https://www.zijianhu.com/tag/robotics/</link>
     </image>
@@ -54,12 +54,6 @@ service and support teams.&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -68,28 +62,20 @@ service and support teams.&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-volunteers-demonstrating-the-study-setup&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Volunteers demonstrating the study setup&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;4032&#34; height=&#34;3024&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Volunteers demonstrating the study setup
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-volunteers-demonstrating-the-study-setup&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Volunteers demonstrating the study setup&#34; srcset=&#34;
+               /project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_7f42a7f4bbd37dd6ebeadffc500591fc.jpg 400w,
+               /project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_74074270f216fcf6a73d06effbe6a739.jpg 760w,
+               /project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/multi_party/images/groupSession_huae0fa70effc1edf77d903f67a0da2f5d_4231037_7f42a7f4bbd37dd6ebeadffc500591fc.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Volunteers demonstrating the study setup
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;In each study session, three participants were seated around the end of a table with a seated &lt;a href=&#34;https://www.softbankrobotics.com/emea/index.php/en/nao&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NAO&lt;/a&gt; robot as shown in Figure 1.
 The NAO robot, acting as a group moderator, was positioned towards the participants.
 On the table, a 360-degree microphone and 3 cameras facing directly to the participants&#39; face were placed.
@@ -116,7 +102,9 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
 
 
   
-    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+    
+
+&lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
   &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 
   
@@ -125,8 +113,12 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
   &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
     
 
-  
-  &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/chris-birmingham/&#34;&gt;Chris Birmingham&lt;/a&gt;&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/kartik-mahajan/&#34;&gt;Kartik Mahajan&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/eli-reber/&#34;&gt;Eli Reber&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/maja-j.-mataric/&#34;&gt;Maja J. Matarić&lt;/a&gt;&lt;/span&gt;
+  &lt;span &gt;
+      Chris Birmingham&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;
+      Zijian Hu&lt;/span&gt;, &lt;span &gt;
+      Kartik Mahajan&lt;/span&gt;, &lt;span &gt;
+      Eli Reber&lt;/span&gt;, &lt;span &gt;
+      Maja J. Matarić&lt;/span&gt;
   &lt;/span&gt;
   (2020).
   &lt;a href=&#34;https://www.zijianhu.com/publication/birmingham-icra-2020/&#34;&gt;Can I Trust You? A User Study of Robot Mediation of a Support Group&lt;/a&gt;.
@@ -147,23 +139,23 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://arxiv.org/abs/2002.04671&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://arxiv.org/abs/2002.04671&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   PDF
 &lt;/a&gt;
 
 
 
-&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
         data-filename=&#34;/publication/birmingham-icra-2020/cite.bib&#34;&gt;
   Cite
-&lt;/button&gt;
+&lt;/a&gt;
 
 
 
 
 
   
-  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/multi_party/&#34;&gt;
+  &lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://www.zijianhu.com/project/multi_party/&#34;&gt;
     Project
   &lt;/a&gt;
   
@@ -176,7 +168,7 @@ The robot operator was seated behind a one-way mirror hidden from participants.&
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://doi.org/10.1109/ICRA40945.2020.9196875&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1109/ICRA40945.2020.9196875&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   DOI
 &lt;/a&gt;
 
@@ -253,7 +245,9 @@ service and support teams.&lt;/p&gt;
 
 
   
-    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+    
+
+&lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
   &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 
   
@@ -262,8 +256,12 @@ service and support teams.&lt;/p&gt;
   &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
     
 
-  
-  &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/naomi-t.-fitter/&#34;&gt;Naomi T. Fitter&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/youngseok-joung/&#34;&gt;Youngseok Joung&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/marton-demeter/&#34;&gt;Marton Demeter&lt;/a&gt;&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/maja-j.-mataric/&#34;&gt;Maja J. Matarić&lt;/a&gt;&lt;/span&gt;
+  &lt;span &gt;
+      Naomi T. Fitter&lt;/span&gt;, &lt;span &gt;
+      Youngseok Joung&lt;/span&gt;, &lt;span &gt;
+      Marton Demeter&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;
+      Zijian Hu&lt;/span&gt;, &lt;span &gt;
+      Maja J. Matarić&lt;/span&gt;
   &lt;/span&gt;
   (2019).
   &lt;a href=&#34;https://www.zijianhu.com/publication/fitter-roman-2019-hardware/&#34;&gt;Design and Evaluation of Expressive Turn-Taking Hardware for a Telepresence Robot&lt;/a&gt;.
@@ -284,23 +282,23 @@ service and support teams.&lt;/p&gt;
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;http://robotics.usc.edu/publications/1048/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;http://robotics.usc.edu/publications/1048/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   PDF
 &lt;/a&gt;
 
 
 
-&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
         data-filename=&#34;/publication/fitter-roman-2019-hardware/cite.bib&#34;&gt;
   Cite
-&lt;/button&gt;
+&lt;/a&gt;
 
 
 
 
 
   
-  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/nri_kids/&#34;&gt;
+  &lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://www.zijianhu.com/project/nri_kids/&#34;&gt;
     Project
   &lt;/a&gt;
   
@@ -315,13 +313,13 @@ service and support teams.&lt;/p&gt;
   
     
   
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://youtu.be/Ft8XCAIbslE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://youtu.be/Ft8XCAIbslE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   Video
 &lt;/a&gt;
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://doi.org/10.1109/RO-MAN46459.2019.8956413&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1109/RO-MAN46459.2019.8956413&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   DOI
 &lt;/a&gt;
 
@@ -343,7 +341,9 @@ service and support teams.&lt;/p&gt;
 
 
   
-    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+    
+
+&lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
   &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 
   
@@ -352,8 +352,12 @@ service and support teams.&lt;/p&gt;
   &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
     
 
-  
-  &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/naomi-t.-fitter/&#34;&gt;Naomi T. Fitter&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/youngseok-joung/&#34;&gt;Youngseok Joung&lt;/a&gt;&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/marton-demeter/&#34;&gt;Marton Demeter&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/maja-j.-mataric/&#34;&gt;Maja J. Matarić&lt;/a&gt;&lt;/span&gt;
+  &lt;span &gt;
+      Naomi T. Fitter&lt;/span&gt;, &lt;span &gt;
+      Youngseok Joung&lt;/span&gt;, &lt;span class=&#34;author-highlighted&#34;&gt;
+      Zijian Hu&lt;/span&gt;, &lt;span &gt;
+      Marton Demeter&lt;/span&gt;, &lt;span &gt;
+      Maja J. Matarić&lt;/span&gt;
   &lt;/span&gt;
   (2019).
   &lt;a href=&#34;https://www.zijianhu.com/publication/fitter-roman-2019-ui/&#34;&gt;User Interface Tradeoffs for Remote Deictic Gesturing&lt;/a&gt;.
@@ -374,23 +378,23 @@ service and support teams.&lt;/p&gt;
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;http://robotics.usc.edu/publications/1049/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;http://robotics.usc.edu/publications/1049/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   PDF
 &lt;/a&gt;
 
 
 
-&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
         data-filename=&#34;/publication/fitter-roman-2019-ui/cite.bib&#34;&gt;
   Cite
-&lt;/button&gt;
+&lt;/a&gt;
 
 
 
 
 
   
-  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/nri_kids/&#34;&gt;
+  &lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://www.zijianhu.com/project/nri_kids/&#34;&gt;
     Project
   &lt;/a&gt;
   
@@ -403,7 +407,7 @@ service and support teams.&lt;/p&gt;
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://doi.org/10.1109/RO-MAN46459.2019.8956354&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1109/RO-MAN46459.2019.8956354&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   DOI
 &lt;/a&gt;
 
@@ -676,7 +680,6 @@ ros-kinetic-moveit
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;!--## Hello World Example--&gt;
 &lt;h3 id=&#34;using-choregraphe&#34;&gt;Using Choregraphe&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;

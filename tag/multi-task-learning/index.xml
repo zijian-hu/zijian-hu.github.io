@@ -7,7 +7,7 @@
     <description>Multi-task Learning</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 May 2019 00:00:00 -0700</lastBuildDate>
     <image>
-      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/media/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Multi-task Learning</title>
       <link>https://www.zijianhu.com/tag/multi-task-learning/</link>
     </image>
@@ -18,8 +18,9 @@
       <pubDate>Fri, 03 May 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/dpa_sgd/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This page contains a copy of the final report of our final project for Spring 2019 CSCI-599: Deep Learning and its Applications at the University of Southern California. The &lt;a href=&#34;http://fl.chaoyanghe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original page&lt;/a&gt; was removed&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+  &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#problem-formulation&#34;&gt;Problem formulation&lt;/a&gt;
       &lt;ul&gt;
@@ -53,6 +54,7 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
+&lt;/details&gt;
 &lt;p&gt;In the cloud-based environment, distributed deep learning systems such as Tensorflow and PyTorch is widespread in various domains, but they are typically built based on the parameter server, which
 requires data integrated into one place (a server or a cluster) to train a model[Dean &lt;em&gt;et al.&lt;/em&gt;; Li &lt;em&gt;et al.&lt;/em&gt;, 2014; Cui &lt;em&gt;et al.&lt;/em&gt;, 2014; Abadi &lt;em&gt;et al.&lt;/em&gt;, 2016; Paszke &lt;em&gt;et al.&lt;/em&gt;, 2017], as shown in Figure 1(a). Increasing
 practical constraints lead this data integration difficult or impossible, including data privacy and confidentiality, intellectual property protection, and law constraints. A promising solution to these
@@ -63,12 +65,6 @@ problems is called Federated Learning [McMahan &lt;em&gt;et al.&lt;/em&gt;, 2016
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -77,28 +73,20 @@ problems is called Federated Learning [McMahan &lt;em&gt;et al.&lt;/em&gt;, 2016
 
 
 
-
-
-
-&lt;figure id=&#34;figure-federated-multi-task-learning-topology-a-cloud-based-distributed-learning-b-centralized-federated-learning-c-decentralized-federated-learning-d-centralized-communication-topology-with-decentralized-parameter-exchanging-topology&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/introduction_hu3ada94327916f25607af6cbc5bb02ef8_300845_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Federated Multi-Task Learning Topology. (a) Cloud-Based Distributed Learning; (b) Centralized Federated Learning; (c) Decentralized Federated Learning; (d) Centralized Communication Topology with Decentralized Parameter Exchanging Topology.&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/introduction_hu3ada94327916f25607af6cbc5bb02ef8_300845_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1775&#34; height=&#34;1623&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Federated Multi-Task Learning Topology. (a) Cloud-Based Distributed Learning; (b) Centralized Federated Learning; (c) Decentralized Federated Learning; (d) Centralized Communication Topology with Decentralized Parameter Exchanging Topology.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-federated-multi-task-learning-topology-a-cloud-based-distributed-learning-b-centralized-federated-learning-c-decentralized-federated-learning-d-centralized-communication-topology-with-decentralized-parameter-exchanging-topology&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Federated Multi-Task Learning Topology. (a) Cloud-Based Distributed Learning; (b) Centralized Federated Learning; (c) Decentralized Federated Learning; (d) Centralized Communication Topology with Decentralized Parameter Exchanging Topology.&#34; srcset=&#34;
+               /project/dpa_sgd/images/introduction_hu3ada94327916f25607af6cbc5bb02ef8_300845_eece3795b2a0e602abd1dba120e2490a.png 400w,
+               /project/dpa_sgd/images/introduction_hu3ada94327916f25607af6cbc5bb02ef8_300845_b585cf0dbc81bc53723d1548d9fbc1c2.png 760w,
+               /project/dpa_sgd/images/introduction_hu3ada94327916f25607af6cbc5bb02ef8_300845_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/introduction_hu3ada94327916f25607af6cbc5bb02ef8_300845_eece3795b2a0e602abd1dba120e2490a.png&#34;
+               width=&#34;760&#34;
+               height=&#34;695&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Federated Multi-Task Learning Topology. (a) Cloud-Based Distributed Learning; (b) Centralized Federated Learning; (c) Decentralized Federated Learning; (d) Centralized Communication Topology with Decentralized Parameter Exchanging Topology.
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;problem-formulation&#34;&gt;Problem formulation&lt;/h2&gt;
 &lt;h3 id=&#34;statistical-challenges&#34;&gt;Statistical Challenges&lt;/h3&gt;
 &lt;ol&gt;
@@ -122,12 +110,6 @@ capacities of each worker may differ due to variability in hardware(CPU, memory)
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -136,28 +118,20 @@ capacities of each worker may differ due to variability in hardware(CPU, memory)
 
 
 
-
-
-
-&lt;figure id=&#34;figure-federated-multi-task-deep-learning-framework&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Federated Multi-Task Deep Learning Framework&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3006&#34; height=&#34;1017&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Federated Multi-Task Deep Learning Framework
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-federated-multi-task-deep-learning-framework&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Federated Multi-Task Deep Learning Framework&#34; srcset=&#34;
+               /project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_dee915d90f07524c351e5f90f05879f4.png 400w,
+               /project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_1efe53060f24a4c405f57945b8ceded4.png 760w,
+               /project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedFramework_hu58784681c8646995d497d2752388e320_131151_dee915d90f07524c351e5f90f05879f4.png&#34;
+               width=&#34;760&#34;
+               height=&#34;257&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Federated Multi-Task Deep Learning Framework
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h3 id=&#34;general-definition-of-federated-learning&#34;&gt;General Definition of Federated Learning&lt;/h3&gt;
 &lt;p&gt;Following the first federated learning paper McMahan &lt;em&gt;et al.&lt;/em&gt; [2016], we define the objective function for the federated setting as&lt;/p&gt;
 &lt;p&gt;$$
@@ -215,12 +189,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -229,28 +197,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-decentralized-periodic-averaging-sgd&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedSGD_huba6fab2315ef5e6a14b9cf31294d583a_115107_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Decentralized Periodic Averaging SGD&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedSGD_huba6fab2315ef5e6a14b9cf31294d583a_115107_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;961&#34; height=&#34;454&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Decentralized Periodic Averaging SGD
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-decentralized-periodic-averaging-sgd&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Decentralized Periodic Averaging SGD&#34; srcset=&#34;
+               /project/dpa_sgd/images/decentralizedSGD_huba6fab2315ef5e6a14b9cf31294d583a_115107_df34e4eca1695a5a9c90f53696d0d3a0.jpg 400w,
+               /project/dpa_sgd/images/decentralizedSGD_huba6fab2315ef5e6a14b9cf31294d583a_115107_f86d7b5efa66be7141739f67ca0d0e4f.jpg 760w,
+               /project/dpa_sgd/images/decentralizedSGD_huba6fab2315ef5e6a14b9cf31294d583a_115107_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/decentralizedSGD_huba6fab2315ef5e6a14b9cf31294d583a_115107_df34e4eca1695a5a9c90f53696d0d3a0.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;359&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Decentralized Periodic Averaging SGD
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;To solve this non-convex problem, we apply the alternating optimization method  Zhang and Yeung [2012], where alternately updating parameters $\vec{X} = (\vec{W, U},\mathbf{\theta})$ and $\mathbf{\Omega}$.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Optimizing&lt;/em&gt; $\mathbf{\theta}, \vec{W}$ and $\vec{U}$: For simplicity, we define set $\Xi = (\mathbf{\Omega}_1, \mathbf{\Omega}_2,&amp;hellip;,\mathbf{\Omega_K})$ to represent the correlation matrix for every nodes. Fixing $\Xi$, we can use SGD method to update $\mathbf{\theta}, \vec{W}$ and $\vec{U}$ jointly. Our problem can then be reformulated as:&lt;/p&gt;
 &lt;p&gt;$$
@@ -293,12 +253,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -307,28 +261,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-algorithm-1-federated-multi-task-deep-learning-framework-with-decentralized-averaging-sgd&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/algorithm1_huebfc1ec7eb44c05c128ffe140125722d_379297_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;&amp;lt;strong&amp;gt;Algorithm 1&amp;lt;/strong&amp;gt;: Federated Multi-Task Deep Learning Framework with Decentralized Averaging SGD&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/algorithm1_huebfc1ec7eb44c05c128ffe140125722d_379297_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2508&#34; height=&#34;1684&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    &lt;strong&gt;Algorithm 1&lt;/strong&gt;: Federated Multi-Task Deep Learning Framework with Decentralized Averaging SGD
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-algorithm-1-federated-multi-task-deep-learning-framework-with-decentralized-averaging-sgd&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;**Algorithm 1**: Federated Multi-Task Deep Learning Framework with Decentralized Averaging SGD&#34; srcset=&#34;
+               /project/dpa_sgd/images/algorithm1_huebfc1ec7eb44c05c128ffe140125722d_379297_6f66c41da6fed2fc8b17f1b221bc0bdb.png 400w,
+               /project/dpa_sgd/images/algorithm1_huebfc1ec7eb44c05c128ffe140125722d_379297_51bf87f934d7c037aa7aa885715195a9.png 760w,
+               /project/dpa_sgd/images/algorithm1_huebfc1ec7eb44c05c128ffe140125722d_379297_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/algorithm1_huebfc1ec7eb44c05c128ffe140125722d_379297_6f66c41da6fed2fc8b17f1b221bc0bdb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;510&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;strong&gt;Algorithm 1&lt;/strong&gt;: Federated Multi-Task Deep Learning Framework with Decentralized Averaging SGD
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h3 id=&#34;advantages-of-our-algorithm&#34;&gt;Advantages of Our Algorithm&lt;/h3&gt;
 &lt;p&gt;Here we illustrate system-wise advantages of DPA-SGD:&lt;/p&gt;
 
@@ -337,12 +283,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -351,28 +291,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-illustration-of-training-time-reducing-due-to-the-mechanism-of-dpa-sgd&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/advantage_huca52a4d98cc084a2f136be1565963362_287468_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Illustration of training time reducing due to the mechanism of DPA-SGD&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/advantage_huca52a4d98cc084a2f136be1565963362_287468_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2184&#34; height=&#34;1684&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Illustration of training time reducing due to the mechanism of DPA-SGD
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-illustration-of-training-time-reducing-due-to-the-mechanism-of-dpa-sgd&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Illustration of training time reducing due to the mechanism of DPA-SGD&#34; srcset=&#34;
+               /project/dpa_sgd/images/advantage_huca52a4d98cc084a2f136be1565963362_287468_f07e7817cd216b6b2bc0d76a47913f67.png 400w,
+               /project/dpa_sgd/images/advantage_huca52a4d98cc084a2f136be1565963362_287468_af4e8a7bcd8b627813ad4ba59395a8a8.png 760w,
+               /project/dpa_sgd/images/advantage_huca52a4d98cc084a2f136be1565963362_287468_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/advantage_huca52a4d98cc084a2f136be1565963362_287468_f07e7817cd216b6b2bc0d76a47913f67.png&#34;
+               width=&#34;760&#34;
+               height=&#34;586&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Illustration of training time reducing due to the mechanism of DPA-SGD
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;Faster convergence speed&lt;/strong&gt;. Figure 4 illustrates three reasons that DHA-SGD can speed up convergence.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;em&gt;Periodic averaging&lt;/em&gt; can alleviate the communication delay by reducing times of synchronization which only happen periodically. As we can see in Figure 4, the yellow blocks (communication) will largely be deleted due to the periodic averaging mechanism.&lt;/li&gt;
@@ -387,12 +319,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -401,28 +327,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-federated-learning-system-design-and-protocol&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/system1_hu83de1cf0503563fdaf62e3d336a68002_546718_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Federated Learning System Design and Protocol&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/system1_hu83de1cf0503563fdaf62e3d336a68002_546718_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1536&#34; height=&#34;1380&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-    Federated Learning System Design and Protocol
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-federated-learning-system-design-and-protocol&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Federated Learning System Design and Protocol&#34; srcset=&#34;
+               /project/dpa_sgd/images/system1_hu83de1cf0503563fdaf62e3d336a68002_546718_a1a22ed8477567d02b86fcc83064a41c.png 400w,
+               /project/dpa_sgd/images/system1_hu83de1cf0503563fdaf62e3d336a68002_546718_8f49ecc36dac656199b0827d4a870aff.png 760w,
+               /project/dpa_sgd/images/system1_hu83de1cf0503563fdaf62e3d336a68002_546718_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/system1_hu83de1cf0503563fdaf62e3d336a68002_546718_a1a22ed8477567d02b86fcc83064a41c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;683&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Federated Learning System Design and Protocol
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;We have developed a real-world decentralized federated learning system. Our system is currently deployed in a cluster environment, consisting of 24 physical machines, each supporting 48 CPU cores. Suppose we run one process per CPU core, this system can run up to 1152 workers for parallel training. Our federated learning system enables centralized and decentralization training while supporting the Federated multi-task learning framework. It also supports user and training management in the Federated Learning scenario. As shown in Figure 5 (Upper), it includes training process management such as topology generation, user selection, configuration dispatching, on-device training, and statistics collection. In the topological generation step, we can select the appropriate eigenvalues for the topology matrix according to our the convergence property analysis, which determines the sparseness of the network topology to balance the model accuracy and the training speed. The user selection process can configure different strategies to select distinct users. Each user only requires training once for a model. In our experiment, users are selected according to the LEAF data set. This process can be further optimized in the future to choose users who are more meaningful to the model.&lt;/p&gt;
 &lt;p&gt;The software architecture of each worker is shown in Figure 5 (Lower). Each work can be an IoT device, smartphone or the edge server.  It is an abstract architecture design for the on-device software system which unifies the system architecture for different on-device operating systems such as Android or iOS for the smartphone and the linux edge server. For the edge server, we implement this system design in a Python environment. For the smartphone, we develop the training worker system based on Android and iOS. The low-level communication is an abstract layer. In the edge server environment, we use the MPI protocol for exchanging gradient or other necessary information. As we can see, the communication sending and receiving threads are independent of the training threads. The collaborate through message queues. Currently, we only disclose the implementation of the MPI communication protocol in the source code. In the future, we consider open source our code to support more on-device platforms.&lt;/p&gt;
 &lt;p&gt;To put it simply, another contribution of this paper is that we publish a practical federated learning system that can promote further research on distributed learning and especially federated learning.&lt;/p&gt;
@@ -445,12 +363,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -459,28 +371,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-accuracy-for-fedavg-single-task-and-ring-dpa-sgd-multi-task-vs-round-number&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;624&#34; height=&#34;520&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
+&lt;figure  id=&#34;figure-accuracy-for-fedavg-single-task-and-ring-dpa-sgd-multi-task-vs-round-number&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number&#34; srcset=&#34;
+               /project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_9bcecc76da1da85d2247394f9a5119a3.png 400w,
+               /project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_e6b692096fa8cc46d4409d76c1ece3de.png 760w,
+               /project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc2-round_number_hu1b1935e33a88baa3b47754e16403a12d_48889_9bcecc76da1da85d2247394f9a5119a3.png&#34;
+               width=&#34;624&#34;
+               height=&#34;520&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Accuracy for FedAvg Single-task and Ring DPA-SGD Multi-task vs Round number
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;We compare the performance between FedAvg, the current state-of-the-art Federated Learning algorithm, and our DPA-SGD on Multi-Task Learning Framework (DPA-SGD-MTL) with a ring topology network. From the Figure, we clearly see that the training speed is around 20% faster than the FedAvg. The Ring DPA-SGD-MTL’s accuracy is also comparable to the FedAvg.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -497,12 +401,6 @@ $$&lt;/p&gt;
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -511,40 +409,26 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-walk-clock-time&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;634&#34; height=&#34;503&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/td&gt;
+&lt;figure  id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-walk-clock-time&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time&#34; srcset=&#34;
+               /project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_b585cb6b2406abff98e3fc76f88702c3.png 400w,
+               /project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_880c3659cbf201faf27d7cdea20af48d.png 760w,
+               /project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-time_huf55eceac0cc195dd4c9e2c46301c67c2_47880_b585cb6b2406abff98e3fc76f88702c3.png&#34;
+               width=&#34;634&#34;
+               height=&#34;503&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Accuracy for FedAvg-MTL and DPA-SGD MTL vs walk clock time
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;
 
 
 
 
 
-  
-
-
-
-  
-  
 
 
 
@@ -553,28 +437,20 @@ $$&lt;/p&gt;
 
 
 
-
-
-
-&lt;figure id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-round-number&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;662&#34; height=&#34;503&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/td&gt;
+&lt;figure  id=&#34;figure-accuracy-for-fedavg-mtl-and-dpa-sgd-mtl-vs-round-number&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number&#34; srcset=&#34;
+               /project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_e3895de8d9edfd3b3db6f9d32fadbe91.png 400w,
+               /project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_9a933f83048f9b28ff9ca3c16d8a625c.png 760w,
+               /project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/dpa_sgd/images/results/acc1-round_number_hubf99043acb542c03ffabbe3bd8a40698_46387_e3895de8d9edfd3b3db6f9d32fadbe91.png&#34;
+               width=&#34;662&#34;
+               height=&#34;503&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Accuracy for FedAvg-MTL and DPA-SGD MTL vs round number
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -588,7 +464,7 @@ T \geq K^{3} \left( \frac{1+\zeta^{2}}{1-\zeta^{2}} \tau - 1 \right)^{2}
 $$&lt;/p&gt;
 &lt;p&gt;then with learning rate $\eta = \frac{K}{LK} \sqrt{\frac{K}{T}}$ , the average-squared gradient norm after K iterations is bounded by&lt;/p&gt;
 &lt;p&gt;$$
-\mathbb{E} \Bigg[ \frac{1}{T} \sum\limits_{t=1}^T {\left\lVert \nabla F(\vec u_{t}) \right\rVert}^{2} \Bigg] \leq \frac{2[F(\vec{x}_{1})-F_{inf}]}{\eta T} + \frac{2\sigma^{2}}{\sqrt{KT}} \
+\mathbb{E} \Bigg[ \frac{1}{T} \sum\limits_{t=1}^T {\left\lVert \nabla F(\vec u_{t}) \right\rVert}^{2} \Bigg] \leq \frac{2[F(\vec{x}_{1})-F_{inf}]}{\eta T} + \frac{2\sigma^{2}}{\sqrt{KT}} \ 
 = \mathcal{O}(\frac{1}{\sqrt{KT}})
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How to choose $\tau$, $\zeta$&lt;/strong&gt;: for a small number of well-connected workers, larger $\tau$ is more preferable; for a large number of workers, using a sparse mixing matrix and small $\tau$ gives

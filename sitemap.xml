@@ -1,268 +1,120 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://www.zijianhu.com/talk/example-talk/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/event/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.zijianhu.com/publication-type/1/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/authors/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/low-shot-learning/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/machine-learning/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/publication_types/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/publication/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/ram-nevatia/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/semi-supervised-learning/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/publication/hu-2020-simple/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tags/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/xuefeng-hu/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/zhengyu-yang/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/zijian-hu/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/computer-vision/</loc>
     <lastmod>2020-12-05T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/lwll/</loc>
     <lastmod>2020-12-05T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/</loc>
     <lastmod>2020-12-05T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/post/</loc>
     <lastmod>2020-07-23T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/pytorch/</loc>
     <lastmod>2020-07-23T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/post/pytorch/ema/</loc>
     <lastmod>2020-07-23T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/tutorial/</loc>
     <lastmod>2020-07-23T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/publication/birmingham-icra-2020/</loc>
     <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/chris-birmingham/</loc>
-    <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/eli-reber/</loc>
-    <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/human-robot-interaction/</loc>
     <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/kartik-mahajan/</loc>
-    <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/maja-j.-mataric/</loc>
-    <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/robotics/</loc>
     <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/multi_party/</loc>
     <lastmod>2020-05-31T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/publication/fitter-roman-2019-hardware/</loc>
     <lastmod>2019-10-14T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/marton-demeter/</loc>
-    <lastmod>2019-10-14T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/naomi-t.-fitter/</loc>
-    <lastmod>2019-10-14T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/nri_kids/</loc>
     <lastmod>2019-10-14T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/publication/fitter-roman-2019-ui/</loc>
     <lastmod>2019-10-14T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/youngseok-joung/</loc>
-    <lastmod>2019-10-14T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/houston-claure/</loc>
-    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/robot_team/</loc>
     <lastmod>2019-06-01T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/stefanos-nikolaidis/</loc>
-    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/chaoyang-he/</loc>
-    <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/dpa_sgd/</loc>
     <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/federated-learning/</loc>
     <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/multi-task-learning/</loc>
     <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/shuai-xia/</loc>
-    <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/tian-xie/</loc>
-    <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/project/baby/</loc>
     <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/author/lauren-klein/</loc>
-    <lastmod>2019-03-26T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.zijianhu.com/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/nao/</loc>
     <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/post/nao-tutorial/getting-started/</loc>
     <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/post/nao-tutorial/installation/</loc>
     <lastmod>2019-04-02T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/post/nao-tutorial/nao-sdk/</loc>
     <lastmod>2019-04-02T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.zijianhu.com/tag/ros/</loc>
     <lastmod>2019-04-03T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.zijianhu.com/admin/</loc>
+  </url><url>
     <loc>https://www.zijianhu.com/categories/</loc>
   </url>
-  
-  <url>
-    <loc>https://www.zijianhu.com/talk/</loc>
-  </url>
-  
 </urlset>

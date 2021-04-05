@@ -7,7 +7,7 @@
     <description>Computer Vision</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Dec 2020 00:00:00 -0700</lastBuildDate>
     <image>
-      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/media/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Computer Vision</title>
       <link>https://www.zijianhu.com/tag/computer-vision/</link>
     </image>
@@ -51,7 +51,9 @@ As the training progress, more class labels become available until the training 
 
 
   
-    &lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+    
+
+&lt;div class=&#34;pub-list-item&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
   &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 
   
@@ -60,8 +62,11 @@ As the training progress, more class labels become available until the training 
   &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
     
 
-  
-  &lt;span class=&#34;author-highlighted&#34;&gt;&lt;a href=&#34;https://www.zijianhu.com/author/zijian-hu/&#34;&gt;Zijian Hu&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/zhengyu-yang/&#34;&gt;Zhengyu Yang&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/xuefeng-hu/&#34;&gt;Xuefeng Hu&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;&lt;a href=&#34;https://www.zijianhu.com/author/ram-nevatia/&#34;&gt;Ram Nevatia&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&#34;author-highlighted&#34;&gt;
+      Zijian Hu&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      Zhengyu Yang&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      Xuefeng Hu&lt;/span&gt;, &lt;span &gt;
+      Ram Nevatia&lt;/span&gt;
   &lt;/span&gt;
   (2021).
   &lt;a href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/&#34;&gt;SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification&lt;/a&gt;.
@@ -82,23 +87,23 @@ As the training progress, more class labels become available until the training 
 
 
 
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://arxiv.org/abs/2103.16725&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://arxiv.org/abs/2103.16725&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   PDF
 &lt;/a&gt;
 
 
 
-&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal&#34;
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
         data-filename=&#34;/publication/hu-2020-simple/cite.bib&#34;&gt;
   Cite
-&lt;/button&gt;
+&lt;/a&gt;
 
 
   
   
     
   
-&lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://github.com/zijian-hu/SimPLE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://github.com/zijian-hu/SimPLE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   Code
 &lt;/a&gt;
 
@@ -106,7 +111,7 @@ As the training progress, more class labels become available until the training 
 
 
   
-  &lt;a class=&#34;btn btn-outline-primary my-1 mr-1 btn-sm&#34; href=&#34;https://www.zijianhu.com/project/lwll/&#34;&gt;
+  &lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://www.zijianhu.com/project/lwll/&#34;&gt;
     Project
   &lt;/a&gt;
   

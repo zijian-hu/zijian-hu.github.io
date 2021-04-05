@@ -7,7 +7,7 @@
     <description>Tutorial</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 -0700</lastBuildDate>
     <image>
-      <url>https://www.zijianhu.com/images/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.zijianhu.com/media/icon_hub8aaec6c2c2e1082c2b24756ea87d425_171065_512x512_fill_lanczos_center_2.png</url>
       <title>Tutorial</title>
       <link>https://www.zijianhu.com/tag/tutorial/</link>
     </image>
@@ -281,7 +281,6 @@ ros-kinetic-moveit
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;!--## Hello World Example--&gt;
 &lt;h3 id=&#34;using-choregraphe&#34;&gt;Using Choregraphe&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Follow &lt;a href=&#34;http://doc.aldebaran.com/2-1/getting_started/helloworld_choregraphe.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt;&lt;/li&gt;
