@@ -821,14 +821,81 @@
 
     <div class="article-style">
       <p>Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members</p>
+<h2 id="study-design">Study Design</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-study-setup">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Study setup" srcset="
+               /project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_b22b18d47bd8291ec8f62716d097d558.png 400w,
+               /project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_a3c92289d4ca76572d5bf0e1c9423ba5.png 760w,
+               /project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_1200x1200_fit_lanczos_2.png 1200w"
+               src="/project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_b22b18d47bd8291ec8f62716d097d558.png"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Study setup
+    </figcaption></figure>
+<p>As shown in Figure <a href="#figure-study-setup">1</a>, In each study session, several participants were seated around the table.
+Each participant is expected to complete their own task.
+The robot is tasked to bring the puzzle piece to each participant in an order determined by its resource distribution algorithm.
+Out goal is to evaluate the effectiveness and fairness of different resource distribution algorithms.</p>
 <h2 id="development-detail">Development Detail</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-control-architecture">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Control architecture" srcset="
+               /project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_139424e08ede7dc3c51bb00cd1801959.png 400w,
+               /project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_e17bfe3bc8a349a268823c9b1658b7f3.png 760w,
+               /project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_1200x1200_fit_lanczos_2.png 1200w"
+               src="/project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_139424e08ede7dc3c51bb00cd1801959.png"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Control architecture
+    </figcaption></figure>
+<p>On the table, a unique ArUco maker is attached in front of each participant, in front of the puzzle pieces, and on top of the robot.
+A camera mounted on a tripod that oversees the entire table is used for robot localization and navigation.</p>
+<p>As shown in Figure <a href="#figure-control-architecture">2</a>.
+The main component in the perception system is the ArUco marker detector.
+The controller is composed of a finite-state machine and resource distribution algorithm.
+The finite-state machine encodes the state transition while the resource distribution algorithm determines where (which participant) to deliver the current puzzle piece.
+The perception system runs concurrently with the controller.</p>
 <p>For project development, my contributions includes:</p>
 <ul>
 <li>Designed and implemented multi-threaded perception and control system for <a href="https://anki.com/en-ca/vector.html" target="_blank" rel="noopener">Anki Vector</a> robot</li>
 <li>Camera calibration with ArUco Markers</li>
 <li>ArUco Marker detection for navigation and robot localization</li>
 <li>Path planning using finite state machine</li>
-<li>Resource distribution with Multi Armed Bandit variant algorithm</li>
 </ul>
 
     </div>

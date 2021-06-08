@@ -144,14 +144,81 @@ As the training progress, more class labels become available until the training 
       <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/robot_team/</guid>
       <description>&lt;p&gt;Our work looks to understand how robots can be successfully integrated into human teams. Much work in the Human-Robot Interaction space has investigated one on one interactions with one robot and one human. Our work looks to fill this gap of knowledge by providing an algorithm that takes into account the social construct of human fairness and optimization through a Multi Armed Bandit variant algorithm. We apply this algorithm to a robot tasked with distributing resources to different human team members&lt;/p&gt;
+&lt;h2 id=&#34;study-design&#34;&gt;Study Design&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-study-setup&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Study setup&#34; srcset=&#34;
+               /project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_b22b18d47bd8291ec8f62716d097d558.png 400w,
+               /project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_a3c92289d4ca76572d5bf0e1c9423ba5.png 760w,
+               /project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/robot_team/images/studySetup_hu76b3e537e205736635d7ca0202a3cf5b_777755_b22b18d47bd8291ec8f62716d097d558.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Study setup
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;As shown in Figure &lt;a href=&#34;#figure-study-setup&#34;&gt;1&lt;/a&gt;, In each study session, several participants were seated around the table.
+Each participant is expected to complete their own task.
+The robot is tasked to bring the puzzle piece to each participant in an order determined by its resource distribution algorithm.
+Out goal is to evaluate the effectiveness and fairness of different resource distribution algorithms.&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-control-architecture&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Control architecture&#34; srcset=&#34;
+               /project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_139424e08ede7dc3c51bb00cd1801959.png 400w,
+               /project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_e17bfe3bc8a349a268823c9b1658b7f3.png 760w,
+               /project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/robot_team/images/controlArchitecture_hu6303699076812cc32636c1b3c5e734bb_935427_139424e08ede7dc3c51bb00cd1801959.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Control architecture
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;On the table, a unique ArUco maker is attached in front of each participant, in front of the puzzle pieces, and on top of the robot.
+A camera mounted on a tripod that oversees the entire table is used for robot localization and navigation.&lt;/p&gt;
+&lt;p&gt;As shown in Figure &lt;a href=&#34;#figure-control-architecture&#34;&gt;2&lt;/a&gt;.
+The main component in the perception system is the ArUco marker detector.
+The controller is composed of a finite-state machine and resource distribution algorithm.
+The finite-state machine encodes the state transition while the resource distribution algorithm determines where (which participant) to deliver the current puzzle piece.
+The perception system runs concurrently with the controller.&lt;/p&gt;
 &lt;p&gt;For project development, my contributions includes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Designed and implemented multi-threaded perception and control system for &lt;a href=&#34;https://anki.com/en-ca/vector.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anki Vector&lt;/a&gt; robot&lt;/li&gt;
 &lt;li&gt;Camera calibration with ArUco Markers&lt;/li&gt;
 &lt;li&gt;ArUco Marker detection for navigation and robot localization&lt;/li&gt;
 &lt;li&gt;Path planning using finite state machine&lt;/li&gt;
-&lt;li&gt;Resource distribution with Multi Armed Bandit variant algorithm&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
