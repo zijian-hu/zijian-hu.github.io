@@ -18,7 +18,6 @@
       <pubDate>Sat, 05 Dec 2020 00:00:00 -0700</pubDate>
       <guid>https://www.zijianhu.com/project/lwll/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This is an ongoing project. The details are subject to change.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;We proposed a novel semi-supervised classification algorithm that focuses on the less studied relationship between the high confidence unlabeled data that are similar to each other. Our algorithm, SimPLE, achieved state-of-the-art performance on standard SSL benchmarks and achieved the best accuracy on some tasks in LwLL evaluation. We also evaluated our method in the transfer setting where our algorithm outperforms prior works and supervised baseline by a large margin.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The following project description is taken from &lt;a href=&#34;https://www.darpa.mil/program/learning-with-less-labeling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DARPA&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In supervised machine learning (ML), the ML system learns by example to recognize things, such as objects in images or speech. Humans provide these examples to ML systems during their training in the form of labeled data. With enough labeled data, we can generally build accurate pattern recognition models.&lt;/p&gt;
@@ -28,14 +27,355 @@
 &lt;p&gt;The Learning with Less Labeling (LwLL) program aims to make the process of training machine learning models more efficient by reducing the amount of labeled data required to build a model by six or more orders of magnitude, and by reducing the amount of data needed to adapt models to new environments to tens to hundreds of labeled examples.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;lwll-evaluation&#34;&gt;LwLL Evaluation&lt;/h2&gt;
-&lt;p&gt;The evaluation has 3 types of tasks: NLP, Image Classification and Object Detection.
+&lt;p&gt;The evaluation has 3 types of tasks: Image Classification, Object Detection and Machine Translation.
 Our team is focusing on the image classification task.
-Each task includes a base stage and an adaptation stage where each stage consists of 6 to 7 checkpoints.
-For image classification, pre-trained models on some selected datasets are allowed.&lt;/p&gt;
-&lt;p&gt;At the first checkpoint, only 1 label per category is available.
-As the training progress, more class labels become available until the training is fully labeled in the last checkpoint.&lt;/p&gt;
+Each task includes a base phase and an adaptation pha where each phase consists of 6 to 8 stages.
+For image classification, pre-trained models on predefined whitelisted datasets are allowed.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-number-of-labels-in-each-stage&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Number of labels in each stage&#34; srcset=&#34;
+               /project/lwll/images/labelSizes_hubb74a262980ba22c8035cac02b706536_14330_ebe883e776b8bd89780073fbc18e8976.png 400w,
+               /project/lwll/images/labelSizes_hubb74a262980ba22c8035cac02b706536_14330_4763e4ead4909379d09f8ebd07279ec2.png 760w,
+               /project/lwll/images/labelSizes_hubb74a262980ba22c8035cac02b706536_14330_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/lwll/images/labelSizes_hubb74a262980ba22c8035cac02b706536_14330_ebe883e776b8bd89780073fbc18e8976.png&#34;
+               width=&#34;760&#34;
+               height=&#34;457&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Number of labels in each stage
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The full training set without any label is given at the beginning.
+At stage 1, can request 1 label per category in the training set (label budget is 1).
+As the training progress, the label budget is increased.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-lwll-evaluation-model-pipeline&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;LwLL evaluation model pipeline&#34; srcset=&#34;
+               /project/lwll/images/pipeline_hu9924dad4871f9743a57a641474e56b32_2536040_b1b3cf849fba56be982376556309c68c.png 400w,
+               /project/lwll/images/pipeline_hu9924dad4871f9743a57a641474e56b32_2536040_c90e3d93cf702df6a0d4165d4077fecd.png 760w,
+               /project/lwll/images/pipeline_hu9924dad4871f9743a57a641474e56b32_2536040_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/lwll/images/pipeline_hu9924dad4871f9743a57a641474e56b32_2536040_b1b3cf849fba56be982376556309c68c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      LwLL evaluation model pipeline
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Our team used a few-shot learning method for the first 2 to 3 checkpoints when the labeled set size is small.
+Once sufficient number of labeled data samples become available, the training was handed to our semi-supervised algorithm.&lt;/p&gt;
+&lt;h2 id=&#34;simple-similar-pseudo-label-exploitation-for-semi-supervised-classification&#34;&gt;SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification&lt;/h2&gt;
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+&lt;div class=&#34;view-list-item&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;a href=&#34;https://www.zijianhu.com/publication/hu-2020-simple/&#34; &gt;SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification&lt;/a&gt;
+
+  
+
+  
+  &lt;div class=&#34;article-metadata&#34;&gt;
+    
+
+  &lt;span class=&#34;author-highlighted&#34;&gt;
+      Zijian Hu&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      Zhengyu Yang&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      Xuefeng Hu&lt;/span&gt;, &lt;span &gt;
+      Ram Nevatia&lt;/span&gt;
+  &lt;/div&gt;
+  
+
+  
+  &lt;div class=&#34;btn-links&#34;&gt;
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://arxiv.org/abs/2103.16725&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/hu-2020-simple/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://github.com/zijian-hu/SimPLE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Code
+&lt;/a&gt;
+
+
+
+
+  
+  &lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://www.zijianhu.com/project/lwll/&#34;&gt;
+    Project
+  &lt;/a&gt;
+  
+
+
+
+
+
+
+
+
+
+
+
+  &lt;/div&gt;
+  
+
+&lt;/div&gt;
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-simple-algorithm&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;SimPLE algorithm&#34; srcset=&#34;
+               /project/lwll/images/SimPLE_hu7e6c5a87fea892f23597c7d6d500ed86_413333_0605d2c51801b670c0e6f8f0c76155a7.png 400w,
+               /project/lwll/images/SimPLE_hu7e6c5a87fea892f23597c7d6d500ed86_413333_fd8bb7a4688eb35996a473879abb02fe.png 760w,
+               /project/lwll/images/SimPLE_hu7e6c5a87fea892f23597c7d6d500ed86_413333_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/lwll/images/SimPLE_hu7e6c5a87fea892f23597c7d6d500ed86_413333_0605d2c51801b670c0e6f8f0c76155a7.png&#34;
+               width=&#34;760&#34;
+               height=&#34;265&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      SimPLE algorithm
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;We proposed a novel semi-supervised classification algorithm, SimPLE (Figure &lt;a href=&#34;#figure-simple-algorithm&#34;&gt;3&lt;/a&gt;),
+that focuses on the less studied relationship between the high confidence unlabeled data that are similar to each other.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-pair-loss-overview&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Pair Loss Overview.&#34; srcset=&#34;
+               /project/lwll/images/pairloss_huef2b7e22861dfbe63d7e9199d7f52e18_879311_94280aeecc749839c06355a9e4d70c27.png 400w,
+               /project/lwll/images/pairloss_huef2b7e22861dfbe63d7e9199d7f52e18_879311_27c79b729d9183d7453a356cbc09af89.png 760w,
+               /project/lwll/images/pairloss_huef2b7e22861dfbe63d7e9199d7f52e18_879311_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/lwll/images/pairloss_huef2b7e22861dfbe63d7e9199d7f52e18_879311_94280aeecc749839c06355a9e4d70c27.png&#34;
+               width=&#34;760&#34;
+               height=&#34;591&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Pair Loss Overview.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;As shown in Figure &lt;a href=&#34;#figure-pair-loss-overview&#34;&gt;4&lt;/a&gt;, the new proposed Pair Loss minimizes the statistical distance between high confidence pseudo labels with similarity above a certain threshold.
+The similarity threshold &amp;ldquo;extended&amp;rdquo; our confidence threshold in an adaptive manner,
+as a sample whose pseudo label confidence is below the threshold can still be selected by the loss and be pushed to a higher confidence level.&lt;/p&gt;
+&lt;p&gt;Formally, we defined the Pair Loss as the following:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\mathcal{L_P} &amp;amp;= \frac{1}{\binom{KB}{2}}
+\sum_{\mathcal{U}&#39;}
+\mathbb{1}_{\max\left(q_l\right) &amp;gt; \tau_c} \cdot
+\mathbb{1}_{f_{\operatorname{sim}}\left(q_l,q_r\right) &amp;gt; \tau_s} \\&lt;br&gt;
+&amp;amp;\cdot f_{\operatorname{dist}}\left(q_l, \mathrm{p}_{\text{model}}\left(\tilde{y} \mid v_r ; \theta\right)\right)
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notations&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$K$: number of augmentations&lt;/li&gt;
+&lt;li&gt;$B$: batch size&lt;/li&gt;
+&lt;li&gt;$\mathcal{U}&#39;$: unlabeled batch&lt;/li&gt;
+&lt;li&gt;$\tau_c$: confidence threshold&lt;/li&gt;
+&lt;li&gt;$\tau_s$: similarity threshold&lt;/li&gt;
+&lt;li&gt;$f_{\operatorname{sim}}\left(\cdot,\cdot\right)$: similarity function
+&lt;ul&gt;
+&lt;li&gt;We use &lt;a href=&#34;http://www.jstor.org/stable/25047882&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bhattacharyya coefficient&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$f_{\operatorname{dist}}\left(\cdot,\cdot\right)$: distance function
+&lt;ul&gt;
+&lt;li&gt;We use $1-$ &lt;a href=&#34;http://www.jstor.org/stable/25047882&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bhattacharyya coefficient&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;experimental-results&#34;&gt;Experimental Results&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Dataset&lt;/th&gt;
+    &lt;th&gt;Num. Labels&lt;/th&gt;
+    &lt;th&gt;Method&lt;/th&gt;
+    &lt;th&gt;Backbone&lt;/th&gt;
+    &lt;th&gt;Top-1 Accuracy&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;4&#34;&gt;CIFAR-100&lt;/td&gt;
+    &lt;td rowspan=&#34;4&#34;&gt;10000&lt;/td&gt;
+    &lt;td&gt;MixMatch&lt;/td&gt;
+    &lt;td&gt;WRN 28-8&lt;/td&gt;
+    &lt;td&gt;71.69%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;ReMixMatch&lt;/td&gt;
+    &lt;td&gt;WRN 28-8&lt;/td&gt;
+    &lt;td&gt;76.97%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;FixMatch&lt;/td&gt;
+    &lt;td&gt;WRN 28-8&lt;/td&gt;
+    &lt;td&gt;77.40%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;SimPLE&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;WRN 28-8&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;78.11%&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;3&#34;&gt;Mini-ImageNet&lt;/td&gt;
+    &lt;td rowspan=&#34;3&#34;&gt;4000&lt;/td&gt;
+    &lt;td&gt;MixMatch&lt;/td&gt;
+    &lt;td&gt;WRN 28-2&lt;/td&gt;
+    &lt;td&gt;55.47%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;MixMatch Enhanced&lt;/td&gt;
+    &lt;td&gt;WRN 28-2&lt;/td&gt;
+    &lt;td&gt;60.50%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;SimPLE&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;WRN 28-2&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;66.55%&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;3&#34;&gt;ImageNet to DomainNet-Real&lt;/td&gt;
+    &lt;td rowspan=&#34;3&#34;&gt;3795&lt;/td&gt;
+    &lt;td&gt;MixMatch&lt;/td&gt;
+    &lt;td&gt;ResNet-50&lt;/td&gt;
+    &lt;td&gt;35.34%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;MixMatch Enhanced&lt;/td&gt;
+    &lt;td&gt;ResNet-50&lt;/td&gt;
+    &lt;td&gt;35.16%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;SimPLE&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;ResNet-50&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;50.90%&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;3&#34;&gt;DomainNet-Real to Mini-ImageNet&lt;/td&gt;
+    &lt;td rowspan=&#34;3&#34;&gt;4000&lt;/td&gt;
+    &lt;td&gt;MixMatch&lt;/td&gt;
+    &lt;td&gt;WRN 28-2&lt;/td&gt;
+    &lt;td&gt;53.39%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;MixMatch Enhanced&lt;/td&gt;
+    &lt;td&gt;WRN 28-2&lt;/td&gt;
+    &lt;td&gt;55.75%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;SimPLE&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;WRN 28-2&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b&gt;58.73%&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Our algorithm, SimPLE, achieved state-of-the-art performance on standard SSL benchmarks and achieved the best accuracy on some tasks in LwLL evaluation. We also evaluated our method in the transfer setting where our algorithm outperforms prior works and supervised baseline by a large margin.&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
-&lt;p&gt;Our team used a few-shot learning method for the first 2 to 3 checkpoints when the labeled set size is small. Once sufficient number of labeled data samples become available, the training was handed to our semi-supervised algorithm.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Designed a novel algorithm for semi-supervised classification&lt;/li&gt;
 &lt;li&gt;Evaluated our algorithm on standard benchmarks (CIFAR-10, CIFAR-100, SVHN, Mini-ImageNet)&lt;/li&gt;
