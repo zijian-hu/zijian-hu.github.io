@@ -76,14 +76,132 @@ service and support teams.&lt;/p&gt;
   &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
       Volunteers demonstrating the study setup
     &lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;In each study session, three participants were seated around the end of a table with a seated &lt;a href=&#34;https://www.softbankrobotics.com/emea/index.php/en/nao&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NAO&lt;/a&gt; robot as shown in Figure 1.
+&lt;p&gt;In each study session, three participants were seated around the end of a table with a seated
+&lt;a href=&#34;https://www.softbankrobotics.com/emea/index.php/en/nao&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NAO&lt;/a&gt; robot as shown in
+Figure &lt;a href=&#34;#figure-volunteers-demonstrating-the-study-setup&#34;&gt;1&lt;/a&gt;.
 The NAO robot, acting as a group moderator, was positioned towards the participants.
 On the table, a 360-degree microphone and 3 cameras facing directly to the participants&#39; face were placed.
 Behind the robot, an RGB-D camera was mounted on a tripod to record the interactions between the group members.
 The robot operator was seated behind a one-way mirror hidden from participants.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Sensitivity&lt;/th&gt;
+&lt;th&gt;Question&lt;/th&gt;
+&lt;th&gt;Disclosure&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Low&lt;/td&gt;
+&lt;td&gt;What do you like about school?&lt;/td&gt;
+&lt;td&gt;When I feel stressed, I think my circuits might overload.&lt;br&gt;Does anyone else feel the same way?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Medium&lt;/td&gt;
+&lt;td&gt;What are some of the hardest parts of school for you?&lt;/td&gt;
+&lt;td&gt;Sometimes I worry I am inadequate for this school.&lt;br&gt;Does anyone else sometimes feel that too?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hard&lt;/td&gt;
+&lt;td&gt;What will happen if you don’t succeed in school?&lt;/td&gt;
+&lt;td&gt;Sometimes I worry about if I belong here. &lt;br&gt;Does anyone else feel the same way?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;During the interaction, the robot can ask questions or make disclosures.
+A total of 16 questions and 6 disclosures are available.
+On average, 12 questions and 3 disclosures were made by the robot in each session.&lt;/p&gt;
+&lt;p&gt;The questions and disclosures are grouped into low, medium, and high sensitivity as illustrated in the below table.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-self-annotation-at-the-end-of-each-session&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Self-annotation at the end of each session&#34; srcset=&#34;
+               /project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_f185a0b114e2a2f4b71d1dc670ef2d1e.jpg 400w,
+               /project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_18a3e6c8642b06fa0a6b1be14de65482.jpg 760w,
+               /project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_f185a0b114e2a2f4b71d1dc670ef2d1e.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Self-annotation at the end of each session
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-self-annotation-ui&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Self-annotation UI&#34; srcset=&#34;
+               /project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_0eaed455e52637024578e82b913c3f0d.jpeg 400w,
+               /project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_47efa0fb9bb1d5086cd36d0a59ab7fc3.jpeg 760w,
+               /project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_1200x1200_fit_q75_lanczos.jpeg 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_0eaed455e52637024578e82b913c3f0d.jpeg&#34;
+               width=&#34;760&#34;
+               height=&#34;374&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Self-annotation UI
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;p&gt;To measure how the level of trust changes overtime, the participants were asked to report their trust towards other participants against the recordings of the current session after the group interaction.&lt;/p&gt;
 &lt;p&gt;The detail for the procedure of the study can be found &lt;a href=&#34;https://www.zijianhu.com/publication/birmingham-icra-2020/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;development-detail&#34;&gt;Development Detail&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-control-architecture&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;Control architecture&#34; srcset=&#34;
+               /project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_ea79ef16c416ef42845a6e21c1a777b3.png 400w,
+               /project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_a7aa5f0207f9c10c827af96ade1ef0b2.png 760w,
+               /project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;https://www.zijianhu.com/project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_ea79ef16c416ef42845a6e21c1a777b3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Control architecture
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;As shown in Figure &lt;a href=&#34;#figure-control-architecture&#34;&gt;3&lt;/a&gt;.
+The wizard controls the robot through the Wizard-of-Oz web interface.&lt;/p&gt;
 &lt;p&gt;For project development, my contributions includes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Developed NAO control program&lt;/li&gt;

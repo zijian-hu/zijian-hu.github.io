@@ -919,14 +919,132 @@ service and support teams.</p>
   </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
       Volunteers demonstrating the study setup
     </figcaption></figure>
-<p>In each study session, three participants were seated around the end of a table with a seated <a href="https://www.softbankrobotics.com/emea/index.php/en/nao" target="_blank" rel="noopener">NAO</a> robot as shown in Figure 1.
+<p>In each study session, three participants were seated around the end of a table with a seated
+<a href="https://www.softbankrobotics.com/emea/index.php/en/nao" target="_blank" rel="noopener">NAO</a> robot as shown in
+Figure <a href="#figure-volunteers-demonstrating-the-study-setup">1</a>.
 The NAO robot, acting as a group moderator, was positioned towards the participants.
 On the table, a 360-degree microphone and 3 cameras facing directly to the participants' face were placed.
 Behind the robot, an RGB-D camera was mounted on a tripod to record the interactions between the group members.
 The robot operator was seated behind a one-way mirror hidden from participants.</p>
+<table>
+<thead>
+<tr>
+<th>Sensitivity</th>
+<th>Question</th>
+<th>Disclosure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low</td>
+<td>What do you like about school?</td>
+<td>When I feel stressed, I think my circuits might overload.<br>Does anyone else feel the same way?</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>What are some of the hardest parts of school for you?</td>
+<td>Sometimes I worry I am inadequate for this school.<br>Does anyone else sometimes feel that too?</td>
+</tr>
+<tr>
+<td>Hard</td>
+<td>What will happen if you don’t succeed in school?</td>
+<td>Sometimes I worry about if I belong here. <br>Does anyone else feel the same way?</td>
+</tr>
+</tbody>
+</table>
+<p>During the interaction, the robot can ask questions or make disclosures.
+A total of 16 questions and 6 disclosures are available.
+On average, 12 questions and 3 disclosures were made by the robot in each session.</p>
+<p>The questions and disclosures are grouped into low, medium, and high sensitivity as illustrated in the below table.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-self-annotation-at-the-end-of-each-session">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Self-annotation at the end of each session" srcset="
+               /project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_f185a0b114e2a2f4b71d1dc670ef2d1e.jpg 400w,
+               /project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_18a3e6c8642b06fa0a6b1be14de65482.jpg 760w,
+               /project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_1200x1200_fit_q75_lanczos.jpg 1200w"
+               src="/project/multi_party/images/selfAnnotation_hu018bd18db52de5e1bf3466d495c63534_3322063_f185a0b114e2a2f4b71d1dc670ef2d1e.jpg"
+               width="760"
+               height="570"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Self-annotation at the end of each session
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-self-annotation-ui">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Self-annotation UI" srcset="
+               /project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_0eaed455e52637024578e82b913c3f0d.jpeg 400w,
+               /project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_47efa0fb9bb1d5086cd36d0a59ab7fc3.jpeg 760w,
+               /project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_1200x1200_fit_q75_lanczos.jpeg 1200w"
+               src="/project/multi_party/images/selfAnnotationInterface_hu01a33997c9fd23d1255e85aa1fdfd3e0_226197_0eaed455e52637024578e82b913c3f0d.jpeg"
+               width="760"
+               height="374"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Self-annotation UI
+    </figcaption></figure>
 <p>To measure how the level of trust changes overtime, the participants were asked to report their trust towards other participants against the recordings of the current session after the group interaction.</p>
 <p>The detail for the procedure of the study can be found <a href="https://www.zijianhu.com/publication/birmingham-icra-2020/">here</a>.</p>
 <h2 id="development-detail">Development Detail</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-control-architecture">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" >
+        <img alt="Control architecture" srcset="
+               /project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_ea79ef16c416ef42845a6e21c1a777b3.png 400w,
+               /project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_a7aa5f0207f9c10c827af96ade1ef0b2.png 760w,
+               /project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_1200x1200_fit_lanczos_2.png 1200w"
+               src="/project/multi_party/images/controlArchitecture_hub5ada478ae36be9d27c03f6260a933bc_467110_ea79ef16c416ef42845a6e21c1a777b3.png"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Control architecture
+    </figcaption></figure>
+<p>As shown in Figure <a href="#figure-control-architecture">3</a>.
+The wizard controls the robot through the Wizard-of-Oz web interface.</p>
 <p>For project development, my contributions includes:</p>
 <ul>
 <li>Developed NAO control program</li>
