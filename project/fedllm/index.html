@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="This tutorial shows how to correctly implement EMA for PyTorch" />
+  <meta name="description" content="FedML AI platform is democratizing large language models (LLMs) by enabling enterprises to train their own models on proprietary data. Today, we release FedLLM, an MLOps-supported training pipeline that allows for building domain-specific LLMs on proprietary data. The platform enables data collaboration, computation collaboration, and model collaboration, and supporting training on centralized and geo-distributed GPU clusters, as well as federated learning for data silos. FedLLM is compatible with popular LLM libraries such as HuggingFace and DeepSpeed, and is designed to improve efficiency and security/privacy. To get started, FedML users &amp; developers only need to add 100 lines of source code. The complex steps of deployment and orchestration of training in enterprise environments are all handled by FedML MLOps platform." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://www.zijianhu.com/post/pytorch/ema/" />
+  <link rel="alternate" hreflang="en-us" href="https://www.zijianhu.com/project/fedllm/" />
 
   
 
@@ -60,6 +60,9 @@
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -207,9 +210,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -273,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu175ac60b1877c266d8732aac3c921a86_8742_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu175ac60b1877c266d8732aac3c921a86_8742_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://www.zijianhu.com/post/pytorch/ema/" />
+  <link rel="canonical" href="https://www.zijianhu.com/project/fedllm/" />
 
   
   
@@ -284,27 +287,26 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
   
     <meta property="twitter:site" content="@zijianhu" />
     <meta property="twitter:creator" content="@zijianhu" />
   
   <meta property="og:site_name" content="Zijian Hu" />
-  <meta property="og:url" content="https://www.zijianhu.com/post/pytorch/ema/" />
-  <meta property="og:title" content="PyTorch: Exponential Moving Average (EMA) Example | Zijian Hu" />
-  <meta property="og:description" content="This tutorial shows how to correctly implement EMA for PyTorch" /><meta property="og:image" content="https://www.zijianhu.com/media/icon_hu175ac60b1877c266d8732aac3c921a86_8742_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="https://www.zijianhu.com/media/icon_hu175ac60b1877c266d8732aac3c921a86_8742_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://www.zijianhu.com/project/fedllm/" />
+  <meta property="og:title" content="FedLLM: Build Your Own Large Language Models on Proprietary Data using the FedML Platform | Zijian Hu" />
+  <meta property="og:description" content="FedML AI platform is democratizing large language models (LLMs) by enabling enterprises to train their own models on proprietary data. Today, we release FedLLM, an MLOps-supported training pipeline that allows for building domain-specific LLMs on proprietary data. The platform enables data collaboration, computation collaboration, and model collaboration, and supporting training on centralized and geo-distributed GPU clusters, as well as federated learning for data silos. FedLLM is compatible with popular LLM libraries such as HuggingFace and DeepSpeed, and is designed to improve efficiency and security/privacy. To get started, FedML users &amp; developers only need to add 100 lines of source code. The complex steps of deployment and orchestration of training in enterprise environments are all handled by FedML MLOps platform." /><meta property="og:image" content="https://www.zijianhu.com/project/fedllm/featured.jpeg" />
+    <meta property="twitter:image" content="https://www.zijianhu.com/project/fedllm/featured.jpeg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2020-07-23T00:00:00-07:00"
+        content="2023-04-27T00:00:00-07:00"
       />
     
-    <meta property="article:modified_time" content="2020-07-23T00:00:00-07:00">
+    <meta property="article:modified_time" content="2023-04-27T00:00:00-07:00">
   
 
   
@@ -316,8 +318,6 @@
 
 
 
-
-  
 
 
 
@@ -325,15 +325,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.zijianhu.com/post/pytorch/ema/"
+    "@id": "https://www.zijianhu.com/project/fedllm/"
   },
-  "headline": "PyTorch: Exponential Moving Average (EMA) Example",
+  "headline": "FedLLM: Build Your Own Large Language Models on Proprietary Data using the FedML Platform",
   
-  "datePublished": "2020-07-23T00:00:00-07:00",
-  "dateModified": "2020-07-23T00:00:00-07:00",
+  "image": [
+    "https://www.zijianhu.com/project/fedllm/featured.jpeg"
+  ],
+  
+  "datePublished": "2023-04-27T00:00:00-07:00",
+  "dateModified": "2023-04-27T00:00:00-07:00",
   
   "author": {
     "@type": "Person",
@@ -348,7 +352,7 @@
       "url": "https://www.zijianhu.com/media/icon_hu175ac60b1877c266d8732aac3c921a86_8742_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "This tutorial shows how to correctly implement EMA for PyTorch"
+  "description": "FedML AI platform is democratizing large language models (LLMs) by enabling enterprises to train their own models on proprietary data. Today, we release FedLLM, an MLOps-supported training pipeline that allows for building domain-specific LLMs on proprietary data. The platform enables data collaboration, computation collaboration, and model collaboration, and supporting training on centralized and geo-distributed GPU clusters, as well as federated learning for data silos. FedLLM is compatible with popular LLM libraries such as HuggingFace and DeepSpeed, and is designed to improve efficiency and security/privacy. To get started, FedML users \u0026 developers only need to add 100 lines of source code. The complex steps of deployment and orchestration of training in enterprise environments are all handled by FedML MLOps platform."
 }
 </script>
 
@@ -364,11 +368,11 @@
 
 
 
-  <title>PyTorch: Exponential Moving Average (EMA) Example | Zijian Hu</title>
+  <title>FedLLM: Build Your Own Large Language Models on Proprietary Data using the FedML Platform | Zijian Hu</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ade87a5ed3dd7bd98a96c8ab9d9891c4" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ff5ce4c1fc59a4e950adef3bcaaf4d3c" >
 
   
   
@@ -718,7 +722,7 @@
   </div>
 
   <div class="page-body">
-    <article class="article">
+    <article class="article article-project">
 
   
 
@@ -733,20 +737,26 @@
 
 
 
-  
+
+
+
+
+
+
+
 
   
-  
-  
-<div class="article-container pt-3">
-  <h1>PyTorch: Exponential Moving Average (EMA) Example</h1>
-
-  
-  <p class="page-subtitle">PyTorch Examples: EMA</p>
-  
-
   
     
+  
+
+
+<div class="article-container pt-3">
+  <h1>FedLLM: Build Your Own Large Language Models on Proprietary Data using the FedML Platform</h1>
+
+  
+
+  
 
 
 <div class="article-metadata">
@@ -770,17 +780,12 @@
     
       
     
-    Jul 23, 2020
+    Apr 27, 2023
   </span>
   
 
   
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
   
 
   
@@ -795,13 +800,55 @@
 
 </div>
 
-    
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  <a class="btn btn-outline-primary my-1" href="https://blog.fedml.ai/releasing-fedllm-build-your-own-large-language-models-on-proprietary-data-using-the-fedml-platform/" target="_blank" rel="noopener">Go to Project Site</a>
+  
+  
+
+
+
 
 
 
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 746px;">
+  <div style="position: relative">
+    <img src="/project/fedllm/featured_hu8be3554212ccdb5fe278336fb3f5a251_142256_720x0_resize_q75_lanczos.jpeg" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
@@ -809,74 +856,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h2 id="introduction">Introduction</h2>
-<p>This example carefully replicates the behavior of TensorFlow&rsquo;s <a href="https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage" target="_blank" rel="noopener">tf.train.ExponentialMovingAverage</a>.</p>
-<p>Notice that when applying EMA, only the trainable parameters should be changed; for PyTorch, we can get the trainable parameters by <code>model.parameters()</code> or <code>model.named_parameters()</code> where <code>model</code> is a <code>torch.nn.Module</code>.</p>
-<p>Since my implementation creates a copy of the input model (i.e. <code>shadow</code>), the buffers needs to be copied to <code>shadow</code> whenever <code>update()</code> is invoked.</p>
-<h3 id="alternative-implementation">Alternative Implementation</h3>
-<p>You could implement <code>shadow</code> as a <code>dict</code>, for detail of this version see <a href="https://fyubang.com/2019/06/01/ema/" target="_blank" rel="noopener">【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现</a>. One problem with that implementation is that shadow needs to be manually saved since shadow parameters are not stored in <code>state_dict</code>; a simple fix to this problem is to register all shadow parameters by calling <code>register_parameter(&lt;parameter name&gt;)</code>.</p>
-<h2 id="implementations">Implementations</h2>
-<pre><code class="language-python">import torch
-from torch import nn
-
-from copy import deepcopy
-from collections import OrderedDict
-from sys import stderr
-
-# for type hint
-from torch import Tensor
-
-
-class EMA(nn.Module):
-    def __init__(self, model: nn.Module, decay: float):
-        super().__init__()
-        self.decay = decay
-
-        self.model = model
-        self.shadow = deepcopy(self.model)
-
-        for param in self.shadow.parameters():
-            param.detach_()
-
-    @torch.no_grad()
-    def update(self):
-        if not self.training:
-            print(&quot;EMA update should only be called during training&quot;, file=stderr, flush=True)
-            return
-
-        model_params = OrderedDict(self.model.named_parameters())
-        shadow_params = OrderedDict(self.shadow.named_parameters())
-
-        # check if both model contains the same set of keys
-        assert model_params.keys() == shadow_params.keys()
-
-        for name, param in model_params.items():
-            # see https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage
-            # shadow_variable -= (1 - decay) * (shadow_variable - variable)
-            shadow_params[name].sub_((1. - self.decay) * (shadow_params[name] - param))
-
-        model_buffers = OrderedDict(self.model.named_buffers())
-        shadow_buffers = OrderedDict(self.shadow.named_buffers())
-
-        # check if both model contains the same set of keys
-        assert model_buffers.keys() == shadow_buffers.keys()
-
-        for name, buffer in model_buffers.items():
-            # buffers are copied
-            shadow_buffers[name].copy_(buffer)
-
-    def forward(self, inputs: Tensor, return_feature: bool = False) -&gt; Tensor:
-        if self.training:
-            return self.model(inputs, return_feature)
-        else:
-            return self.shadow(inputs, return_feature)
-
-</code></pre>
-<h3 id="reference">Reference</h3>
-<ul>
-<li><a href="https://www.tensorflow.org/api_docs/python/tf/train/ExponentialMovingAverage" target="_blank" rel="noopener">tf.train.ExponentialMovingAverage</a></li>
-<li><a href="https://fyubang.com/2019/06/01/ema/" target="_blank" rel="noopener">【炼丹技巧】指数移动平均（EMA）的原理及PyTorch实现</a></li>
-</ul>
+      <p><em><strong>This is an ongoing project. The details are subject to change.</strong></em></p>
 
     </div>
 
@@ -891,9 +871,11 @@ class EMA(nn.Module):
   
   <a class="badge badge-light" href="/tag/machine-learning/">Machine Learning</a>
   
-  <a class="badge badge-light" href="/tag/pytorch/">PyTorch</a>
+  <a class="badge badge-light" href="/tag/natural-language-processing/">Natural Language Processing</a>
   
-  <a class="badge badge-light" href="/tag/tutorial/">Tutorial</a>
+  <a class="badge badge-light" href="/tag/large-language-model/">Large Language Model</a>
+  
+  <a class="badge badge-light" href="/tag/federated-learning/">Federated Learning</a>
   
 </div>
 
@@ -910,7 +892,7 @@ class EMA(nn.Module):
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://www.zijianhu.com/post/pytorch/ema/&amp;text=PyTorch:%20Exponential%20Moving%20Average%20%28EMA%29%20Example" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://www.zijianhu.com/project/fedllm/&amp;text=FedLLM:%20Build%20Your%20Own%20Large%20Language%20Models%20on%20Proprietary%20Data%20using%20the%20FedML%20Platform" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -923,7 +905,7 @@ class EMA(nn.Module):
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://www.zijianhu.com/post/pytorch/ema/&amp;t=PyTorch:%20Exponential%20Moving%20Average%20%28EMA%29%20Example" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.zijianhu.com/project/fedllm/&amp;t=FedLLM:%20Build%20Your%20Own%20Large%20Language%20Models%20on%20Proprietary%20Data%20using%20the%20FedML%20Platform" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -936,7 +918,7 @@ class EMA(nn.Module):
       
       
       <li>
-        <a href="mailto:?subject=PyTorch:%20Exponential%20Moving%20Average%20%28EMA%29%20Example&amp;body=https://www.zijianhu.com/post/pytorch/ema/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=FedLLM:%20Build%20Your%20Own%20Large%20Language%20Models%20on%20Proprietary%20Data%20using%20the%20FedML%20Platform&amp;body=https://www.zijianhu.com/project/fedllm/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -949,7 +931,7 @@ class EMA(nn.Module):
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://www.zijianhu.com/post/pytorch/ema/&amp;title=PyTorch:%20Exponential%20Moving%20Average%20%28EMA%29%20Example" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://www.zijianhu.com/project/fedllm/&amp;title=FedLLM:%20Build%20Your%20Own%20Large%20Language%20Models%20on%20Proprietary%20Data%20using%20the%20FedML%20Platform" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -962,7 +944,7 @@ class EMA(nn.Module):
       
       
       <li>
-        <a href="whatsapp://send?text=PyTorch:%20Exponential%20Moving%20Average%20%28EMA%29%20Example%20https://www.zijianhu.com/post/pytorch/ema/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=FedLLM:%20Build%20Your%20Own%20Large%20Language%20Models%20on%20Proprietary%20Data%20using%20the%20FedML%20Platform%20https://www.zijianhu.com/project/fedllm/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -975,7 +957,7 @@ class EMA(nn.Module):
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://www.zijianhu.com/post/pytorch/ema/&amp;title=PyTorch:%20Exponential%20Moving%20Average%20%28EMA%29%20Example" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://www.zijianhu.com/project/fedllm/&amp;title=FedLLM:%20Build%20Your%20Own%20Large%20Language%20Models%20on%20Proprietary%20Data%20using%20the%20FedML%20Platform" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1173,13 +1155,13 @@ class EMA(nn.Module):
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/project/fedllm/">FedLLM: Build Your Own Large Language Models on Proprietary Data using the FedML Platform</a></li>
+      <li><a href="/project/dpa_sgd/">Decentralized Federated Multi-Task Learning and System Design</a></li>
       
       <li><a href="/project/lwll/">Learning with Less Labeling (LwLL)</a></li>
       
       <li><a href="/publication/hu-2020-simple/">SimPLE: Similar Pseudo Label Exploitation for Semi-Supervised Classification</a></li>
       
-      <li><a href="/project/dpa_sgd/">Decentralized Federated Multi-Task Learning and System Design</a></li>
+      <li><a href="/post/pytorch/ema/">PyTorch: Exponential Moving Average (EMA) Example</a></li>
       
       <li><a href="/project/multi_party/">Trust in Multi-Party Human-Robot Interaction</a></li>
       
@@ -1191,6 +1173,22 @@ class EMA(nn.Module):
 
 
 
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
   </div>
 </article>
   </div>

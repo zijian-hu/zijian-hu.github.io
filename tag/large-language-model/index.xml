@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Large Language Model | Zijian Hu</title>
+    <link>https://www.zijianhu.com/tag/large-language-model/</link>
+      <atom:link href="https://www.zijianhu.com/tag/large-language-model/index.xml" rel="self" type="application/rss+xml" />
+    <description>Large Language Model</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 27 Apr 2023 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://www.zijianhu.com/media/icon_hu175ac60b1877c266d8732aac3c921a86_8742_512x512_fill_lanczos_center_2.png</url>
+      <title>Large Language Model</title>
+      <link>https://www.zijianhu.com/tag/large-language-model/</link>
+    </image>
+    
+    <item>
+      <title>FedLLM: Build Your Own Large Language Models on Proprietary Data using the FedML Platform</title>
+      <link>https://www.zijianhu.com/project/fedllm/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 -0700</pubDate>
+      <guid>https://www.zijianhu.com/project/fedllm/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;This is an ongoing project. The details are subject to change.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

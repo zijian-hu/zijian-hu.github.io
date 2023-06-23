@@ -11,13 +11,31 @@
     <loc>https://www.zijianhu.com/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.zijianhu.com/tag/federated-learning/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/project/fedllm/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/tag/large-language-model/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/tag/machine-learning/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/tag/natural-language-processing/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/project/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://www.zijianhu.com/tags/</loc>
+    <lastmod>2023-04-27T00:00:00-07:00</lastmod>
+  </url><url>
     <loc>https://www.zijianhu.com/publication-type/1/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://www.zijianhu.com/tag/low-shot-learning/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://www.zijianhu.com/tag/machine-learning/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://www.zijianhu.com/publication_types/</loc>
@@ -32,16 +50,10 @@
     <loc>https://www.zijianhu.com/publication/hu-2020-simple/</loc>
     <lastmod>2021-06-19T00:00:00-07:00</lastmod>
   </url><url>
-    <loc>https://www.zijianhu.com/tags/</loc>
-    <lastmod>2021-06-19T00:00:00-07:00</lastmod>
-  </url><url>
     <loc>https://www.zijianhu.com/tag/computer-vision/</loc>
     <lastmod>2020-12-05T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://www.zijianhu.com/project/lwll/</loc>
-    <lastmod>2020-12-05T00:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://www.zijianhu.com/project/</loc>
     <lastmod>2020-12-05T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://www.zijianhu.com/post/</loc>
@@ -81,9 +93,6 @@
     <lastmod>2019-06-01T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://www.zijianhu.com/project/dpa_sgd/</loc>
-    <lastmod>2019-05-03T00:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://www.zijianhu.com/tag/federated-learning/</loc>
     <lastmod>2019-05-03T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://www.zijianhu.com/tag/multi-task-learning/</loc>
